@@ -1,0 +1,3534 @@
+# Translation file for wp-dark-mode
+# Copyright (C) 2026 wp-dark-mode
+# This file is distributed under the same license as the wp-dark-mode package.
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-dark-mode\n"
+"Language: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-23 07:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: wp-auto-i18n\n"
+"X-Domain: wp-dark-mode\n"
+
+#: includes/admin/class-admin-install.php:221
+msgid "Upgrade now"
+msgstr "ì§€ê¸ˆ ì—…ê·¸ë ˆì´ë“œ"
+
+#: includes/admin/class-admin-install.php:232, includes/admin/class-admin-menus.php:59, includes/admin/class-admin-menus.php:60, includes/admin/class-admin-menus.php:71, includes/admin/class-admin-menus.php:72, includes/admin/class-strings.php:542
+msgid "Settings"
+msgstr "ì„¤ì •"
+
+#: includes/admin/class-admin-menus.php:45
+msgid "WP Dark Mode Settings"
+msgstr "WP ë‹¤í¬ ëª¨ë“œ ì„¤ì •"
+
+#: includes/admin/class-admin-menus.php:46, includes/admin/class-admin-notices.php:86, includes/admin/class-strings.php:656, includes/admin/class-strings.php:662
+msgid "WP Dark Mode"
+msgstr "WP ë‹¤í¬ ëª¨ë“œ"
+
+#: includes/admin/class-admin-menus.php:82, includes/admin/class-admin-menus.php:83, includes/admin/class-strings.php:665
+msgid "Get Started"
+msgstr "ì‹œìž‘í•˜ê¸°"
+
+#: includes/admin/class-admin-menus.php:93, includes/admin/class-admin-menus.php:94, includes/modules/social-share/class-social-share.php:463
+msgid "Social Share"
+msgstr "ì†Œì…œ ê³µìœ "
+
+#: includes/admin/class-admin-menus.php:107, includes/admin/class-strings.php:493
+msgid "Recommended Plugins"
+msgstr "ì¶”ì²œ í”ŒëŸ¬ê·¸ì¸"
+
+#: includes/admin/class-admin-menus.php:108
+msgid "Recommended <br /> Plugins"
+msgstr "ì¶”ì²œ <br /> í”ŒëŸ¬ê·¸ì¸"
+
+#: includes/admin/class-admin-menus.php:120, includes/admin/class-admin-menus.php:129, includes/admin/class-strings.php:749
+msgid "Upgrade Now"
+msgstr "ì§€ê¸ˆ ì—…ê·¸ë ˆì´ë“œ"
+
+#: includes/admin/class-admin-rest.php:145, includes/admin/class-admin-rest.php:187
+msgid "No settings found."
+msgstr "ì„¤ì •ì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-admin-rest.php:195
+msgid "Settings saved successfully."
+msgstr "ì„¤ì •ì´ ì„±ê³µì ìœ¼ë¡œ ì €ìž¥ë˜ì—ˆìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-admin-rest.php:210
+msgid "Reset not confirmed."
+msgstr "ì´ˆê¸°í™”ê°€ í™•ì¸ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-admin-rest.php:220, includes/admin/class-strings.php:519
+msgid "Settings reset successfully."
+msgstr "ì„¤ì •ì´ ì„±ê³µì ìœ¼ë¡œ ì´ˆê¸°í™”ë˜ì—ˆìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-admin-rest.php:238
+msgid "No notice found."
+msgstr "ì•Œë¦¼ì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-recommended-plugins.php:201, templates/admin/recommended-plugins.php:134
+msgid "Try out our recommended plugins"
+msgstr "ì¶”ì²œ í”ŒëŸ¬ê·¸ì¸ì„ ì‚¬ìš©í•˜ì—¬ ë³´ì„¸ìš”"
+
+#: includes/admin/class-recommended-plugins.php:202, templates/admin/recommended-plugins.php:135
+msgid "Hide From Menu"
+msgstr "ë©”ë‰´ì—ì„œ ìˆ¨ê¸°ê¸°"
+
+#: includes/admin/class-recommended-plugins.php:252, templates/admin/recommended-plugins.php:184
+msgid "By %s"
+msgstr "%s ì œìž‘"
+
+#: includes/admin/class-recommended-plugins.php:279, templates/admin/recommended-plugins.php:211
+msgid "Install Now"
+msgstr "ì§€ê¸ˆ ì„¤ì¹˜"
+
+#: includes/admin/class-recommended-plugins.php:301, templates/admin/recommended-plugins.php:233
+msgid "Update Now"
+msgstr "ì§€ê¸ˆ ì—…ë°ì´íŠ¸"
+
+#: includes/admin/class-recommended-plugins.php:320, templates/admin/recommended-plugins.php:252
+msgid "Activate"
+msgstr "í™œì„±í™”"
+
+#: includes/admin/class-recommended-plugins.php:353, templates/admin/recommended-plugins.php:285
+msgid "More information about %s"
+msgstr "%sì— ëŒ€í•œ ìžì„¸í•œ ì •ë³´"
+
+#: includes/admin/class-recommended-plugins.php:355, templates/admin/recommended-plugins.php:287
+msgid "More Details"
+msgstr "ìƒì„¸ ì •ë³´"
+
+#: includes/admin/class-recommended-plugins.php:385, templates/admin/recommended-plugins.php:317
+msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
+msgstr "ì´ í”ŒëŸ¬ê·¸ì¸ì€ í˜„ìž¬ ë²„ì „ì˜ ì›Œë“œí”„ë ˆìŠ¤ ë° PHPì™€ í˜¸í™˜ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-recommended-plugins.php:409, templates/admin/recommended-plugins.php:341
+msgid "This plugin doesn&#8217;t work with your version of WordPress."
+msgstr "ì´ í”ŒëŸ¬ê·¸ì¸ì€ í˜„ìž¬ ë²„ì „ì˜ ì›Œë“œí”„ë ˆìŠ¤ì™€ í˜¸í™˜ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-recommended-plugins.php:418, templates/admin/recommended-plugins.php:350
+msgid "This plugin doesn&#8217;t work with your version of PHP."
+msgstr "ì´ í”ŒëŸ¬ê·¸ì¸ì€ í˜„ìž¬ ë²„ì „ì˜ PHPì™€ í˜¸í™˜ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-recommended-plugins.php:466, templates/admin/recommended-plugins.php:398
+msgid "Last Updated:"
+msgstr "ë§ˆì§€ë§‰ ì—…ë°ì´íŠ¸:"
+
+#: includes/admin/class-recommended-plugins.php:469, templates/admin/recommended-plugins.php:401
+msgid "%s ago"
+msgstr "%s ì „"
+
+#: includes/admin/class-recommended-plugins.php:487, templates/admin/recommended-plugins.php:419
+msgid "%s Active Installations"
+msgstr "%sê°œì˜ í™œì„± ì„¤ì¹˜"
+
+#: includes/admin/class-recommended-plugins.php:508, includes/admin/class-strings.php:70, templates/admin/recommended-plugins.php:440
+msgid "Are you sure?"
+msgstr "í™•ì‹¤í•©ë‹ˆê¹Œ?"
+
+#: includes/admin/class-recommended-plugins.php:509, templates/admin/recommended-plugins.php:441
+msgid ""
+"If you hide the recommended plugins page from your menu, it won't appear "
+"there again. Are you sure you'd like to do it?"
+msgstr "ë©”ë‰´ì—ì„œ ì¶”ì²œ í”ŒëŸ¬ê·¸ì¸ íŽ˜ì´ì§€ë¥¼ ìˆ¨ê¸°ë©´ ë‹¤ì‹œ ë‚˜íƒ€ë‚˜ì§€ ì•ŠìŠµë‹ˆë‹¤. ì •ë§ ì§„í–‰í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+#: includes/admin/class-strings.php:15
+msgid ""
+"Enabling dark mode on your website is easy and simple. <a href=\"\">Learn "
+"how to get started with WP Dark Mode within minutes.</a>"
+msgstr ""
+"ì›¹ì‚¬ì´íŠ¸ì— ë‹¤í¬ ëª¨ë“œë¥¼ í™œì„±í™”í•˜ëŠ” ê²ƒì€ ë§¤ìš° ì‰½ê³  ê°„ë‹¨í•©ë‹ˆë‹¤. <a href=\"\">ëª‡ ë¶„ ë§Œì— WP Dark Modeë¥¼ ì‹œìž‘í•˜ëŠ” "
+"ë°©ë²•ì„ ì•Œì•„ë³´ì„¸ìš”.</a>"
+
+#: includes/admin/class-strings.php:16
+msgid ""
+"To purchase and activate WP Dark Mode Ultimate, please visit our <a "
+"href=\"http://wppool.dev/wp-dark-mode-pricing/\" target=\"_blank\">pricing "
+"page</a>."
+msgstr ""
+"ì¶”ê°€ ê¸°ëŠ¥ì„ í™œì„±í™”í•˜ë ¤ë©´ <a href=\"http://wppool.dev/wp-dark-mode-pricing/\" "
+"target=\"_blank\">ê°€ê²© ì±…ì • íŽ˜ì´ì§€</a>ë¥¼ ë°©ë¬¸í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:17
+msgid ""
+"Yes, WP Dark Mode is compatible with major page builders, including "
+"Gutenberg and Elementor. You can place the dark mode switch button on any "
+"page or post using these builders."
+msgstr ""
+"ë„¤, WP Dark ModeëŠ” êµ¬í…ë² ë¥´í¬ ë° ì—˜ë¦¬ë©˜í„°ë¥¼ í¬í•¨í•œ ì£¼ìš” íŽ˜ì´ì§€ ë¹Œë”ì™€ í˜¸í™˜ë©ë‹ˆë‹¤. ì´ëŸ¬í•œ ë¹Œë”ë¥¼ ì‚¬ìš©í•˜ì—¬ ëª¨ë“  íŽ˜ì´ì§€ë‚˜ "
+"í¬ìŠ¤íŠ¸ì— ë‹¤í¬ ëª¨ë“œ ì „í™˜ ë²„íŠ¼ì„ ë°°ì¹˜í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:18
+msgid ""
+"Yes, WP Dark Mode has been tested and works seamlessly across modern "
+"browsers such as Safari, Chrome, Firefox, Edge, Opera, Brave, and more."
+msgstr ""
+"ë„¤, WP Dark ModeëŠ” Safari, Chrome, Firefox, Edge, Opera, Brave ë“± í˜„ëŒ€ì ì¸ ë¸Œë¼ìš°ì €ì—ì„œ "
+"í…ŒìŠ¤íŠ¸ë˜ì—ˆìœ¼ë©° ì›í™œí•˜ê²Œ ìž‘ë™í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:19
+msgid ""
+"Go to WP Dark Mode > Settings > Customization > Image Settings and "
+"upload/select the image you want to use for dark mode."
+msgstr "WP Dark Mode > ì„¤ì • > ì‚¬ìš©ìž ì •ì˜ > ì´ë¯¸ì§€ ì„¤ì •ìœ¼ë¡œ ì´ë™í•˜ì—¬ ë‹¤í¬ ëª¨ë“œì— ì‚¬ìš©í•  ì´ë¯¸ì§€ë¥¼ ì—…ë¡œë“œí•˜ê±°ë‚˜ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:20
+msgid ""
+"WP Dark Mode allows you to exclude specific elements or pages from being "
+"affected by dark mode using CSS selectors. Go to WP Dark Mode > Settings > "
+"Advanced > Exclude Settings > HTML Elements and add the CSS selectors for "
+"the elements you want to exclude."
+msgstr ""
+"WP Dark Modeë¥¼ ì‚¬ìš©í•˜ë©´ CSS ì„ íƒê¸°ë¥¼ ì‚¬ìš©í•˜ì—¬ íŠ¹ì • ìš”ì†Œë‚˜ íŽ˜ì´ì§€ê°€ ë‹¤í¬ ëª¨ë“œì˜ ì˜í–¥ì„ ë°›ì§€ ì•Šë„ë¡ ì œì™¸í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. "
+"WP Dark Mode > ì„¤ì • > ê³ ê¸‰ > ì œì™¸ ì„¤ì • > HTML ìš”ì†Œë¡œ ì´ë™í•˜ì—¬ ì œì™¸í•˜ë ¤ëŠ” ìš”ì†Œì˜ CSS ì„ íƒê¸°ë¥¼ ì¶”ê°€í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:21
+msgid ""
+"For refunds on the premium plan, please contact our <a "
+"href=\"http://wppool.dev/contact\" rel=\"nofollow\" "
+"target=\"_blank\">customer support team</a> directly. The procedure will be "
+"based on the terms of service in effect at the time of purchase."
+msgstr ""
+"í”„ë¦¬ë¯¸ì—„ í”Œëžœ í™˜ë¶ˆì— ëŒ€í•´ì„œëŠ” <a href=\"http://wppool.dev/contact\" rel=\"nofollow\" "
+"target=\"_blank\">ê³ ê° ì§€ì› íŒ€</a>ì— ì§ì ‘ ë¬¸ì˜í•˜ì„¸ìš”. ì ˆì°¨ëŠ” êµ¬ë§¤ ë‹¹ì‹œì˜ ì„œë¹„ìŠ¤ ì•½ê´€ì„ ê¸°ì¤€ìœ¼ë¡œ í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:22, src/admin/routes/settings-routes.js:87
+msgid "Accessibility"
+msgstr "ì ‘ê·¼ì„±"
+
+#: includes/admin/class-strings.php:23, src/admin/routes/settings-routes.js:88
+msgid "Make your website more accessible for people with disabilities."
+msgstr "ìž¥ì• ì¸ì´ ì›¹ì‚¬ì´íŠ¸ë¥¼ ë” ì‰½ê²Œ ì´ìš©í•  ìˆ˜ ìžˆë„ë¡ í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:24
+msgid "Accessibility Switches"
+msgstr "ì ‘ê·¼ì„± ìŠ¤ìœ„ì¹˜"
+
+#: includes/admin/class-strings.php:25, includes/admin/class-strings.php:643
+msgid "Please active WooCommerce to use this feature."
+msgstr "ì´ ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ë ¤ë©´ ìš°ì»¤ë¨¸ìŠ¤ë¥¼ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:26
+msgid "+ Add Custom Color Preset"
+msgstr "+ ì‚¬ìš©ìž ì •ì˜ ìƒ‰ìƒ í”„ë¦¬ì…‹ ì¶”ê°€"
+
+#: includes/admin/class-strings.php:27
+msgid "Add images to replace them in dark mode"
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ ëŒ€ì²´í•  ì´ë¯¸ì§€ ì¶”ê°€"
+
+#: includes/admin/class-strings.php:28
+msgid "Add New"
+msgstr "ìƒˆë¡œ ì¶”ê°€"
+
+#: includes/admin/class-strings.php:29, includes/admin/class-strings.php:652
+msgid ""
+"Drag & drop the Darkmode Switcher to any of your menus from the Menu option "
+"under Appearance settings in WordPress dashboard"
+msgstr "ì›Œë“œí”„ë ˆìŠ¤ ëŒ€ì‹œë³´ë“œì˜ ì™¸ëª¨ ì„¤ì • ì•„ëž˜ ë©”ë‰´ ì˜µì…˜ì—ì„œ ë‹¤í¬ëª¨ë“œ ìŠ¤ìœ„ì²˜ë¥¼ ì›í•˜ëŠ” ë©”ë‰´ë¡œ ë“œëž˜ê·¸ ì•¤ ë“œë¡­í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:30, includes/admin/class-strings.php:35
+msgid "Add Dark Mode switch to Menus from WordPress dashboard"
+msgstr "ì›Œë“œí”„ë ˆìŠ¤ ëŒ€ì‹œë³´ë“œì—ì„œ ë©”ë‰´ì— ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ ì¶”ê°€"
+
+#: includes/admin/class-strings.php:31
+msgid "Add custom triggers to toggle dark mode"
+msgstr "ë‹¤í¬ ëª¨ë“œ ì „í™˜ì„ ìœ„í•œ ì‚¬ìš©ìž ì •ì˜ íŠ¸ë¦¬ê±° ì¶”ê°€"
+
+#: includes/admin/class-strings.php:32
+msgid "Add videos to replace them in dark mode"
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ ëŒ€ì²´í•  ë¹„ë””ì˜¤ ì¶”ê°€"
+
+#: includes/admin/class-strings.php:33
+msgid ""
+"Navigate to the Widget option in the WordPress dashboard under Appearance "
+"menu. Select the menu where you want to display dark mode switch and click "
+"on the â€˜+â€™ button and type <span class=\"text-[#374151]\"> Dark Mode "
+"Switch</span> in the widget searchbox"
+msgstr ""
+"ì›Œë“œí”„ë ˆìŠ¤ ëŒ€ì‹œë³´ë“œì˜ ì™¸ëª¨ ë©”ë‰´ ì•„ëž˜ ìœ„ì ¯ ì˜µì…˜ìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤. ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ë¥¼ í‘œì‹œí•˜ë ¤ëŠ” ë©”ë‰´ë¥¼ ì„ íƒí•˜ê³  '+' ë²„íŠ¼ì„ í´ë¦­í•œ "
+"ë‹¤ìŒ ìœ„ì ¯ ê²€ìƒ‰ì°½ì— <span class=\"text-[#374151]\"> Dark Mode Switch</span>ë¥¼ ìž…ë ¥í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:34
+msgid "Add the WP Dark Mode widget to the menu"
+msgstr "ë©”ë‰´ì— WP Dark Mode ìœ„ì ¯ ì¶”ê°€"
+
+#: includes/admin/class-strings.php:36, includes/admin/class-strings.php:37
+msgid "Adjust Typography for Dark Mode"
+msgstr "ë‹¤í¬ ëª¨ë“œ íƒ€ì´í¬ê·¸ëž˜í”¼ ì¡°ì •"
+
+#: includes/admin/class-strings.php:38, includes/admin/class-strings.php:594
+msgid ""
+"Enable to get seamless readability by font adaptation during dark-light "
+"mode toggling."
+msgstr "ë‹¤í¬/ë¼ì´íŠ¸ ëª¨ë“œ ì „í™˜ ì‹œ ê¸€ê¼´ ì ì‘ì„ í†µí•´ ì›í™œí•œ ê°€ë…ì„±ì„ í™•ë³´í•˜ë ¤ë©´ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:39, includes/admin/class-strings.php:228
+msgid "Turn it ON to enable dark mode on the WordPress dashboard"
+msgstr "ì›Œë“œí”„ë ˆìŠ¤ ëŒ€ì‹œë³´ë“œì—ì„œ ë‹¤í¬ ëª¨ë“œë¥¼ í™œì„±í™”í•˜ë ¤ë©´ ì¼œì„¸ìš”."
+
+#: includes/admin/class-strings.php:40, includes/admin/class-strings.php:227
+msgid "Enable Admin Dashboard Dark Mode"
+msgstr "ê´€ë¦¬ìž ëŒ€ì‹œë³´ë“œ ë‹¤í¬ ëª¨ë“œ í™œì„±í™”"
+
+#: includes/admin/class-strings.php:41, src/admin/routes/settings-routes.js:22
+msgid "Settings to Control Dark Mode on your WordPress Admin Panel"
+msgstr "ì›Œë“œí”„ë ˆìŠ¤ ê´€ë¦¬ìž íŒ¨ë„ì˜ ë‹¤í¬ ëª¨ë“œ ì œì–´ ì„¤ì •"
+
+#: includes/admin/class-strings.php:42, src/admin/routes/settings-routes.js:21
+msgid "Admin Panel Dark Mode"
+msgstr "ê´€ë¦¬ìž íŒ¨ë„ ë‹¤í¬ ëª¨ë“œ"
+
+#: includes/admin/class-strings.php:43, src/admin/routes/settings-routes.js:63
+msgid "Advanced"
+msgstr "ê³ ê¸‰"
+
+#: includes/admin/class-strings.php:44
+msgid "Affiliate Program"
+msgstr "ì œíœ´ í”„ë¡œê·¸ëž¨"
+
+#: includes/admin/class-strings.php:45
+msgid ""
+"Hey! Enjoying the WP Dark Mode plugin? ðŸ˜ Join our <a "
+"href=\"https://go.wppool.dev/zfrO\" target=\"_blank\" "
+"class=\"text-[#7C3AED] font-semibold\">Influencer Program</a> to make money "
+"from your social media content. You can also check our <a "
+"href=\"https://go.wppool.dev/Tfej\" target=\"_blank\" "
+"class=\"text-[#7C3AED] font-semibold no-underline\">Affiliate Program</a> "
+"to get a <strong>25% commission</strong> on every sale!"
+msgstr ""
+"ì•ˆë…•í•˜ì„¸ìš”! WP Dark Mode í”ŒëŸ¬ê·¸ì¸ì„ ì¦ê¸°ê³  ê³„ì‹ ê°€ìš”? ðŸ˜ <a "
+"href=\"https://go.wppool.dev/zfrO\" target=\"_blank\" "
+"class=\"text-[#7C3AED] font-semibold\">ì¸í”Œë£¨ì–¸ì„œ í”„ë¡œê·¸ëž¨</a>ì— ì°¸ì—¬í•˜ì—¬ ì†Œì…œ ë¯¸ë””ì–´ ì½˜í…ì¸ ë¡œ ìˆ˜ìµì„ "
+"ì°½ì¶œí•´ ë³´ì„¸ìš”. ë˜í•œ ëª¨ë“  íŒë§¤ì— ëŒ€í•´ 25% ìˆ˜ìˆ˜ë£Œë¥¼ ë°›ì„ ìˆ˜ ìžˆëŠ” <a "
+"href=\"https://go.wppool.dev/Tfej\" target=\"_blank\" "
+"class=\"text-[#7C3AED] font-semibold no-underline\">ì œíœ´ í”„ë¡œê·¸ëž¨</a>ë„ í™•ì¸í•´ ë³´ì„¸ìš”!"
+
+#: includes/admin/class-strings.php:46
+msgid "AI Custom Preset"
+msgstr "AI ì‚¬ìš©ìž ì •ì˜ í”„ë¦¬ì…‹"
+
+#: includes/admin/class-strings.php:47
+msgid ""
+"Let AI generate your stunning dark mode themes in seconds. Preview, "
+"compare, and apply the one you love."
+msgstr "AIê°€ ë‹¨ ëª‡ ì´ˆ ë§Œì— ë©‹ì§„ ë‹¤í¬ ëª¨ë“œ í…Œë§ˆë¥¼ ìƒì„±í•˜ë„ë¡ í•˜ì„¸ìš”. ë¯¸ë¦¬ë³´ê³ , ë¹„êµí•˜ê³ , ë§ˆìŒì— ë“œëŠ” í…Œë§ˆë¥¼ ì ìš©í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:48
+msgid "Create Your Dark Mode with AI"
+msgstr "AIë¡œ ë‚˜ë§Œì˜ ë‹¤í¬ ëª¨ë“œ ë§Œë“¤ê¸°"
+
+#: includes/admin/class-strings.php:49, src/admin/routes/settings-routes.js:125, src/admin/routes/settings-routes.js:131
+msgid "AI Model"
+msgstr "AI ëª¨ë¸"
+
+#: includes/admin/class-strings.php:50, src/admin/routes/settings-routes.js:132
+msgid "Configure AI model settings for theme generation"
+msgstr "í…Œë§ˆ ìƒì„±ì„ ìœ„í•œ AI ëª¨ë¸ ì„¤ì • êµ¬ì„±"
+
+#: includes/admin/class-strings.php:51
+msgid "âš¡ AI Preset Generator"
+msgstr "âš¡ AI í”„ë¦¬ì…‹ ìƒì„±ê¸°"
+
+#: includes/admin/class-strings.php:52
+msgid "Let AI instantly generate a smart dark mode theme preset for you."
+msgstr "AIê°€ ì¦‰ì‹œ ìŠ¤ë§ˆíŠ¸í•œ ë‹¤í¬ ëª¨ë“œ í…Œë§ˆ í”„ë¦¬ì…‹ì„ ìƒì„±í•˜ë„ë¡ í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:53
+msgid "AI Preset Generator"
+msgstr "AI í”„ë¦¬ì…‹ ìƒì„±ê¸°"
+
+#: includes/admin/class-strings.php:54, includes/admin/class-strings.php:55
+msgid "AI Preset saved successfully!"
+msgstr "AI í”„ë¦¬ì…‹ì´ ì„±ê³µì ìœ¼ë¡œ ì €ìž¥ë˜ì—ˆìŠµë‹ˆë‹¤!"
+
+#: includes/admin/class-strings.php:56
+msgid "I already did it"
+msgstr "ì´ë¯¸ ì™„ë£Œí–ˆìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:57
+msgid "You already have a preset named"
+msgstr "ì´ë¯¸ í•´ë‹¹ ì´ë¦„ì˜ í”„ë¦¬ì…‹ì´ ìžˆìŠµë‹ˆë‹¤:"
+
+#: includes/admin/class-strings.php:58
+msgid "AM"
+msgstr "ì˜¤ì „"
+
+#: includes/admin/class-strings.php:59, src/admin/routes/settings-routes.js:104, src/admin/routes/settings-routes.js:118
+msgid "Analytics"
+msgstr "ë¶„ì„"
+
+#: includes/admin/class-strings.php:60
+msgid ""
+"If you enable this then the chart above will be shown in your admin panel "
+"dashboard"
+msgstr "ì´ë¥¼ í™œì„±í™”í•˜ë©´ ìœ„ì˜ ì°¨íŠ¸ê°€ ê´€ë¦¬ìž íŒ¨ë„ ëŒ€ì‹œë³´ë“œì— í‘œì‹œë©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:61
+msgid "Display this dark mode usage chart on the WordPress Dashboard"
+msgstr "ì›Œë“œí”„ë ˆìŠ¤ ëŒ€ì‹œë³´ë“œì— ë‹¤í¬ ëª¨ë“œ ì‚¬ìš© ì°¨íŠ¸ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:62, src/admin/routes/settings-routes.js:119
+msgid "Configure analytics settings."
+msgstr "ë¶„ì„ ì„¤ì • êµ¬ì„±"
+
+#: includes/admin/class-strings.php:63
+msgid ""
+"Enable dark mode analytics to track how many times site visitors have used "
+"dark mode in a certain period."
+msgstr "íŠ¹ì • ê¸°ê°„ ë™ì•ˆ ì‚¬ì´íŠ¸ ë°©ë¬¸ìžê°€ ë‹¤í¬ ëª¨ë“œë¥¼ ì‚¬ìš©í•œ íšŸìˆ˜ë¥¼ ì¶”ì í•˜ë ¤ë©´ ë‹¤í¬ ëª¨ë“œ ë¶„ì„ì„ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:64, includes/admin/class-strings.php:167
+msgid "Dark Mode Analytics"
+msgstr "ë‹¤í¬ ëª¨ë“œ ë¶„ì„"
+
+#: includes/admin/class-strings.php:65, includes/admin/class-strings.php:66
+msgid "Analyze my website"
+msgstr "ë‚´ ì›¹ì‚¬ì´íŠ¸ ë¶„ì„"
+
+#: includes/admin/class-strings.php:67, src/admin/routes/settings-routes.js:57
+msgid "Choose your page transition animation"
+msgstr "íŽ˜ì´ì§€ ì „í™˜ ì• ë‹ˆë©”ì´ì…˜ ì„ íƒ"
+
+#: includes/admin/class-strings.php:68
+msgid ""
+"Enable this option to choose the transition animation when switching "
+"between light and dark modes on your website."
+msgstr "ì›¹ì‚¬ì´íŠ¸ì—ì„œ ë¼ì´íŠ¸ ëª¨ë“œì™€ ë‹¤í¬ ëª¨ë“œ ê°„ì„ ì „í™˜í•  ë•Œ íŽ˜ì´ì§€ ì „í™˜ ì• ë‹ˆë©”ì´ì…˜ì„ ì„ íƒí•˜ë ¤ë©´ ì´ ì˜µì…˜ì„ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:69, includes/admin/class-strings.php:235
+msgid "Enable Page Transition Animation"
+msgstr "íŽ˜ì´ì§€ ì „í™˜ ì• ë‹ˆë©”ì´ì…˜ í™œì„±í™”"
+
+#: includes/admin/class-strings.php:71
+msgid "Enable to choose an animation effect for the selected switch"
+msgstr "ì„ íƒí•œ ìŠ¤ìœ„ì¹˜ì— ëŒ€í•œ ì• ë‹ˆë©”ì´ì…˜ íš¨ê³¼ë¥¼ ì„ íƒí•˜ë ¤ë©´ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:72
+msgid "Switch Attention Effect"
+msgstr "ìŠ¤ìœ„ì¹˜ ì£¼ëª© íš¨ê³¼"
+
+#: includes/admin/class-strings.php:73
+msgid "Auto-hide Switch on Idle"
+msgstr "ìœ íœ´ ì‹œ ìŠ¤ìœ„ì¹˜ ìžë™ ìˆ¨ê¸°ê¸°"
+
+#: includes/admin/class-strings.php:74
+msgid "Enable to automatically hide the floating switch when the user is idle."
+msgstr "ì‚¬ìš©ìžê°€ ìœ íœ´ ìƒíƒœì¼ ë•Œ í”Œë¡œíŒ… ìŠ¤ìœ„ì¹˜ë¥¼ ìžë™ìœ¼ë¡œ ìˆ¨ê¸°ë ¤ë©´ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:75
+msgid "Automatic Color"
+msgstr "ìžë™ ìƒ‰ìƒ"
+
+#: includes/admin/class-strings.php:76, includes/admin/class-strings.php:78
+msgid "Adjust the your automatic color for dark mode color scheme"
+msgstr "ë‹¤í¬ ëª¨ë“œ ìƒ‰ìƒ ì²´ê³„ì— ëŒ€í•œ ìžë™ ìƒ‰ìƒ ì¡°ì •"
+
+#: includes/admin/class-strings.php:77, includes/admin/class-strings.php:79
+msgid "Adjust your automatic color filter"
+msgstr "ìžë™ ìƒ‰ìƒ í•„í„° ì¡°ì •"
+
+#: includes/admin/class-strings.php:80
+msgid "Back"
+msgstr "ë’¤ë¡œ"
+
+#: includes/admin/class-strings.php:81
+msgid "Background"
+msgstr "ë°°ê²½"
+
+#: includes/admin/class-strings.php:82, includes/admin/class-strings.php:85
+msgid "Block Editor Dark Mode"
+msgstr "ë¸”ë¡ ì—ë””í„° ë‹¤í¬ ëª¨ë“œ"
+
+#: includes/admin/class-strings.php:83, includes/admin/class-strings.php:84
+msgid ""
+"Turn it ON to show dark mode switch in the block editor for toggling "
+"between dark and light mode."
+msgstr "ë¸”ë¡ ì—ë””í„°ì—ì„œ ë‹¤í¬ ëª¨ë“œì™€ ë¼ì´íŠ¸ ëª¨ë“œ ê°„ ì „í™˜ì„ ìœ„í•œ ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ë¥¼ í‘œì‹œí•˜ë ¤ë©´ ì¼œì„¸ìš”."
+
+#: includes/admin/class-strings.php:86
+msgid "Body Background Color"
+msgstr "ë³¸ë¬¸ ë°°ê²½ìƒ‰"
+
+#: includes/admin/class-strings.php:87
+msgid "Body Colors"
+msgstr "ë³¸ë¬¸ ìƒ‰ìƒ"
+
+#: includes/admin/class-strings.php:88
+msgid "Border"
+msgstr "í…Œë‘ë¦¬"
+
+#: includes/admin/class-strings.php:89
+msgid "Brightness"
+msgstr "ë°ê¸°"
+
+#: includes/admin/class-strings.php:90
+msgid "Adjust your preferred dark mode brightness"
+msgstr "ì„ í˜¸í•˜ëŠ” ë‹¤í¬ ëª¨ë“œ ë°ê¸° ì¡°ì •"
+
+#: includes/admin/class-strings.php:91
+msgid "Brightness level"
+msgstr "ë°ê¸° ìˆ˜ì¤€"
+
+#: includes/admin/class-strings.php:92
+msgid "Browse"
+msgstr "ë‘˜ëŸ¬ë³´ê¸°"
+
+#: includes/admin/class-strings.php:93
+msgid "Button Hover Background Color"
+msgstr "ë²„íŠ¼ í˜¸ë²„ ë°°ê²½ ìƒ‰ìƒ"
+
+#: includes/admin/class-strings.php:94
+msgid "Button Hover Text Color"
+msgstr "ë²„íŠ¼ í˜¸ë²„ í…ìŠ¤íŠ¸ ìƒ‰ìƒ"
+
+#: includes/admin/class-strings.php:95
+msgid "Button Border"
+msgstr "ë²„íŠ¼ í…Œë‘ë¦¬"
+
+#: includes/admin/class-strings.php:96
+msgid "Button Colors"
+msgstr "ë²„íŠ¼ ìƒ‰ìƒ"
+
+#: includes/admin/class-strings.php:97
+msgid "Cancel"
+msgstr "ì·¨ì†Œ"
+
+#: includes/admin/class-strings.php:98
+msgid "Choose Color Mode"
+msgstr "ìƒ‰ìƒ ëª¨ë“œ ì„ íƒ"
+
+#: includes/admin/class-strings.php:99, includes/admin/class-strings.php:100
+msgid "Choose Your Preferred Color Palettes"
+msgstr "ì„ í˜¸í•˜ëŠ” ìƒ‰ìƒ íŒ”ë ˆíŠ¸ ì„ íƒ"
+
+#: includes/admin/class-strings.php:101
+msgid "Choose any button, menu link, or icon and make it toggle dark mode."
+msgstr "ë²„íŠ¼, ë©”ë‰´ ë§í¬ ë˜ëŠ” ì•„ì´ì½˜ì„ ì„ íƒí•˜ì—¬ ë‹¤í¬ ëª¨ë“œë¥¼ ì „í™˜í•˜ë„ë¡ ë§Œë“œì„¸ìš”."
+
+#: includes/admin/class-strings.php:102, includes/admin/class-strings.php:105
+msgid "Classic Editor Dark Mode"
+msgstr "í´ëž˜ì‹ ì—ë””í„° ë‹¤í¬ ëª¨ë“œ"
+
+#: includes/admin/class-strings.php:103, includes/admin/class-strings.php:104
+msgid ""
+"Turn it ON to show dark mode switch in the classic editor for toggling "
+"between dark and light mode."
+msgstr "í´ëž˜ì‹ ì—ë””í„°ì—ì„œ ë‹¤í¬ ëª¨ë“œì™€ ë¼ì´íŠ¸ ëª¨ë“œ ê°„ ì „í™˜ì„ ìœ„í•œ ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ë¥¼ í‘œì‹œí•˜ë ¤ë©´ ì¼œì„¸ìš”."
+
+#: includes/admin/class-strings.php:106, includes/admin/class-strings.php:640
+msgid "Wait! Clear palette previews?"
+msgstr "ìž ê¹ë§Œìš”! íŒ”ë ˆíŠ¸ ë¯¸ë¦¬ë³´ê¸°ë¥¼ ì§€ìš°ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+#: includes/admin/class-strings.php:107
+msgid "Click on the button below to create your first custom color."
+msgstr "ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•˜ì—¬ ì²« ë²ˆì§¸ ì‚¬ìš©ìž ì •ì˜ ìƒ‰ìƒì„ ë§Œë“œì„¸ìš”."
+
+#: includes/admin/class-strings.php:108, src/admin/routes/settings-routes.js:42
+msgid "Explore your options to get the best dark mode visual experience."
+msgstr "ìµœìƒì˜ ë‹¤í¬ ëª¨ë“œ ì‹œê°ì  ê²½í—˜ì„ ìœ„í•´ ì˜µì…˜ì„ íƒìƒ‰í•´ ë³´ì„¸ìš”."
+
+#: includes/admin/class-strings.php:109
+msgid "Color Presets"
+msgstr "ìƒ‰ìƒ í”„ë¦¬ì…‹"
+
+#: includes/admin/class-strings.php:110, includes/admin/class-strings.php:111
+msgid "Choose a color preset for the dark mode color scheme."
+msgstr "ë‹¤í¬ ëª¨ë“œ ìƒ‰ìƒ ì²´ê³„ì— ëŒ€í•œ ìƒ‰ìƒ í”„ë¦¬ì…‹ì„ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:112, includes/admin/class-strings.php:168
+msgid "Dark Mode Color Presets"
+msgstr "ë‹¤í¬ ëª¨ë“œ ìƒ‰ìƒ í”„ë¦¬ì…‹"
+
+#: includes/admin/class-strings.php:113, src/admin/routes/settings-routes.js:41
+msgid "Color Settings"
+msgstr "ìƒ‰ìƒ ì„¤ì •"
+
+#: includes/admin/class-strings.php:114
+msgid "How WP Dark Mode Ultimate compares to the free version?"
+msgstr "WP Dark Mode UltimateëŠ” ë¬´ë£Œ ë²„ì „ê³¼ ì–´ë–»ê²Œ ë¹„êµë˜ë‚˜ìš”?"
+
+#: includes/admin/class-strings.php:115
+msgid "Compose new email with"
+msgstr "ìƒˆ ì´ë©”ì¼ ìž‘ì„±:"
+
+#: includes/admin/class-strings.php:116
+msgid "Confirm"
+msgstr "í™•ì¸"
+
+#: includes/admin/class-strings.php:117
+msgid "Are you sure want to import?"
+msgstr "ì •ë§ ê°€ì ¸ì˜¤ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+#: includes/admin/class-strings.php:118
+msgid "Contact"
+msgstr "ì—°ë½ì²˜"
+
+#: includes/admin/class-strings.php:119
+msgid "Contact Support"
+msgstr "ê³ ê° ì§€ì› ë¬¸ì˜"
+
+#: includes/admin/class-strings.php:120, includes/admin/class-strings.php:121
+msgid "Content Switch"
+msgstr "ì½˜í…ì¸  ìŠ¤ìœ„ì¹˜"
+
+#: includes/admin/class-strings.php:122
+msgid "Display dark mode switch at top of all pages"
+msgstr "ëª¨ë“  íŽ˜ì´ì§€ ìƒë‹¨ì— ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:123
+msgid "Display dark mode switch at top of all posts"
+msgstr "ëª¨ë“  í¬ìŠ¤íŠ¸ ìƒë‹¨ì— ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:124, includes/admin/class-strings.php:125
+msgid "Continue to Edit"
+msgstr "ê³„ì† íŽ¸ì§‘"
+
+#: includes/admin/class-strings.php:126
+msgid "Contrast"
+msgstr "ëŒ€ë¹„"
+
+#: includes/admin/class-strings.php:127
+msgid "Adjust your desired dark mode contrast"
+msgstr "ì›í•˜ëŠ” ë‹¤í¬ ëª¨ë“œ ëŒ€ë¹„ ì¡°ì •"
+
+#: includes/admin/class-strings.php:128, src/admin/routes/settings-routes.js:5
+msgid "Controls"
+msgstr "ì œì–´"
+
+#: includes/admin/class-strings.php:129
+msgid "Copied"
+msgstr "ë³µì‚¬ë¨"
+
+#: includes/admin/class-strings.php:130
+msgid "Copied to Clipboard!"
+msgstr "í´ë¦½ë³´ë“œì— ë³µì‚¬ë˜ì—ˆìŠµë‹ˆë‹¤!"
+
+#: includes/admin/class-strings.php:131
+msgid "Copy Email"
+msgstr "ì´ë©”ì¼ ë³µì‚¬"
+
+#: includes/admin/class-strings.php:132
+msgid "Copy email address to your clipboard"
+msgstr "ì´ë©”ì¼ ì£¼ì†Œë¥¼ í´ë¦½ë³´ë“œì— ë³µì‚¬"
+
+#: includes/admin/class-strings.php:133
+msgid "Copy Shortcode"
+msgstr "ìˆì½”ë“œ ë³µì‚¬"
+
+#: includes/admin/class-strings.php:134
+msgid "Create a custom color palette first!"
+msgstr "ë¨¼ì € ì‚¬ìš©ìž ì •ì˜ ìƒ‰ìƒ íŒ”ë ˆíŠ¸ë¥¼ ë§Œë“œì„¸ìš”!"
+
+#: includes/admin/class-strings.php:135
+msgid "Create New Preset"
+msgstr "ìƒˆ í”„ë¦¬ì…‹ ë§Œë“¤ê¸°"
+
+#: includes/admin/class-strings.php:136
+msgid "Create Your Own Toggle Element"
+msgstr "ë‚˜ë§Œì˜ ì „í™˜ ìš”ì†Œ ë§Œë“¤ê¸°"
+
+#: includes/admin/class-strings.php:137
+msgid "Background of the switch button"
+msgstr "ìŠ¤ìœ„ì¹˜ ë²„íŠ¼ ë°°ê²½"
+
+#: includes/admin/class-strings.php:138
+msgid "CTA Background Color"
+msgstr "CTA ë°°ê²½ ìƒ‰ìƒ"
+
+#: includes/admin/class-strings.php:139
+msgid "Color of the call to action text"
+msgstr "ì½œ íˆ¬ ì•¡ì…˜ í…ìŠ¤íŠ¸ ìƒ‰ìƒ"
+
+#: includes/admin/class-strings.php:140
+msgid "CTA Text Color"
+msgstr "CTA í…ìŠ¤íŠ¸ ìƒ‰ìƒ"
+
+#: includes/admin/class-strings.php:141
+msgid "Enable to add a call-to-action text for the dark mode switch."
+msgstr "ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ì— ì½œ íˆ¬ ì•¡ì…˜ í…ìŠ¤íŠ¸ë¥¼ ì¶”ê°€í•˜ë ¤ë©´ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:142
+msgid "Add call to action text beside the dark mode button"
+msgstr "ë‹¤í¬ ëª¨ë“œ ë²„íŠ¼ ì˜†ì— ì½œ íˆ¬ ì•¡ì…˜ í…ìŠ¤íŠ¸ ì¶”ê°€"
+
+#: includes/admin/class-strings.php:143
+msgid "Call-to-action Text"
+msgstr "ì½œ íˆ¬ ì•¡ì…˜ í…ìŠ¤íŠ¸"
+
+#: includes/admin/class-strings.php:144
+msgid "Your Current Plan"
+msgstr "í˜„ìž¬ í”Œëžœ"
+
+#: includes/admin/class-strings.php:145, includes/classes/class-config.php:182, includes/classes/class-config.php:210
+msgid "Custom"
+msgstr "ì‚¬ìš©ìž ì •ì˜"
+
+#: includes/admin/class-strings.php:146
+msgid "Custom Color Preset Name"
+msgstr "ì‚¬ìš©ìž ì •ì˜ ìƒ‰ìƒ í”„ë¦¬ì…‹ ì´ë¦„"
+
+#: includes/admin/class-strings.php:147, src/admin/routes/settings-routes.js:82
+msgid "Custom CSS"
+msgstr "ì‚¬ìš©ìž ì •ì˜ CSS"
+
+#: includes/admin/class-strings.php:148, src/admin/routes/settings-routes.js:83
+msgid "Custom CSS code to apply on dark mode or on both mode"
+msgstr "ë‹¤í¬ ëª¨ë“œ ë˜ëŠ” ë‘ ëª¨ë“œ ëª¨ë‘ì— ì ìš©í•  ì‚¬ìš©ìž ì •ì˜ CSS ì½”ë“œ"
+
+#: includes/admin/class-strings.php:149
+msgid ""
+"Add custom CSS for dark mode only. This CSS will only apply when the dark "
+"mode is on. use <code>!important</code> flag on each property"
+msgstr ""
+"ë‹¤í¬ ëª¨ë“œ ì „ìš© ì‚¬ìš©ìž ì •ì˜ CSSë¥¼ ì¶”ê°€í•©ë‹ˆë‹¤. ì´ CSSëŠ” ë‹¤í¬ ëª¨ë“œê°€ ì¼œì ¸ ìžˆì„ ë•Œë§Œ ì ìš©ë©ë‹ˆë‹¤. ê° ì†ì„±ì— "
+"<code>!important</code> í”Œëž˜ê·¸ë¥¼ ì‚¬ìš©í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:150
+msgid "Enter custom CSS here"
+msgstr "ì—¬ê¸°ì— ì‚¬ìš©ìž ì •ì˜ CSSë¥¼ ìž…ë ¥í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:151
+msgid ""
+"Before saving this mode, please ensure you have created a custom color "
+"palette. Alternatively, you can switch your mode to either \"Color "
+"Presets\" or \"Automatic Color\" if that better suits your needs."
+msgstr ""
+"ì´ ëª¨ë“œë¥¼ ì €ìž¥í•˜ê¸° ì „ì— ì‚¬ìš©ìž ì •ì˜ ìƒ‰ìƒ íŒ”ë ˆíŠ¸ë¥¼ ë§Œë“¤ì—ˆëŠ”ì§€ í™•ì¸í•˜ì„¸ìš”. ë˜ëŠ” í•„ìš”ì— ë”°ë¼ ëª¨ë“œë¥¼ \"ìƒ‰ìƒ í”„ë¦¬ì…‹\" ë˜ëŠ” \"ìžë™ "
+"ìƒ‰ìƒ\"ìœ¼ë¡œ ë³€ê²½í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:152
+msgid "Choose or create your custom color presets with the power of AI."
+msgstr "AIì˜ íž˜ìœ¼ë¡œ ì‚¬ìš©ìž ì •ì˜ ìƒ‰ìƒ í”„ë¦¬ì…‹ì„ ì„ íƒí•˜ê±°ë‚˜ ë§Œë“œì„¸ìš”."
+
+#: includes/admin/class-strings.php:153
+msgid "Your Custom Color Presets"
+msgstr "ì‚¬ìš©ìž ì •ì˜ ìƒ‰ìƒ í”„ë¦¬ì…‹"
+
+#: includes/admin/class-strings.php:154
+msgid "Custom size"
+msgstr "ì‚¬ìš©ìž ì •ì˜ í¬ê¸°"
+
+#: includes/admin/class-strings.php:155
+msgid "Custom Switch Icon"
+msgstr "ì‚¬ìš©ìž ì •ì˜ ìŠ¤ìœ„ì¹˜ ì•„ì´ì½˜"
+
+#: includes/admin/class-strings.php:156
+msgid "Enable to use your custom switch icon."
+msgstr "ì‚¬ìš©ìž ì •ì˜ ìŠ¤ìœ„ì¹˜ ì•„ì´ì½˜ì„ ì‚¬ìš©í•˜ë ¤ë©´ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:157
+msgid "Custom Switch Text"
+msgstr "ì‚¬ìš©ìž ì •ì˜ ìŠ¤ìœ„ì¹˜ í…ìŠ¤íŠ¸"
+
+#: includes/admin/class-strings.php:158
+msgid "Customize the dark mode switch text."
+msgstr "ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ í…ìŠ¤íŠ¸ë¥¼ ì‚¬ìš©ìž ì •ì˜í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:159, includes/admin/class-strings.php:160
+msgid "Custom Trigger"
+msgstr "ì‚¬ìš©ìž ì •ì˜ íŠ¸ë¦¬ê±°"
+
+#: includes/admin/class-strings.php:161
+msgid "Custom Triggers"
+msgstr "ì‚¬ìš©ìž ì •ì˜ íŠ¸ë¦¬ê±°"
+
+#: includes/admin/class-strings.php:162
+msgid "Allow any element on your site to toggle Dark Mode using CSS selectors."
+msgstr "CSS ì„ íƒê¸°ë¥¼ ì‚¬ìš©í•˜ì—¬ ì‚¬ì´íŠ¸ì˜ ëª¨ë“  ìš”ì†Œì—ì„œ ë‹¤í¬ ëª¨ë“œë¥¼ ì „í™˜í•  ìˆ˜ ìžˆë„ë¡ í—ˆìš©í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:163
+msgid "Customer Support"
+msgstr "ê³ ê° ì§€ì›"
+
+#: includes/admin/class-strings.php:164, includes/admin/class-strings.php:679, src/admin/routes/settings-routes.js:28
+msgid "Customization"
+msgstr "ì‚¬ìš©ìž ì •ì˜"
+
+#: includes/admin/class-strings.php:165
+msgid "Customize the selected dark mode preset color in your way"
+msgstr "ì„ íƒí•œ ë‹¤í¬ ëª¨ë“œ í”„ë¦¬ì…‹ ìƒ‰ìƒì„ ì›í•˜ëŠ” ëŒ€ë¡œ ì‚¬ìš©ìž ì •ì˜í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:44
+msgid "Dark"
+msgstr "ë‹¤í¬"
+
+#: includes/admin/class-strings.php:169
+msgid "Dark Mode CSS"
+msgstr "ë‹¤í¬ ëª¨ë“œ CSS"
+
+#: includes/admin/class-strings.php:170
+msgid "Dark Mode Switch Icon"
+msgstr "ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ ì•„ì´ì½˜"
+
+#: includes/admin/class-strings.php:171
+msgid "Dark Mode Image"
+msgstr "ë‹¤í¬ ëª¨ë“œ ì´ë¯¸ì§€"
+
+#: includes/admin/class-strings.php:172
+msgid "Dark Mode Switch Text"
+msgstr "ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ í…ìŠ¤íŠ¸"
+
+#: includes/admin/class-strings.php:173
+msgid "Add custom text for the dark mode switch"
+msgstr "ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ì— ëŒ€í•œ ì‚¬ìš©ìž ì •ì˜ í…ìŠ¤íŠ¸ ì¶”ê°€"
+
+#: includes/admin/class-strings.php:174
+msgid "Dark Mode Video :"
+msgstr "ë‹¤í¬ ëª¨ë“œ ë¹„ë””ì˜¤ :"
+
+#: includes/admin/class-strings.php:175, includes/admin/class-strings.php:658
+msgid "WP Dark Mode Usage"
+msgstr "WP Dark Mode ì‚¬ìš©ëŸ‰"
+
+#: includes/admin/class-strings.php:176
+msgid "Default app or browser"
+msgstr "ê¸°ë³¸ ì•± ë˜ëŠ” ë¸Œë¼ìš°ì €"
+
+#: includes/admin/class-strings.php:177
+msgid "Default Email App"
+msgstr "ê¸°ë³¸ ì´ë©”ì¼ ì•±"
+
+#: includes/admin/class-strings.php:178
+msgid "Enable to show the switch after a delay when page loads."
+msgstr "íŽ˜ì´ì§€ ë¡œë“œ ì‹œ ì§€ì—° í›„ ìŠ¤ìœ„ì¹˜ë¥¼ í‘œì‹œí•˜ë ¤ë©´ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:179
+msgid ""
+"Enabling this feature may delay WP Dark Mode to be applied on the frontend. "
+"Enable this feature only if you are facing issues with server-side caching."
+msgstr ""
+"ì´ ê¸°ëŠ¥ì„ í™œì„±í™”í•˜ë©´ í”„ëŸ°íŠ¸ì—”ë“œì—ì„œ WP Dark Mode ì ìš©ì´ ì§€ì—°ë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ì„œë²„ ì¸¡ ìºì‹± ë¬¸ì œê°€ ìžˆëŠ” ê²½ìš°ì—ë§Œ ì´ ê¸°ëŠ¥ì„ "
+"í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:180
+msgid "Delay Time"
+msgstr "ì§€ì—° ì‹œê°„"
+
+#: includes/admin/class-strings.php:181
+msgid "The floating switch will appear after this delay when page loads."
+msgstr "íŽ˜ì´ì§€ ë¡œë“œ ì‹œ ì´ ì§€ì—° ì‹œê°„ í›„ì— í”Œë¡œíŒ… ìŠ¤ìœ„ì¹˜ê°€ ë‚˜íƒ€ë‚©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:182
+msgid "Delete"
+msgstr "ì‚­ì œ"
+
+#: includes/admin/class-strings.php:183
+msgid "Delete this image group?"
+msgstr "ì´ ì´ë¯¸ì§€ ê·¸ë£¹ì„ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+#: includes/admin/class-strings.php:184
+msgid ""
+"This preset will be permanently deleted. Are you sure you want to confirm "
+"this deletion?"
+msgstr "ì´ í”„ë¦¬ì…‹ì€ ì˜êµ¬ì ìœ¼ë¡œ ì‚­ì œë©ë‹ˆë‹¤. ì •ë§ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+#: includes/admin/class-strings.php:185
+msgid "Do you want to delete this preset?"
+msgstr "ì´ í”„ë¦¬ì…‹ì„ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+#: includes/admin/class-strings.php:186
+msgid "Delete this trigger?"
+msgstr "ì´ íŠ¸ë¦¬ê±°ë¥¼ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+#: includes/admin/class-strings.php:187
+msgid "Are you sure you want to delete this trigger?"
+msgstr "ì •ë§ ì´ íŠ¸ë¦¬ê±°ë¥¼ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+#: includes/admin/class-strings.php:188
+msgid "Delete this video group?"
+msgstr "ì´ ë¹„ë””ì˜¤ ê·¸ë£¹ì„ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+#: includes/admin/class-strings.php:189, includes/admin/class-strings.php:701
+msgid "Desktop"
+msgstr "ë°ìŠ¤í¬í†±"
+
+#: includes/admin/class-strings.php:190
+msgid "Disable"
+msgstr "ë¹„í™œì„±í™”"
+
+#: includes/admin/class-strings.php:191, includes/admin/class-strings.php:597
+msgid ""
+"Disabling typography settings will not make the text size increase "
+"automatically when text toggle is pressed on accessibility switches"
+msgstr "íƒ€ì´í¬ê·¸ëž˜í”¼ ì„¤ì •ì„ ë¹„í™œì„±í™”í•˜ë©´ ì ‘ê·¼ì„± ìŠ¤ìœ„ì¹˜ì—ì„œ í…ìŠ¤íŠ¸ ì „í™˜ì„ ëˆŒëŸ¬ë„ í…ìŠ¤íŠ¸ í¬ê¸°ê°€ ìžë™ìœ¼ë¡œ ì»¤ì§€ì§€ ì•ŠìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:192, includes/admin/class-strings.php:598
+msgid "Do you want to disable Typography settings?"
+msgstr "íƒ€ì´í¬ê·¸ëž˜í”¼ ì„¤ì •ì„ ë¹„í™œì„±í™”í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+#: includes/admin/class-strings.php:193
+msgid "Discard Changes"
+msgstr "ë³€ê²½ ì‚¬í•­ ì·¨ì†Œ"
+
+#: includes/admin/class-strings.php:194
+msgid ""
+"You are about to discard all unsaved changes. All of your settings will be "
+"reset to the point where you last saved. Are you sure you want to discard "
+"all changes?"
+msgstr ""
+"ì €ìž¥ë˜ì§€ ì•Šì€ ëª¨ë“  ë³€ê²½ ì‚¬í•­ì„ ì·¨ì†Œí•˜ë ¤ê³  í•©ë‹ˆë‹¤. ëª¨ë“  ì„¤ì •ì´ ë§ˆì§€ë§‰ìœ¼ë¡œ ì €ìž¥ëœ ì‹œì ìœ¼ë¡œ ìž¬ì„¤ì •ë©ë‹ˆë‹¤. ì •ë§ ëª¨ë“  ë³€ê²½ ì‚¬í•­ì„ "
+"ì·¨ì†Œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+#: includes/admin/class-strings.php:195
+msgid "Discard all changes?"
+msgstr "ëª¨ë“  ë³€ê²½ ì‚¬í•­ì„ ì·¨ì†Œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+#: includes/admin/class-strings.php:196
+msgid "Display Chart on Dashboard"
+msgstr "ëŒ€ì‹œë³´ë“œì— ì°¨íŠ¸ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:197
+msgid "Display dark mode usage chart on the WordPress dashboard"
+msgstr "ì›Œë“œí”„ë ˆìŠ¤ ëŒ€ì‹œë³´ë“œì— ë‹¤í¬ ëª¨ë“œ ì‚¬ìš© ì°¨íŠ¸ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:198
+msgid "Display Floating Switch"
+msgstr "í”Œë¡œíŒ… ìŠ¤ìœ„ì¹˜ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:199
+msgid ""
+"Enable Floating dark mode switch in frontend for toggling between dark and "
+"light mode."
+msgstr "í”„ëŸ°íŠ¸ì—”ë“œì—ì„œ ë‹¤í¬ ëª¨ë“œì™€ ë¼ì´íŠ¸ ëª¨ë“œ ê°„ ì „í™˜ì„ ìœ„í•œ í”Œë¡œíŒ… ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ë¥¼ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:200
+msgid "Display switch on Login/ Register pages"
+msgstr "ë¡œê·¸ì¸/ë“±ë¡ íŽ˜ì´ì§€ì— ìŠ¤ìœ„ì¹˜ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:201
+msgid ""
+"Enable to show the floating dark-mode switch on WordPress and WooCommerce "
+"login/register screens. Hidden by default to keep the form clean."
+msgstr ""
+"ì›Œë“œí”„ë ˆìŠ¤ ë° ìš°ì»¤ë¨¸ìŠ¤ ë¡œê·¸ì¸/ë“±ë¡ í™”ë©´ì— í”Œë¡œíŒ… ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ë¥¼ í‘œì‹œí•˜ë ¤ë©´ í™œì„±í™”í•˜ì„¸ìš”. í¼ì„ ê¹”ë”í•˜ê²Œ ìœ ì§€í•˜ê¸° ìœ„í•´ ê¸°ë³¸ì ìœ¼ë¡œ "
+"ìˆ¨ê²¨ì ¸ ìžˆìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:202
+msgid "Display On"
+msgstr "í‘œì‹œ ìœ„ì¹˜"
+
+#: includes/admin/class-strings.php:203
+msgid "Display Switch in Menu"
+msgstr "ë©”ë‰´ì— ìŠ¤ìœ„ì¹˜ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:204
+msgid "Display the darkmode switch in your website menu."
+msgstr "ì›¹ì‚¬ì´íŠ¸ ë©”ë‰´ì— ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ë¥¼ í‘œì‹œí•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:205
+msgid "The switch will be displayed in the selected menus."
+msgstr "ìŠ¤ìœ„ì¹˜ê°€ ì„ íƒí•œ ë©”ë‰´ì— í‘œì‹œë©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:206
+msgid "Display Switch at Top of Pages"
+msgstr "íŽ˜ì´ì§€ ìƒë‹¨ì— ìŠ¤ìœ„ì¹˜ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:207
+msgid "Display Switch at Top of Posts"
+msgstr "í¬ìŠ¤íŠ¸ ìƒë‹¨ì— ìŠ¤ìœ„ì¹˜ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:208
+msgid "Display Dark Mode switch using WordPress widget"
+msgstr "ì›Œë“œí”„ë ˆìŠ¤ ìœ„ì ¯ì„ ì‚¬ìš©í•˜ì—¬ ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:209
+msgid ""
+"If you get stuck while exploring a feature, feel free to check our docs for "
+"a step-by-step guide."
+msgstr "ê¸°ëŠ¥ì„ íƒìƒ‰í•˜ë‹¤ê°€ ë§‰ížˆë©´ ì–¸ì œë“ ì§€ ë‹¨ê³„ë³„ ê°€ì´ë“œê°€ í¬í•¨ëœ ë¬¸ì„œë¥¼ í™•ì¸í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:210
+msgid "Documentations"
+msgstr "ë¬¸ì„œ"
+
+#: includes/admin/class-strings.php:211
+msgid "Doing it all."
+msgstr "ëª¨ë“  ê²ƒì„ ì²˜ë¦¬í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:212
+msgid "Edit"
+msgstr "íŽ¸ì§‘"
+
+#: includes/admin/class-strings.php:213
+msgid "Edit Preset"
+msgstr "í”„ë¦¬ì…‹ íŽ¸ì§‘"
+
+#: includes/admin/class-strings.php:214
+msgid "Edit Prompt"
+msgstr "í”„ë¡¬í”„íŠ¸ íŽ¸ì§‘"
+
+#: includes/admin/class-strings.php:215
+msgid "Element selector"
+msgstr "ìš”ì†Œ ì„ íƒê¸°"
+
+#: includes/admin/class-strings.php:216, includes/admin/class-strings.php:668
+msgid "Elementor"
+msgstr "ì—˜ë¦¬ë©˜í„°"
+
+#: includes/admin/class-strings.php:217
+msgid ""
+"Get step-by-step instructions on using WP Dark Mode with Elementor page "
+"builder."
+msgstr "ì—˜ë¦¬ë©˜í„° íŽ˜ì´ì§€ ë¹Œë”ì—ì„œ WP Dark Modeë¥¼ ì‚¬ìš©í•˜ëŠ” ë°©ë²•ì— ëŒ€í•œ ë‹¨ê³„ë³„ ì§€ì¹¨ì„ í™•ì¸í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:218
+msgid "Add Dark Mode Switch widget from Basic category"
+msgstr "ê¸°ë³¸ ì¹´í…Œê³ ë¦¬ì—ì„œ ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ ìœ„ì ¯ ì¶”ê°€"
+
+#: includes/admin/class-strings.php:219
+msgid ""
+"Navigate to the editing mode of a Post and Page using Elementor and look "
+"for Dark Mode Switch in the widget panel under Basic widgets"
+msgstr "ì—˜ë¦¬ë©˜í„°ë¥¼ ì‚¬ìš©í•˜ì—¬ í¬ìŠ¤íŠ¸ ë° íŽ˜ì´ì§€ì˜ íŽ¸ì§‘ ëª¨ë“œë¡œ ì´ë™í•œ ë‹¤ìŒ ê¸°ë³¸ ìœ„ì ¯ ì•„ëž˜ì˜ ìœ„ì ¯ íŒ¨ë„ì—ì„œ ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ë¥¼ ì°¾ìœ¼ì„¸ìš”."
+
+#: includes/admin/class-strings.php:220
+msgid "Choose button style from widget settings and you are done"
+msgstr "ìœ„ì ¯ ì„¤ì •ì—ì„œ ë²„íŠ¼ ìŠ¤íƒ€ì¼ì„ ì„ íƒí•˜ë©´ ì™„ë£Œë©ë‹ˆë‹¤!"
+
+#: includes/admin/class-strings.php:221
+msgid ""
+"Select your preferred switch from the list of switches in the widget panel "
+"and you are done!"
+msgstr "ìœ„ì ¯ íŒ¨ë„ì˜ ìŠ¤ìœ„ì¹˜ ëª©ë¡ì—ì„œ ì„ í˜¸í•˜ëŠ” ìŠ¤ìœ„ì¹˜ë¥¼ ì„ íƒí•˜ë©´ ì™„ë£Œë©ë‹ˆë‹¤!"
+
+#: includes/admin/class-strings.php:222
+msgid "Use WP Dark Mode with Elementor"
+msgstr "ì—˜ë¦¬ë©˜í„°ì™€ í•¨ê»˜ WP Dark Mode ì‚¬ìš©"
+
+#: includes/admin/class-strings.php:223, includes/admin/class-strings.php:225
+msgid "Email Reporting"
+msgstr "ì´ë©”ì¼ ë³´ê³ "
+
+#: includes/admin/class-strings.php:224
+msgid "Enable this feature to get the dark mode usage summary through email."
+msgstr "ì´ë©”ì¼ì„ í†µí•´ ë‹¤í¬ ëª¨ë“œ ì‚¬ìš© ìš”ì•½ì„ ë°›ìœ¼ë ¤ë©´ ì´ ê¸°ëŠ¥ì„ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:226
+msgid "Enable"
+msgstr "í™œì„±í™”"
+
+#: includes/admin/class-strings.php:229, includes/classes/class-config.php:314
+msgid "Enable Custom Triggers"
+msgstr "ì‚¬ìš©ìž ì •ì˜ íŠ¸ë¦¬ê±° í™œì„±í™”"
+
+#: includes/admin/class-strings.php:249
+msgid "Enable Dark Mode on Scrollbar"
+msgstr "ìŠ¤í¬ë¡¤ë°”ì—ì„œ ë‹¤í¬ ëª¨ë“œ í™œì„±í™”"
+
+#: includes/admin/class-strings.php:232, includes/admin/class-strings.php:233
+msgid "Enable Frontend Dark Mode"
+msgstr "í”„ëŸ°íŠ¸ì—”ë“œ ë‹¤í¬ ëª¨ë“œ í™œì„±í™”"
+
+#: includes/admin/class-strings.php:234
+msgid "Turn it ON to enable dark mode on the frontend"
+msgstr "í”„ëŸ°íŠ¸ì—”ë“œì—ì„œ ë‹¤í¬ ëª¨ë“œë¥¼ í™œì„±í™”í•˜ë ¤ë©´ ì¼œì„¸ìš”."
+
+#: includes/admin/class-strings.php:236, includes/admin/class-strings.php:238, includes/admin/class-strings.php:526, includes/admin/class-strings.php:527
+msgid "Enable this option to customize your scrollbar while toggling to dark mode"
+msgstr "ë‹¤í¬ ëª¨ë“œë¡œ ì „í™˜í•˜ëŠ” ë™ì•ˆ ìŠ¤í¬ë¡¤ë°”ë¥¼ ì‚¬ìš©ìž ì •ì˜í•˜ë ¤ë©´ ì´ ì˜µì…˜ì„ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:239
+msgid "End Time"
+msgstr "ì¢…ë£Œ ì‹œê°„"
+
+#: includes/admin/class-strings.php:240, includes/admin/class-strings.php:569
+msgid "Enter your selected categories and tags"
+msgstr "ì„ íƒí•œ ì¹´í…Œê³ ë¦¬ ë° íƒœê·¸ ìž…ë ¥"
+
+#: includes/admin/class-strings.php:241, includes/admin/class-strings.php:247
+msgid "Enter HTML element selectors"
+msgstr "HTML ìš”ì†Œ ì„ íƒê¸° ìž…ë ¥"
+
+#: includes/admin/class-strings.php:242, includes/admin/class-strings.php:251
+msgid "Enter your email"
+msgstr "ì´ë©”ì¼ ì£¼ì†Œ ìž…ë ¥"
+
+#: includes/admin/class-strings.php:243
+msgid "Enter image URL"
+msgstr "ì´ë¯¸ì§€ URL ìž…ë ¥"
+
+#: includes/admin/class-strings.php:244, includes/admin/class-strings.php:429
+msgid "Enter your selected pages, posts and custom post types"
+msgstr "ì„ íƒí•œ íŽ˜ì´ì§€, í¬ìŠ¤íŠ¸ ë° ì‚¬ìš©ìž ì •ì˜ í¬ìŠ¤íŠ¸ ìœ í˜• ìž…ë ¥"
+
+#: includes/admin/class-strings.php:245, includes/admin/class-strings.php:252
+msgid "Enter Your Prompt"
+msgstr "í”„ë¡¬í”„íŠ¸ ìž…ë ¥"
+
+#: includes/admin/class-strings.php:246
+msgid "Enter your selected posts"
+msgstr "ì„ íƒí•œ í¬ìŠ¤íŠ¸ ìž…ë ¥"
+
+#: includes/admin/class-strings.php:248
+msgid "Enter video URL"
+msgstr "ë¹„ë””ì˜¤ URL ìž…ë ¥"
+
+#: includes/admin/class-strings.php:249, includes/admin/class-strings.php:645
+msgid "Enter your selected WooCommerce categories"
+msgstr "ì„ íƒí•œ ìš°ì»¤ë¨¸ìŠ¤ ì¹´í…Œê³ ë¦¬ ìž…ë ¥"
+
+#: includes/admin/class-strings.php:250, includes/admin/class-strings.php:650
+msgid "Enter your selected WooCommerce products"
+msgstr "ì„ íƒí•œ ìš°ì»¤ë¨¸ìŠ¤ ì œí’ˆ ìž…ë ¥"
+
+#: includes/admin/class-strings.php:253
+msgid "Except:"
+msgstr "ì œì™¸:"
+
+#: includes/admin/class-strings.php:254
+msgid "Exclude All"
+msgstr "ëª¨ë‘ ì œì™¸"
+
+#: includes/admin/class-strings.php:255, includes/admin/class-strings.php:260
+msgid "Exclude WP Dark Mode from Caching"
+msgstr "ìºì‹±ì—ì„œ WP Dark Mode ì œì™¸"
+
+#: includes/admin/class-strings.php:256, includes/admin/class-strings.php:261
+msgid ""
+"Enable this feature to exclude WP Dark Mode from server-side caching "
+"technology like Lightspeed Cache, WPRocket etc."
+msgstr ""
+"Lightspeed Cache, WPRocket ë“±ê³¼ ê°™ì€ ì„œë²„ ì¸¡ ìºì‹± ê¸°ìˆ ì—ì„œ WP Dark Modeë¥¼ ì œì™¸í•˜ë ¤ë©´ ì´ ê¸°ëŠ¥ì„ "
+"í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:257
+msgid "Exclude Elements"
+msgstr "ìš”ì†Œ ì œì™¸"
+
+#: includes/admin/class-strings.php:258, includes/admin/class-strings.php:368
+msgid "Exclude dark mode on HTML tags, CSS class, CSS ids and more"
+msgstr "ìžì‚° íƒœê·¸, CSS í´ëž˜ìŠ¤, CSS ID ë“±ì—ì„œ ë‹¤í¬ ëª¨ë“œ ì œì™¸"
+
+#: includes/admin/class-strings.php:259
+msgid ""
+"Add HTML element selectors (tags, classes, or IDs) to exclude them from "
+"being affected by dark mode."
+msgstr "ë‹¤í¬ ëª¨ë“œì˜ ì˜í–¥ì„ ë°›ì§€ ì•Šë„ë¡ HTML ìš”ì†Œ ì„ íƒê¸°(íƒœê·¸, í´ëž˜ìŠ¤ ë˜ëŠ” ID)ë¥¼ ì¶”ê°€í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:262
+msgid "Exclude Low Brightness on specific images"
+msgstr "íŠ¹ì • ì´ë¯¸ì§€ì—ì„œ ë‚®ì€ ë°ê¸° ì œì™¸"
+
+#: includes/admin/class-strings.php:263
+msgid "Exclude Low Brightness on specific videos"
+msgstr "íŠ¹ì • ë¹„ë””ì˜¤ì—ì„œ ë‚®ì€ ë°ê¸° ì œì™¸"
+
+#: includes/admin/class-strings.php:264
+msgid "Exclude Low Grayscale Images "
+msgstr "ë‚®ì€ ê·¸ë ˆì´ìŠ¤ì¼€ì¼ ì´ë¯¸ì§€ ì œì™¸"
+
+#: includes/admin/class-strings.php:265
+msgid "Exclude Low Grayscale Videos"
+msgstr "ë‚®ì€ ê·¸ë ˆì´ìŠ¤ì¼€ì¼ ë¹„ë””ì˜¤ ì œì™¸"
+
+#: includes/admin/class-strings.php:266
+msgid "Exclude Pages/ Posts"
+msgstr "íŽ˜ì´ì§€/í¬ìŠ¤íŠ¸ ì œì™¸"
+
+#: includes/admin/class-strings.php:267
+msgid "Exclude dark mode on specific WordPress post type and taxonomy"
+msgstr "íŠ¹ì • ì›Œë“œí”„ë ˆìŠ¤ í¬ìŠ¤íŠ¸ ìœ í˜• ë° ë¶„ë¥˜ì²´ê³„ì—ì„œ ë‹¤í¬ ëª¨ë“œ ì œì™¸"
+
+#: includes/admin/class-strings.php:268, includes/admin/class-strings.php:271
+msgid ""
+"Add pages, posts and custom post types that you want to exclude from the "
+"dark mode."
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ ì œì™¸í•˜ë ¤ëŠ” íŽ˜ì´ì§€, í¬ìŠ¤íŠ¸ ë° ì‚¬ìš©ìž ì •ì˜ í¬ìŠ¤íŠ¸ ìœ í˜•ì„ ì¶”ê°€í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:269, includes/admin/class-strings.php:447
+msgid "Dark Mode will only work on the selected posts and pages."
+msgstr "ë‹¤í¬ ëª¨ë“œëŠ” ì„ íƒí•œ í¬ìŠ¤íŠ¸ì™€ íŽ˜ì´ì§€ì—ì„œë§Œ ìž‘ë™í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:270
+msgid "Exclude Post Type:"
+msgstr "í¬ìŠ¤íŠ¸ ìœ í˜• ì œì™¸:"
+
+#: includes/admin/class-strings.php:272, src/admin/routes/settings-routes.js:77
+msgid "Exclude Settings"
+msgstr "ì œì™¸ ì„¤ì •"
+
+#: includes/admin/class-strings.php:273
+msgid "Configure exclusion settings for pages, posts, and elements."
+msgstr "íŽ˜ì´ì§€, í¬ìŠ¤íŠ¸ ë° ìš”ì†Œì— ëŒ€í•œ ì œì™¸ ì„¤ì •ì„ êµ¬ì„±í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:274
+msgid "Exclude Taxonomies"
+msgstr "ë¶„ë¥˜ì²´ê³„ ì œì™¸"
+
+#: includes/admin/class-strings.php:275, includes/admin/class-strings.php:568
+msgid "Include the categories and tags that you want to exclude from the dark mode."
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ ì œì™¸í•˜ë ¤ëŠ” ì¹´í…Œê³ ë¦¬ì™€ íƒœê·¸ë¥¼ í¬í•¨í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:276, includes/admin/class-strings.php:277
+msgid "Exclude Taxonomy Type:"
+msgstr "ë¶„ë¥˜ì²´ê³„ ìœ í˜• ì œì™¸:"
+
+#: includes/admin/class-strings.php:278
+msgid "Exclude WC Categories"
+msgstr "WC ì¹´í…Œê³ ë¦¬ ì œì™¸"
+
+#: includes/admin/class-strings.php:279, includes/admin/class-strings.php:644
+msgid "Add categories to exclude the dark mode from the WooCommerce categories."
+msgstr "ìš°ì»¤ë¨¸ìŠ¤ ì¹´í…Œê³ ë¦¬ì—ì„œ ë‹¤í¬ ëª¨ë“œë¥¼ ì œì™¸í•˜ë ¤ë©´ ì¹´í…Œê³ ë¦¬ë¥¼ ì¶”ê°€í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:280, includes/admin/class-strings.php:448
+msgid "Dark Mode will only work on the selected WooCommerce categories."
+msgstr "ë‹¤í¬ ëª¨ë“œëŠ” ì„ íƒí•œ ìš°ì»¤ë¨¸ìŠ¤ ì¹´í…Œê³ ë¦¬ì—ì„œë§Œ ìž‘ë™í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:281
+msgid "Exclude WC Products"
+msgstr "WC ì œí’ˆ ì œì™¸"
+
+#: includes/admin/class-strings.php:282, includes/admin/class-strings.php:649
+msgid "Add products to exclude the dark mode from the WooCommerce categories."
+msgstr "ìš°ì»¤ë¨¸ìŠ¤ ì œí’ˆì—ì„œ ë‹¤í¬ ëª¨ë“œë¥¼ ì œì™¸í•˜ë ¤ë©´ ì œí’ˆì„ ì¶”ê°€í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:283, includes/admin/class-strings.php:449
+msgid "Dark Mode will only work on the selected WooCommerce products."
+msgstr "ë‹¤í¬ ëª¨ë“œëŠ” ì„ íƒí•œ ìš°ì»¤ë¨¸ìŠ¤ ì œí’ˆì—ì„œë§Œ ìž‘ë™í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:284
+msgid "Exclude WooCommerce"
+msgstr "ìš°ì»¤ë¨¸ìŠ¤ ì œì™¸"
+
+#: includes/admin/class-strings.php:285
+msgid "Exclude dark mode on WooCommerce products and categories"
+msgstr "ìš°ì»¤ë¨¸ìŠ¤ ì œí’ˆ ë° ì¹´í…Œê³ ë¦¬ì—ì„œ ë‹¤í¬ ëª¨ë“œ ì œì™¸"
+
+#: includes/admin/class-strings.php:286, includes/admin/class-strings.php:287
+msgid "Explore Accessibility Switches"
+msgstr "ì ‘ê·¼ì„± ìŠ¤ìœ„ì¹˜ íƒìƒ‰"
+
+#: includes/admin/class-strings.php:288
+msgid "Explore now"
+msgstr "ì§€ê¸ˆ íƒìƒ‰"
+
+#: includes/admin/class-strings.php:289
+msgid "Export"
+msgstr "ë‚´ë³´ë‚´ê¸°"
+
+#: includes/admin/class-strings.php:290
+msgid "Export current settings as JSON file."
+msgstr "í˜„ìž¬ ì„¤ì •ì„ JSON íŒŒì¼ë¡œ ë‚´ë³´ëƒ…ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:291
+msgid "Export Settings"
+msgstr "ì„¤ì • ë‚´ë³´ë‚´ê¸°"
+
+#: includes/admin/class-strings.php:292
+msgid "Default dark mode"
+msgstr "ê¸°ë³¸ ë‹¤í¬ ëª¨ë“œ"
+
+#: includes/admin/class-strings.php:293
+msgid "Dark mode-based image/video"
+msgstr "ë‹¤í¬ ëª¨ë“œ ê¸°ë°˜ ì´ë¯¸ì§€/ë¹„ë””ì˜¤"
+
+#: includes/admin/class-strings.php:294
+msgid "Dark mode usage analytics"
+msgstr "ë‹¤í¬ ëª¨ë“œ ì‚¬ìš© ë¶„ì„"
+
+#: includes/admin/class-strings.php:295
+msgid "24/7 live chat & VIP support"
+msgstr "24/7 ì‹¤ì‹œê°„ ì±„íŒ… ë° VIP ì§€ì›"
+
+#: includes/admin/class-strings.php:296
+msgid "Gutenberg block"
+msgstr "êµ¬í…ë² ë¥´í¬ ë¸”ë¡"
+
+#: includes/admin/class-strings.php:297
+msgid "Elementor widget"
+msgstr "ì—˜ë¦¬ë©˜í„° ìœ„ì ¯"
+
+#: includes/admin/class-strings.php:298
+msgid "Dark mode for WordPress dashboard"
+msgstr "ì›Œë“œí”„ë ˆìŠ¤ ëŒ€ì‹œë³´ë“œìš© ë‹¤í¬ ëª¨ë“œ"
+
+#: includes/admin/class-strings.php:299
+msgid "Time-based dark mode"
+msgstr "ì‹œê°„ ê¸°ë°˜ ë‹¤í¬ ëª¨ë“œ"
+
+#: includes/admin/class-strings.php:300
+msgid "Access to 19 premium dark mode switches"
+msgstr "19ê°œì˜ í”„ë¦¬ë¯¸ì—„ ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ ì´ìš© ê°€ëŠ¥"
+
+#: includes/admin/class-strings.php:301
+msgid "Access to 13 dark mode color scheme"
+msgstr "13ê°œì˜ ë‹¤í¬ ëª¨ë“œ ìƒ‰ìƒ ì²´ê³„ ì´ìš© ê°€ëŠ¥"
+
+#: includes/admin/class-strings.php:302
+msgid "Manual customization with custom CSS"
+msgstr "ì‚¬ìš©ìž ì •ì˜ CSSë¥¼ í†µí•œ ìˆ˜ë™ ì‚¬ìš©ìž ì •ì˜"
+
+#: includes/admin/class-strings.php:303
+msgid "Customizable dark mode switch and CTA"
+msgstr "ì‚¬ìš©ìž ì •ì˜ ê°€ëŠ¥í•œ ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ ë° CTA"
+
+#: includes/admin/class-strings.php:304, includes/admin/class-strings.php:669
+msgid "FAQ"
+msgstr "ìžì£¼ ë¬»ëŠ” ì§ˆë¬¸(FAQ)"
+
+#: includes/admin/class-strings.php:305
+msgid "Here are some of the most frequently asked questions about WP Dark Mode"
+msgstr "WP Dark Modeì— ëŒ€í•´ ê°€ìž¥ ìžì£¼ ë¬»ëŠ” ì§ˆë¬¸ë“¤ìž…ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:306
+msgid "Frequently asked questions"
+msgstr "ìžì£¼ ë¬»ëŠ” ì§ˆë¬¸"
+
+#: includes/admin/class-strings.php:307
+msgid "Facebook Community"
+msgstr "íŽ˜ì´ìŠ¤ë¶ ì»¤ë®¤ë‹ˆí‹°"
+
+#: includes/admin/class-strings.php:308
+msgid ""
+"Did you know that there is a Facebook community for dark mode users like "
+"you? Feel free to join to be involved in the discussion."
+msgstr "ê·€í•˜ì™€ ê°™ì€ ë‹¤í¬ ëª¨ë“œ ì‚¬ìš©ìžë¥¼ ìœ„í•œ íŽ˜ì´ìŠ¤ë¶ ì»¤ë®¤ë‹ˆí‹°ê°€ ìžˆë‹¤ëŠ” ê²ƒì„ ì•Œê³  ê³„ì…¨ë‚˜ìš”? ì–¸ì œë“ ì§€ ì°¸ì—¬í•˜ì—¬ í† ë¡ ì— ì°¸ì—¬í•´ ë³´ì„¸ìš”."
+
+#: includes/admin/class-strings.php:309
+msgid "Custom CSS for advanced customization"
+msgstr "ê³ ê¸‰ ì‚¬ìš©ìž ì •ì˜ë¥¼ ìœ„í•œ ì‚¬ìš©ìž ì •ì˜ CSS"
+
+#: includes/admin/class-strings.php:310
+msgid "24/7 dedicated support"
+msgstr "24/7 ì „ë‹´ ì§€ì›"
+
+#: includes/admin/class-strings.php:311
+msgid "Exclude pages/posts from dark mode"
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ íŽ˜ì´ì§€/í¬ìŠ¤íŠ¸ ì œì™¸"
+
+#: includes/admin/class-strings.php:312
+msgid "FEATURE LIST"
+msgstr "ê¸°ëŠ¥ ëª©ë¡"
+
+#: includes/admin/class-strings.php:313
+msgid "No Ads! Distraction free usage"
+msgstr "ê´‘ê³  ì—†ìŒ! ë°©í•´ ì—†ëŠ” ì‚¬ìš©"
+
+#: includes/admin/class-strings.php:314
+msgid "13+ dark mode color presets"
+msgstr "13ê°œ ì´ìƒì˜ ë‹¤í¬ ëª¨ë“œ ìƒ‰ìƒ í”„ë¦¬ì…‹"
+
+#: includes/admin/class-strings.php:315
+msgid "19+ stunning dark mode switches"
+msgstr "19ê°œ ì´ìƒì˜ ë©‹ì§„ ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜"
+
+#: includes/admin/class-strings.php:316
+msgid "Features"
+msgstr "ê¸°ëŠ¥"
+
+#: includes/admin/class-strings.php:317, includes/admin/class-strings.php:323
+msgid "Floating Switch"
+msgstr "í”Œë¡œíŒ… ìŠ¤ìœ„ì¹˜"
+
+#: includes/admin/class-strings.php:318
+msgid "Floating Switch Size"
+msgstr "í”Œë¡œíŒ… ìŠ¤ìœ„ì¹˜ í¬ê¸°"
+
+#: includes/admin/class-strings.php:319, includes/admin/class-strings.php:320
+msgid "Choose the size of the floating toggle switch"
+msgstr "í”Œë¡œíŒ… ì „í™˜ ìŠ¤ìœ„ì¹˜ì˜ í¬ê¸°ë¥¼ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:321
+msgid "Floating Switch Styles"
+msgstr "í”Œë¡œíŒ… ìŠ¤ìœ„ì¹˜ ìŠ¤íƒ€ì¼"
+
+#: includes/admin/class-strings.php:322
+msgid "Choose the style of the floating toggle switch"
+msgstr "í”Œë¡œíŒ… ì „í™˜ ìŠ¤ìœ„ì¹˜ì˜ ìŠ¤íƒ€ì¼ì„ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:324
+msgid "Please follow the steps below"
+msgstr "ì•„ëž˜ ë‹¨ê³„ë¥¼ ë”°ë¥´ì„¸ìš”."
+
+#: includes/admin/class-strings.php:325
+msgid "Font Size"
+msgstr "ê¸€ê¼´ í¬ê¸°"
+
+#: includes/admin/class-strings.php:326
+msgid "Choose the size of the floating toggle switch."
+msgstr "í”Œë¡œíŒ… ì „í™˜ ìŠ¤ìœ„ì¹˜ì˜ í¬ê¸°ë¥¼ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:327
+msgid "Set the font size in percentage."
+msgstr "ê¸€ê¼´ í¬ê¸°ë¥¼ ë°±ë¶„ìœ¨ë¡œ ì„¤ì •í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:328
+msgid "FREE"
+msgstr "ë¬´ë£Œ"
+
+#: includes/admin/class-strings.php:329
+msgid "FREE PLAN"
+msgstr "ë¬´ë£Œ í”Œëžœ"
+
+#: includes/admin/class-strings.php:330, includes/admin/class-strings.php:670
+msgid "Free vs Ultimate"
+msgstr "ë¬´ë£Œ vs Ultimate"
+
+#: includes/admin/class-strings.php:331, src/admin/routes/settings-routes.js:16
+msgid "Frontend Dark Mode"
+msgstr "í”„ëŸ°íŠ¸ì—”ë“œ ë‹¤í¬ ëª¨ë“œ"
+
+#: includes/admin/class-strings.php:332, src/admin/routes/settings-routes.js:17
+msgid "Settings to Control Dark Mode on your Frontend Website"
+msgstr "í”„ëŸ°íŠ¸ì—”ë“œ ì›¹ì‚¬ì´íŠ¸ì˜ ë‹¤í¬ ëª¨ë“œ ì œì–´ ì„¤ì •"
+
+#: includes/admin/class-strings.php:333
+msgid "Turn it ON to enable dark mode on the Frontend"
+msgstr "í”„ëŸ°íŠ¸ì—”ë“œì—ì„œ ë‹¤í¬ ëª¨ë“œë¥¼ í™œì„±í™”í•˜ë ¤ë©´ ì¼œì„¸ìš”."
+
+#: includes/admin/class-strings.php:334
+msgid "Choose how you want to use Dark Mode"
+msgstr "ë‹¤í¬ ëª¨ë“œ ì‚¬ìš© ë°©ì‹ ì„ íƒ"
+
+#: includes/admin/class-strings.php:335
+msgid "Generate My Theme"
+msgstr "ë‚´ í…Œë§ˆ ìƒì„±"
+
+#: includes/admin/class-strings.php:336
+msgid "Generate Colors"
+msgstr "ìƒ‰ìƒ ìƒì„±"
+
+#: includes/admin/class-strings.php:337
+msgid "Generating colors..."
+msgstr "ìƒ‰ìƒì„ ìƒì„±í•˜ëŠ” ì¤‘..."
+
+#: includes/admin/class-strings.php:338, includes/admin/class-strings.php:666
+msgid "Get in touch"
+msgstr "ë¬¸ì˜í•˜ê¸°"
+
+#: includes/admin/class-strings.php:339
+msgid "Get all popular dark mode resources in one place."
+msgstr "ëª¨ë“  ì¸ê¸° ìžˆëŠ” ë‹¤í¬ ëª¨ë“œ ë¦¬ì†ŒìŠ¤ë¥¼ í•œ ê³³ì—ì„œ í™•ì¸í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:340
+msgid "Tutorial, Docs, Support & Community"
+msgstr "íŠœí† ë¦¬ì–¼, ë¬¸ì„œ, ì§€ì› ë° ì»¤ë®¤ë‹ˆí‹°"
+
+#: includes/admin/class-strings.php:341
+msgid "Get Started page"
+msgstr "ì‹œìž‘í•˜ê¸° íŽ˜ì´ì§€"
+
+#: includes/admin/class-strings.php:342
+msgid "Gmail"
+msgstr "ì§€ë©”ì¼"
+
+#: includes/admin/class-strings.php:343
+msgid "Gmail in browser"
+msgstr "ë¸Œë¼ìš°ì €ì˜ ì§€ë©”ì¼"
+
+#: includes/admin/class-strings.php:344
+msgid "Go to Accessibility settings"
+msgstr "ì ‘ê·¼ì„± ì„¤ì •ìœ¼ë¡œ ì´ë™"
+
+#: includes/admin/class-strings.php:345
+msgid "Go to Menu Settings"
+msgstr "ë©”ë‰´ ì„¤ì •ìœ¼ë¡œ ì´ë™"
+
+#: includes/admin/class-strings.php:346
+msgid "Got it"
+msgstr "ì•Œê² ìŠµë‹ˆë‹¤"
+
+#: includes/admin/class-strings.php:347
+msgid "Grayscale"
+msgstr "ê·¸ë ˆì´ìŠ¤ì¼€ì¼"
+
+#: includes/admin/class-strings.php:348
+msgid "Adjust your preferred dark mode Grayscale"
+msgstr "ì„ í˜¸í•˜ëŠ” ë‹¤í¬ ëª¨ë“œ ê·¸ë ˆì´ìŠ¤ì¼€ì¼ ì¡°ì •"
+
+#: includes/admin/class-strings.php:349
+msgid "Grayscale Image"
+msgstr "ê·¸ë ˆì´ìŠ¤ì¼€ì¼ ì´ë¯¸ì§€"
+
+#: includes/admin/class-strings.php:350
+msgid "Grayscale level"
+msgstr "ê·¸ë ˆì´ìŠ¤ì¼€ì¼ ìˆ˜ì¤€"
+
+#: includes/admin/class-strings.php:351
+msgid "Grayscale Video"
+msgstr "ê·¸ë ˆì´ìŠ¤ì¼€ì¼ ë¹„ë””ì˜¤"
+
+#: includes/admin/class-strings.php:352, includes/admin/class-strings.php:667
+msgid "Gutenberg"
+msgstr "êµ¬í…ë² ë¥´í¬"
+
+#: includes/admin/class-strings.php:353
+msgid ""
+"Get step-by-step instructions on using WP Dark Mode with the default block "
+"editor."
+msgstr "ê¸°ë³¸ ë¸”ë¡ ì—ë””í„°ì—ì„œ WP Dark Modeë¥¼ ì‚¬ìš©í•˜ëŠ” ë°©ë²•ì— ëŒ€í•œ ë‹¨ê³„ë³„ ì§€ì¹¨ì„ í™•ì¸í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:354
+msgid "Go to Post/Page edit screen and and click on the â€˜+â€™ icon to add new block"
+msgstr "í¬ìŠ¤íŠ¸/íŽ˜ì´ì§€ íŽ¸ì§‘ í™”ë©´ìœ¼ë¡œ ì´ë™í•˜ì—¬ '+' ì•„ì´ì½˜ì„ í´ë¦­í•˜ì—¬ ìƒˆ ë¸”ë¡ì„ ì¶”ê°€í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:355
+msgid ""
+"Navigate to a Post and Page edit screen and click on the + icon to add a "
+"new gutenberg block"
+msgstr "í¬ìŠ¤íŠ¸ ë° íŽ˜ì´ì§€ íŽ¸ì§‘ í™”ë©´ìœ¼ë¡œ ì´ë™í•˜ì—¬ + ì•„ì´ì½˜ì„ í´ë¦­í•˜ì—¬ ìƒˆ êµ¬í…ë² ë¥´í¬ ë¸”ë¡ì„ ì¶”ê°€í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:356
+msgid "Search for Dark Mode Switch block in the Gutenberg block list"
+msgstr "êµ¬í…ë² ë¥´í¬ ë¸”ë¡ ëª©ë¡ì—ì„œ ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ ë¸”ë¡ ê²€ìƒ‰"
+
+#: includes/admin/class-strings.php:357
+msgid ""
+"Type â€œdark mode switchâ€ in the block list search box and the Dark Mode "
+"Switch block will appear. Click on the block to select it"
+msgstr "ë¸”ë¡ ëª©ë¡ ê²€ìƒ‰ì°½ì— â€œdark mode switchâ€ë¥¼ ìž…ë ¥í•˜ë©´ ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ ë¸”ë¡ì´ ë‚˜íƒ€ë‚©ë‹ˆë‹¤. ë¸”ë¡ì„ í´ë¦­í•˜ì—¬ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:358
+msgid "Choose button style from block settings"
+msgstr "ë¸”ë¡ ì„¤ì •ì—ì„œ ë²„íŠ¼ ìŠ¤íƒ€ì¼ ì„ íƒ"
+
+#: includes/admin/class-strings.php:359
+msgid ""
+"Choose the button style you would like to use from the Switch Style menu on "
+"the right side and you are done!"
+msgstr "ì˜¤ë¥¸ìª½ì˜ ìŠ¤ìœ„ì¹˜ ìŠ¤íƒ€ì¼ ë©”ë‰´ì—ì„œ ì‚¬ìš©í•  ë²„íŠ¼ ìŠ¤íƒ€ì¼ì„ ì„ íƒí•˜ë©´ ì™„ë£Œë©ë‹ˆë‹¤!"
+
+#: includes/admin/class-strings.php:360
+msgid "Use WP Dark Mode with Gutenberg"
+msgstr "êµ¬í…ë² ë¥´í¬ì™€ í•¨ê»˜ WP Dark Mode ì‚¬ìš©"
+
+#: includes/admin/class-strings.php:361
+msgid "Help"
+msgstr "ë„ì›€ë§"
+
+#: includes/admin/class-strings.php:362
+msgid "Hi, I need help with WP Dark Mode."
+msgstr "ì•ˆë…•í•˜ì„¸ìš”, WP Dark Modeì™€ ê´€ë ¨í•´ ë„ì›€ì´ í•„ìš”í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:363
+msgid "Home"
+msgstr "í™ˆ"
+
+#: includes/admin/class-strings.php:364
+msgid "Hover Background"
+msgstr "í˜¸ë²„ ë°°ê²½"
+
+#: includes/admin/class-strings.php:365
+msgid "Hover BG"
+msgstr "í˜¸ë²„ ë°°ê²½"
+
+#: includes/admin/class-strings.php:366
+msgid "Hover Text"
+msgstr "í˜¸ë²„ í…ìŠ¤íŠ¸"
+
+#: includes/admin/class-strings.php:367, includes/admin/class-strings.php:369
+msgid "HTML Element"
+msgstr "HTML ìš”ì†Œ"
+
+#: includes/admin/class-strings.php:370
+msgid "HTML Elements"
+msgstr "HTML ìš”ì†Œ"
+
+#: includes/admin/class-strings.php:371
+msgid "Idle Timeout"
+msgstr "ìœ íœ´ ì‹œê°„ ì œí•œ"
+
+#: includes/admin/class-strings.php:372
+msgid "The floating switch will hide after this period of user inactivity."
+msgstr "ì´ ê¸°ê°„ ë™ì•ˆ ì‚¬ìš©ìžì˜ í™œë™ì´ ì—†ìœ¼ë©´ í”Œë¡œíŒ… ìŠ¤ìœ„ì¹˜ê°€ ìˆ¨ê²¨ì§‘ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:373
+msgid "Image Behavior"
+msgstr "ì´ë¯¸ì§€ ë™ìž‘"
+
+#: includes/admin/class-strings.php:374
+msgid "Settings to change image appearance on dark mode"
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ ì´ë¯¸ì§€ ëª¨ì–‘ì„ ë³€ê²½í•˜ëŠ” ì„¤ì •"
+
+#: includes/admin/class-strings.php:375
+msgid "Image Behavior When Dark Mode Is On"
+msgstr "ë‹¤í¬ ëª¨ë“œ ì¼œì§ ì‹œ ì´ë¯¸ì§€ ë™ìž‘"
+
+#: includes/admin/class-strings.php:376
+msgid "Enable to set the brightness level of the images on dark mode"
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ ì´ë¯¸ì§€ì˜ ë°ê¸° ìˆ˜ì¤€ì„ ì„¤ì •í•˜ë ¤ë©´ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:377, src/admin/routes/settings-routes.js:78
+msgid "Customize image appearance in Dark Mode"
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ ì´ë¯¸ì§€ ëª¨ì–‘ ì‚¬ìš©ìž ì •ì˜"
+
+#: includes/admin/class-strings.php:378
+msgid "Enable to set the grayscale level of the images on dark mode"
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ ì´ë¯¸ì§€ì˜ ê·¸ë ˆì´ìŠ¤ì¼€ì¼ ìˆ˜ì¤€ì„ ì„¤ì •í•˜ë ¤ë©´ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:379
+msgid "Image Replacement"
+msgstr "ì´ë¯¸ì§€ ëŒ€ì²´"
+
+#: includes/admin/class-strings.php:380
+msgid "Replace specific images when dark mode is enabled"
+msgstr "ë‹¤í¬ ëª¨ë“œê°€ í™œì„±í™”ë˜ì—ˆì„ ë•Œ íŠ¹ì • ì´ë¯¸ì§€ ëŒ€ì²´"
+
+#: includes/admin/class-strings.php:381, src/admin/routes/settings-routes.js:46
+msgid "Image Settings"
+msgstr "ì´ë¯¸ì§€ ì„¤ì •"
+
+#: includes/admin/class-strings.php:382
+msgid "Image URL"
+msgstr "ì´ë¯¸ì§€ URL"
+
+#: includes/admin/class-strings.php:383
+msgid "Import"
+msgstr "ê°€ì ¸ì˜¤ê¸°"
+
+#: includes/admin/class-strings.php:384
+msgid "Import Anyway"
+msgstr "ê·¸ëž˜ë„ ê°€ì ¸ì˜¤ê¸°"
+
+#: includes/admin/class-strings.php:385
+msgid "Import settings from JSON file which is exported through WP Dark Mode."
+msgstr "WP Dark Modeë¥¼ í†µí•´ ë‚´ë³´ë‚¸ JSON íŒŒì¼ì—ì„œ ì„¤ì •ì„ ê°€ì ¸ì˜µë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:386
+msgid "Import Settings"
+msgstr "ì„¤ì • ê°€ì ¸ì˜¤ê¸°"
+
+#: includes/admin/class-strings.php:387
+msgid "Settings imported successfully."
+msgstr "ì„¤ì •ì´ ì„±ê³µì ìœ¼ë¡œ ê°€ì ¸ì™€ì¡ŒìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:388
+msgid "In all new ways"
+msgstr "ì™„ì „ížˆ ìƒˆë¡œìš´ ë°©ì‹ìœ¼ë¡œ"
+
+#: includes/admin/class-strings.php:389
+msgid "Include Elements"
+msgstr "ìš”ì†Œ í¬í•¨"
+
+#: includes/admin/class-strings.php:390
+msgid ""
+"Add HTML element selectors (tags, classes, or IDs) to explicitly include "
+"them in dark mode."
+msgstr "ë‹¤í¬ ëª¨ë“œì— ëª…ì‹œì ìœ¼ë¡œ í¬í•¨í•  HTML ìš”ì†Œ ì„ íƒê¸°(íƒœê·¸, í´ëž˜ìŠ¤ ë˜ëŠ” ID)ë¥¼ ì¶”ê°€í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:391
+msgid "Influencer Program"
+msgstr "ì¸í”Œë£¨ì–¸ì„œ í”„ë¡œê·¸ëž¨"
+
+#: includes/admin/class-strings.php:392
+msgid "Input Field Colors"
+msgstr "ìž…ë ¥ í•„ë“œ ìƒ‰ìƒ"
+
+#: includes/admin/class-strings.php:393
+msgid "Input Text"
+msgstr "ìž…ë ¥ í…ìŠ¤íŠ¸"
+
+#: includes/admin/class-strings.php:394, includes/admin/class-strings.php:646
+msgid "Please install WooCommerce to use this feature"
+msgstr "ì´ ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ë ¤ë©´ ìš°ì»¤ë¨¸ìŠ¤ë¥¼ ì„¤ì¹˜í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:395
+msgid "Invalid File"
+msgstr "ìœ íš¨í•˜ì§€ ì•Šì€ íŒŒì¼"
+
+#: includes/admin/class-strings.php:396
+msgid "Join Community"
+msgstr "ì»¤ë®¤ë‹ˆí‹° ê°€ìž…"
+
+#: includes/admin/class-strings.php:397
+msgid "Keyboard Shortcut"
+msgstr "í‚¤ë³´ë“œ ë‹¨ì¶•í‚¤"
+
+#: includes/admin/class-strings.php:398
+msgid "Enable keyboard shortcut to toggle dark mode Ctrl + Alt + D"
+msgstr "ë‹¤í¬ ëª¨ë“œ ì „í™˜ì„ ìœ„í•œ í‚¤ë³´ë“œ ë‹¨ì¶•í‚¤(Ctrl + Alt + D) í™œì„±í™”"
+
+#: includes/admin/class-strings.php:399
+msgid "Toggle Dark Mode using keyboard shortcut."
+msgstr "í‚¤ë³´ë“œ ë‹¨ì¶•í‚¤ë¥¼ ì‚¬ìš©í•˜ì—¬ ë‹¤í¬ ëª¨ë“œë¥¼ ì „í™˜í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:400
+msgid "Large"
+msgstr "í¬ê²Œ"
+
+#: includes/admin/class-strings.php:401
+msgid "Learn more"
+msgstr "ë” ì•Œì•„ë³´ê¸°"
+
+#: includes/admin/class-strings.php:402, includes/admin/class-strings.php:684, includes/classes/class-config.php:195, includes/modules/elementor/widgets/class-elementor-widget.php:154
+msgid "Left"
+msgstr "ì™¼ìª½"
+
+#: includes/admin/class-strings.php:43
+msgid "Light"
+msgstr "ë¼ì´íŠ¸"
+
+#: includes/admin/class-strings.php:404
+msgid "Light Mode Switch Icon"
+msgstr "ë¼ì´íŠ¸ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ ì•„ì´ì½˜"
+
+#: includes/admin/class-strings.php:405
+msgid "Light Mode Image : "
+msgstr "ë¼ì´íŠ¸ ëª¨ë“œ ì´ë¯¸ì§€ : "
+
+#: includes/admin/class-strings.php:406
+msgid "Light Mode Switch Text"
+msgstr "ë¼ì´íŠ¸ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ í…ìŠ¤íŠ¸"
+
+#: includes/admin/class-strings.php:407
+msgid "Add custom text for the light mode switch"
+msgstr "ë¼ì´íŠ¸ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ì— ëŒ€í•œ ì‚¬ìš©ìž ì •ì˜ í…ìŠ¤íŠ¸ ì¶”ê°€"
+
+#: includes/admin/class-strings.php:408
+msgid "Light Mode Video :"
+msgstr "ë¼ì´íŠ¸ ëª¨ë“œ ë¹„ë””ì˜¤ :"
+
+#: includes/admin/class-strings.php:409
+msgid "Link"
+msgstr "ë§í¬"
+
+#: includes/admin/class-strings.php:410
+msgid "Link Hover"
+msgstr "ë§í¬ í˜¸ë²„"
+
+#: includes/admin/class-strings.php:411, includes/admin/class-strings.php:413
+msgid "Load Scripts in Footer"
+msgstr "í‘¸í„°ì—ì„œ ìŠ¤í¬ë¦½íŠ¸ ë¡œë“œ"
+
+#: includes/admin/class-strings.php:412, includes/admin/class-strings.php:414
+msgid ""
+"Enable this feature to improve page load performance and reduce "
+"render-blocking"
+msgstr "íŽ˜ì´ì§€ ë¡œë“œ ì„±ëŠ¥ì„ ê°œì„ í•˜ê³  ë Œë”ë§ ì°¨ë‹¨ì„ ì¤„ì´ë ¤ë©´ ì´ ê¸°ëŠ¥ì„ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:415
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies ex "
+"at odio porttitor, vitae commodo erat pulvinar."
+msgstr ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies ex "
+"at odio porttitor, vitae commodo erat pulvinar."
+
+#: includes/admin/class-strings.php:416
+msgid "Low Brightness Image"
+msgstr "ë‚®ì€ ë°ê¸° ì´ë¯¸ì§€"
+
+#: includes/admin/class-strings.php:417
+msgid "Low Brightness Video"
+msgstr "ë‚®ì€ ë°ê¸° ë¹„ë””ì˜¤"
+
+#: includes/admin/class-strings.php:418
+msgid "Choose how you want to connect to us. Select the option convenient for you"
+msgstr "ë‹¹ì‚¬ì— ì—°ë½í•  ë°©ë²•ì„ ì„ íƒí•˜ì„¸ìš”. ê·€í•˜ì—ê²Œ íŽ¸ë¦¬í•œ ì˜µì…˜ì„ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:419
+msgid "Medium"
+msgstr "ì¤‘ê°„"
+
+#: includes/admin/class-strings.php:420, includes/admin/class-strings.php:421
+msgid "Menu Switch"
+msgstr "ë©”ë‰´ ìŠ¤ìœ„ì¹˜"
+
+#: includes/admin/class-strings.php:422
+msgid ""
+"The Menu Switch is <strong>currently unavailable</strong>. To access this "
+"feature, first you have to enable the â€œFrontend Dark Modeâ€ feature from the "
+"Control settings"
+msgstr ""
+"ë©”ë‰´ ìŠ¤ìœ„ì¹˜ëŠ” <strong>í˜„ìž¬ ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤</strong>. ì´ ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ë ¤ë©´ ë¨¼ì € ì œì–´ ì„¤ì •ì—ì„œ â€œí”„ëŸ°íŠ¸ì—”ë“œ ë‹¤í¬ "
+"ëª¨ë“œâ€ ê¸°ëŠ¥ì„ í™œì„±í™”í•´ì•¼ í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:423
+msgid "Menu switches wonâ€™t be visible anymore"
+msgstr "ë©”ë‰´ ìŠ¤ìœ„ì¹˜ê°€ ë” ì´ìƒ í‘œì‹œë˜ì§€ ì•ŠìŠµë‹ˆë‹¤"
+
+#: includes/admin/class-strings.php:424
+msgid "min"
+msgstr "ë¶„"
+
+#: includes/admin/class-strings.php:425, includes/admin/class-strings.php:700
+msgid "Mobile"
+msgstr "ëª¨ë°”ì¼"
+
+#: includes/admin/class-strings.php:426
+msgid "Mode Image"
+msgstr "ëª¨ë“œ ì´ë¯¸ì§€"
+
+#: includes/admin/class-strings.php:427
+msgid "Mode Video"
+msgstr "ëª¨ë“œ ë¹„ë””ì˜¤"
+
+#: includes/admin/class-strings.php:428
+msgid "More accessibility features"
+msgstr "ì¶”ê°€ ì ‘ê·¼ì„± ê¸°ëŠ¥"
+
+#: includes/admin/class-strings.php:45
+msgid "New"
+msgstr ""
+
+#: includes/admin/class-strings.php:431
+msgid "New Preset "
+msgstr "ìƒˆ í”„ë¦¬ì…‹ "
+
+#: includes/admin/class-strings.php:432
+msgid "No, continue editing"
+msgstr "ì•„ë‹ˆìš”, ê³„ì† íŽ¸ì§‘í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:433
+msgid "No custom color presets is created"
+msgstr "ì‚¬ìš©ìž ì§€ì • ìƒ‰ìƒ í”„ë¦¬ì…‹ì´ ìƒì„±ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤"
+
+#: includes/admin/class-strings.php:434
+msgid "No Image"
+msgstr "ì´ë¯¸ì§€ ì—†ìŒ"
+
+#: includes/admin/class-strings.php:435
+msgid "No Images Added"
+msgstr "ì¶”ê°€ëœ ì´ë¯¸ì§€ ì—†ìŒ"
+
+#: includes/admin/class-strings.php:436
+msgid "No Result found for %s"
+msgstr "%sì— ëŒ€í•œ ê²°ê³¼ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤"
+
+#: includes/admin/class-strings.php:437
+msgid "No Result found"
+msgstr "ê²°ê³¼ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŒ"
+
+#: includes/admin/class-strings.php:438
+msgid "No Triggers Added"
+msgstr "ì¶”ê°€ëœ íŠ¸ë¦¬ê±° ì—†ìŒ"
+
+#: includes/admin/class-strings.php:439
+msgid "No Video"
+msgstr "ë¹„ë””ì˜¤ ì—†ìŒ"
+
+#: includes/admin/class-strings.php:440
+msgid "No Videos Added"
+msgstr "ì¶”ê°€ëœ ë¹„ë””ì˜¤ ì—†ìŒ"
+
+#: includes/admin/class-strings.php:441
+msgid "Normal"
+msgstr "ì¼ë°˜"
+
+#: includes/admin/class-strings.php:442
+msgid "Normal Mode Image"
+msgstr "ì¼ë°˜ ëª¨ë“œ ì´ë¯¸ì§€"
+
+#: includes/admin/class-strings.php:443
+msgid "Normal Mode Video"
+msgstr "ì¼ë°˜ ëª¨ë“œ ë¹„ë””ì˜¤"
+
+#: includes/admin/class-strings.php:444
+msgid "Normal Switches"
+msgstr "ì¼ë°˜ ìŠ¤ìœ„ì¹˜"
+
+#: includes/admin/class-strings.php:445
+msgid "Not Found"
+msgstr "ì°¾ì„ ìˆ˜ ì—†ìŒ"
+
+#: includes/admin/class-strings.php:446
+msgid "Ok"
+msgstr "í™•ì¸"
+
+#: includes/admin/class-strings.php:450
+msgid "Open Docs"
+msgstr "ë¬¸ì„œ ì—´ê¸°"
+
+#: includes/admin/class-strings.php:451, includes/admin/class-strings.php:452
+msgid "Other Accessibility Settings"
+msgstr "ê¸°íƒ€ ì ‘ê·¼ì„± ì„¤ì •"
+
+#: includes/admin/class-strings.php:453, includes/admin/class-strings.php:454
+msgid "Other Performance Settings"
+msgstr "ê¸°íƒ€ ì„±ëŠ¥ ì„¤ì •"
+
+#: includes/admin/class-strings.php:455
+msgid "Outlook"
+msgstr "ì•„ì›ƒë£©"
+
+#: includes/admin/class-strings.php:456
+msgid "Outlook in browser"
+msgstr "ë¸Œë¼ìš°ì €ì˜ ì•„ì›ƒë£©"
+
+#: includes/admin/class-strings.php:457
+msgid "This will override all your current settings."
+msgstr "ëª¨ë“  í˜„ìž¬ ì„¤ì •ì´ ìž¬ì •ì˜ë©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:458
+msgid "Pages/Posts"
+msgstr "íŽ˜ì´ì§€/í¬ìŠ¤íŠ¸"
+
+#: includes/admin/class-strings.php:459
+msgid "Palette %s"
+msgstr "íŒ”ë ˆíŠ¸ %s"
+
+#: includes/admin/class-strings.php:460, includes/admin/class-strings.php:524
+msgid "Scale in percentage relative to normal size"
+msgstr "ì¼ë°˜ í¬ê¸° ëŒ€ë¹„ ë°±ë¶„ìœ¨ ë‹¨ìœ„ í¬ê¸°"
+
+#: includes/admin/class-strings.php:461, src/admin/routes/settings-routes.js:72
+msgid "Performance"
+msgstr "ì„±ëŠ¥"
+
+#: includes/admin/class-strings.php:462, includes/admin/class-strings.php:463
+msgid "Choose Dark Mode behavior to enhance the performance"
+msgstr "ì„±ëŠ¥ì„ í–¥ìƒì‹œí‚¤ê¸° ìœ„í•œ ë‹¤í¬ ëª¨ë“œ ë™ìž‘ ì„ íƒ"
+
+#: includes/admin/class-strings.php:464, src/admin/routes/settings-routes.js:73
+msgid "Configure performance settings."
+msgstr "ì„±ëŠ¥ ì„¤ì • êµ¬ì„±"
+
+#: includes/admin/class-strings.php:465
+msgid "Placeholder"
+msgstr "ìžë¦¬ í‘œì‹œìž"
+
+#: includes/admin/class-strings.php:466
+msgid "PM"
+msgstr "ì˜¤í›„"
+
+#: includes/admin/class-strings.php:467
+msgid "Preset Color Customization"
+msgstr "í”„ë¦¬ì…‹ ìƒ‰ìƒ ì‚¬ìš©ìž ì •ì˜"
+
+#: includes/admin/class-strings.php:468
+msgid ""
+"You cannot delete this preset as it is currently in use. Please select "
+"another preset or change the \"Color Mode\" before deleting this preset."
+msgstr "í˜„ìž¬ ì‚¬ìš© ì¤‘ì´ë¯€ë¡œ ì´ í”„ë¦¬ì…‹ì„ ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ì´ í”„ë¦¬ì…‹ì„ ì‚­ì œí•˜ê¸° ì „ì— ë‹¤ë¥¸ í”„ë¦¬ì…‹ì„ ì„ íƒí•˜ê±°ë‚˜ \"ìƒ‰ìƒ ëª¨ë“œ\"ë¥¼ ë³€ê²½í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:469
+msgid "Preset is already in use!"
+msgstr "í”„ë¦¬ì…‹ì´ ì´ë¯¸ ì‚¬ìš© ì¤‘ìž…ë‹ˆë‹¤!"
+
+#: includes/admin/class-strings.php:470
+msgid "Preset name"
+msgstr "í”„ë¦¬ì…‹ ì´ë¦„"
+
+#: includes/admin/class-strings.php:471, includes/admin/class-strings.php:474
+msgid "Preset name is required. Please enter a name for your preset."
+msgstr "í”„ë¦¬ì…‹ ì´ë¦„ì´ í•„ìš”í•©ë‹ˆë‹¤. í”„ë¦¬ì…‹ ì´ë¦„ì„ ìž…ë ¥í•´ ì£¼ì„¸ìš”."
+
+#: includes/admin/class-strings.php:472
+msgid "Preset Name"
+msgstr "í”„ë¦¬ì…‹ ì´ë¦„"
+
+#: includes/admin/class-strings.php:473
+msgid "e.g., Blue Night Theme"
+msgstr "ì˜ˆ: ë¸”ë£¨ ë‚˜ì´íŠ¸ í…Œë§ˆ"
+
+#: includes/admin/class-strings.php:475, includes/admin/class-strings.php:680
+msgid "Preview"
+msgstr "ë¯¸ë¦¬ë³´ê¸°"
+
+#: includes/admin/class-strings.php:476
+msgid "Pricing"
+msgstr "ê°€ê²©"
+
+#: includes/admin/class-strings.php:477
+msgid "Pro"
+msgstr "í”„ë¡œ"
+
+#: includes/admin/class-strings.php:478
+msgid "e.g., Modern dark theme with blue accents and high contrast..."
+msgstr "ì˜ˆ: íŒŒëž€ìƒ‰ ê°•ì¡°ì™€ ë†’ì€ ëŒ€ë¹„ê°€ ìžˆëŠ” í˜„ëŒ€ì ì¸ ë‹¤í¬ í…Œë§ˆ..."
+
+#: includes/admin/class-strings.php:479
+msgid "px"
+msgstr "px"
+
+#: includes/admin/class-strings.php:480
+msgid "How to enable dark mode on my website?"
+msgstr "ë‚´ ì›¹ì‚¬ì´íŠ¸ì—ì„œ ë‹¤í¬ ëª¨ë“œë¥¼ ì–´ë–»ê²Œ í™œì„±í™”í•˜ë‚˜ìš”?"
+
+#: includes/admin/class-strings.php:481
+msgid "How do I activate PRO plan?"
+msgstr "PRO í”Œëžœì„ ì–´ë–»ê²Œ í™œì„±í™”í•˜ë‚˜ìš”?"
+
+#: includes/admin/class-strings.php:482
+msgid "How do I activate the Ultimate plan?"
+msgstr "Ultimate í”Œëžœì„ ì–´ë–»ê²Œ í™œì„±í™”í•˜ë‚˜ìš”?"
+
+#: includes/admin/class-strings.php:483
+msgid "Can I use it with popular page builders like Gutenberg or Elementor?"
+msgstr "êµ¬í…ë² ë¥´í¬ë‚˜ ì—˜ë¦¬ë©˜í„°ì™€ ê°™ì€ ì¸ê¸° ìžˆëŠ” íŽ˜ì´ì§€ ë¹Œë”ì™€ í•¨ê»˜ ì‚¬ìš©í•  ìˆ˜ ìžˆë‚˜ìš”?"
+
+#: includes/admin/class-strings.php:484
+msgid "Is WP Dark Mode compatible with my theme?"
+msgstr "WP Dark Modeê°€ ë‚´ í…Œë§ˆì™€ í˜¸í™˜ë˜ë‚˜ìš”?"
+
+#: includes/admin/class-strings.php:485
+msgid "Is this plugin compatible with all modern browsers?"
+msgstr "ì´ í”ŒëŸ¬ê·¸ì¸ì€ ëª¨ë“  ìµœì‹  ë¸Œë¼ìš°ì €ì™€ í˜¸í™˜ë˜ë‚˜ìš”?"
+
+#: includes/admin/class-strings.php:486
+msgid "Does the WP Dark Mode plugin have any impact on page loading?"
+msgstr "WP Dark Mode í”ŒëŸ¬ê·¸ì¸ì´ íŽ˜ì´ì§€ ë¡œë”©ì— ì˜í–¥ì„ ì£¼ë‚˜ìš”?"
+
+#: includes/admin/class-strings.php:487
+msgid "Can I change the image for dark mode using this plugin?"
+msgstr "ì´ í”ŒëŸ¬ê·¸ì¸ì„ ì‚¬ìš©í•˜ì—¬ ë‹¤í¬ ëª¨ë“œìš© ì´ë¯¸ì§€ë¥¼ ë³€ê²½í•  ìˆ˜ ìžˆë‚˜ìš”?"
+
+#: includes/admin/class-strings.php:488
+msgid ""
+"How can I prevent any specific elements, sections, or from turning into "
+"dark?"
+msgstr "íŠ¹ì • ìš”ì†Œë‚˜ ì„¹ì…˜ì´ ì–´ë‘¡ê²Œ ë³€í•˜ëŠ” ê²ƒì„ ì–´ë–»ê²Œ ë°©ì§€í•  ìˆ˜ ìžˆë‚˜ìš”?"
+
+#: includes/admin/class-strings.php:489
+msgid "Where can I find the tutorials about using the plugin?"
+msgstr "í”ŒëŸ¬ê·¸ì¸ ì‚¬ìš©ì— ê´€í•œ íŠœí† ë¦¬ì–¼ì€ ì–´ë””ì—ì„œ ì°¾ì„ ìˆ˜ ìžˆë‚˜ìš”?"
+
+#: includes/admin/class-strings.php:490
+msgid "I want a refund for my purchase of the plugin. Whatâ€™s the procedure?"
+msgstr "í”ŒëŸ¬ê·¸ì¸ êµ¬ë§¤ì— ëŒ€í•´ í™˜ë¶ˆë°›ê³  ì‹¶ìŠµë‹ˆë‹¤. ì ˆì°¨ê°€ ì–´ë–»ê²Œ ë˜ë‚˜ìš”?"
+
+#: includes/admin/class-strings.php:491
+msgid "Please Rate Us:"
+msgstr "ì €í¬ë¥¼ í‰ê°€í•´ ì£¼ì„¸ìš”:"
+
+#: includes/admin/class-strings.php:492
+msgid "Recommended"
+msgstr "ì¶”ì²œ"
+
+#: includes/admin/class-strings.php:494
+msgid "Recommended Plugins page"
+msgstr "ì¶”ì²œ í”ŒëŸ¬ê·¸ì¸ íŽ˜ì´ì§€"
+
+#: includes/admin/class-strings.php:495
+msgid "14 days"
+msgstr "14ì¼"
+
+#: includes/admin/class-strings.php:496
+msgid "7 days"
+msgstr "7ì¼"
+
+#: includes/admin/class-strings.php:497
+msgid "Remind me After:"
+msgstr "ë‚˜ì¤‘ì— ì•Œë¦¼:"
+
+#: includes/admin/class-strings.php:498
+msgid "Would you like to be remind in the future?"
+msgstr "ë‚˜ì¤‘ì— ë‹¤ì‹œ ì•Œë¦¼ì„ ë°›ìœ¼ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+#: includes/admin/class-strings.php:499
+msgid "Remind me never"
+msgstr "ë‹¤ì‹œ ì•Œë¦¬ì§€ ì•ŠìŒ"
+
+#: includes/admin/class-strings.php:500
+msgid "Replaced Images"
+msgstr "ëŒ€ì²´ëœ ì´ë¯¸ì§€"
+
+#: includes/admin/class-strings.php:501
+msgid "The following added images will be replaced when dark mode is enabled"
+msgstr "ë‹¤í¬ ëª¨ë“œê°€ í™œì„±í™”ë˜ì—ˆì„ ë•Œ ë‹¤ìŒ ì¶”ê°€ëœ ì´ë¯¸ì§€ê°€ ëŒ€ì²´ë©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:502
+msgid "Replaced Videos"
+msgstr "ëŒ€ì²´ëœ ë¹„ë””ì˜¤"
+
+#: includes/admin/class-strings.php:503
+msgid "These videos will be replaced in the dark mode"
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ ì´ ë¹„ë””ì˜¤ë“¤ì´ ëŒ€ì²´ë©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:504, includes/admin/class-strings.php:508
+msgid "Reporting Email"
+msgstr "ë³´ê³ ìš© ì´ë©”ì¼"
+
+#: includes/admin/class-strings.php:505
+msgid "Enter the email where the analytics report will be sent."
+msgstr "ë¶„ì„ ë³´ê³ ì„œê°€ ì „ì†¡ë  ì´ë©”ì¼ ì£¼ì†Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:506, includes/admin/class-strings.php:514
+msgid "Reporting Email Subject"
+msgstr "ë³´ê³ ìš© ì´ë©”ì¼ ì œëª©"
+
+#: includes/admin/class-strings.php:507
+msgid "Subject of the analytics report email."
+msgstr "ë¶„ì„ ë³´ê³ ì„œ ì´ë©”ì¼ì˜ ì œëª©ìž…ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:509
+msgid "Select the reporting frequency when the email will be send."
+msgstr "ì´ë©”ì¼ ì„± ì „ì†¡ ë¹ˆë„ë¥¼ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:510, includes/admin/class-strings.php:511
+msgid "Reporting Frequency"
+msgstr "ë³´ê³  ë¹ˆë„"
+
+#: includes/admin/class-strings.php:512
+msgid "Select the reporting frequency for the email."
+msgstr "ì´ë©”ì¼ ë³´ê³  ë¹ˆë„ë¥¼ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:513
+msgid "Subject of the analytics report mail"
+msgstr "ë¶„ì„ ë³´ê³ ì„œ ë©”ì¼ì˜ ì œëª©"
+
+#: includes/admin/class-strings.php:515
+msgid "Reset"
+msgstr "ì´ˆê¸°í™”"
+
+#: includes/admin/class-strings.php:516
+msgid ""
+"Are you sure you want to reset all settings to default? We suggest you to "
+"export current settings before you reset the settings."
+msgstr "ëª¨ë“  ì„¤ì •ì„ ê¸°ë³¸ê°’ìœ¼ë¡œ ì´ˆê¸°í™”í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ì´ˆê¸°í™”í•˜ê¸° ì „ì— í˜„ìž¬ ì„¤ì •ì„ ë‚´ë³´ë‚´ëŠ” ê²ƒì´ ì¢‹ìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:517
+msgid ""
+"Reset all settings to default. We recommend to export current settings "
+"before you reset the settings."
+msgstr "ëª¨ë“  ì„¤ì •ì„ ê¸°ë³¸ê°’ìœ¼ë¡œ ì´ˆê¸°í™”í•©ë‹ˆë‹¤. ì´ˆê¸°í™”í•˜ê¸° ì „ì— í˜„ìž¬ ì„¤ì •ì„ ë‚´ë³´ë‚´ëŠ” ê²ƒì„ ê¶Œìž¥í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:518
+msgid "Reset Settings"
+msgstr "ì„¤ì • ìž¬ì„¤ì •"
+
+#: includes/admin/class-strings.php:520
+msgid "Reset to original"
+msgstr "ì›ë³¸ìœ¼ë¡œ ì´ˆê¸°í™”"
+
+#: includes/admin/class-strings.php:521, includes/admin/class-strings.php:686, includes/classes/class-config.php:202, includes/modules/elementor/widgets/class-elementor-widget.php:162
+msgid "Right"
+msgstr "ì˜¤ë¥¸ìª½"
+
+#: includes/admin/class-strings.php:522
+msgid "Save Changes"
+msgstr "ë³€ê²½ ì‚¬í•­ ì €ìž¥"
+
+#: includes/admin/class-strings.php:523, includes/admin/class-strings.php:705
+msgid "Saved Successfully"
+msgstr "ì„±ê³µì ìœ¼ë¡œ ì €ìž¥ë¨"
+
+#: includes/admin/class-strings.php:525
+msgid "Scrollbar Customization"
+msgstr "ìŠ¤í¬ë¡¤ë°” ì‚¬ìš©ìž ì •ì˜"
+
+#: includes/admin/class-strings.php:528, includes/admin/class-strings.php:573
+msgid "Thumb BG"
+msgstr "ì¸ ë°°ê²½"
+
+#: includes/admin/class-strings.php:529
+msgid "Secondary Background Color"
+msgstr "ë³´ì¡° ë°°ê²½ìƒ‰"
+
+#: includes/admin/class-strings.php:530
+msgid "seconds"
+msgstr "ì´ˆ"
+
+#: includes/admin/class-strings.php:531
+msgid "Select"
+msgstr "ì„ íƒ"
+
+#: includes/admin/class-strings.php:532
+msgid "Select Animation"
+msgstr "ì• ë‹ˆë©”ì´ì…˜ ì„ íƒ"
+
+#: includes/admin/class-strings.php:533, includes/admin/class-strings.php:566
+msgid ""
+"Click on the WP Darkmode Widget and you will see the available switches on "
+"the right side of the screen. Select the one that you like"
+msgstr "WP Darkmode ìœ„ì ¯ì„ í´ë¦­í•˜ë©´ í™”ë©´ ì˜¤ë¥¸ìª½ì— ì‚¬ìš© ê°€ëŠ¥í•œ ìŠ¤ìœ„ì¹˜ê°€ í‘œì‹œë©ë‹ˆë‹¤. ë§ˆìŒì— ë“œëŠ” ê²ƒì„ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:534, includes/admin/class-strings.php:536
+msgid "Select a switch style for the menu"
+msgstr "ë©”ë‰´ì— ëŒ€í•œ ìŠ¤ìœ„ì¹˜ ìŠ¤íƒ€ì¼ ì„ íƒ"
+
+#: includes/admin/class-strings.php:535
+msgid "Select Switch Style"
+msgstr "ìŠ¤ìœ„ì¹˜ ìŠ¤íƒ€ì¼ ì„ íƒ"
+
+#: includes/admin/class-strings.php:537
+msgid "Select Switches"
+msgstr "ìŠ¤ìœ„ì¹˜ ì„ íƒ"
+
+#: includes/admin/class-strings.php:538
+msgid "Select time"
+msgstr "ì‹œê°„ ì„ íƒ"
+
+#: includes/admin/class-strings.php:539
+msgid "Enter CSS Selector (e.g., .my-class, #my-id)"
+msgstr "CSS ì„ íƒê¸° ìž…ë ¥ (ì˜ˆ: .my-class, #my-id)"
+
+#: includes/admin/class-strings.php:540
+msgid "Sepia"
+msgstr "ì„¸í”¼ì•„"
+
+#: includes/admin/class-strings.php:541
+msgid "Adjust your preferred dark mode Sepia"
+msgstr "ì„ í˜¸í•˜ëŠ” ë‹¤í¬ ëª¨ë“œ ì„¸í”¼ì•„ ì¡°ì •"
+
+#: includes/admin/class-strings.php:543, src/admin/routes/settings-routes.js:92
+msgid "Shortcode"
+msgstr "ì‡¼íŠ¸ì½”ë“œ"
+
+#: includes/admin/class-strings.php:544
+msgid "Select a switch from below and a shortcode will be generated"
+msgstr "ì•„ëž˜ì—ì„œ ìŠ¤ìœ„ì¹˜ë¥¼ ì„ íƒí•˜ë©´ ìˆì½”ë“œê°€ ìƒì„±ë©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:545, src/admin/routes/settings-routes.js:93
+msgid "Generate shortcodes for dark mode switches"
+msgstr "ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ìš© ìˆì½”ë“œ ìƒì„±"
+
+#: includes/admin/class-strings.php:546
+msgid "Show Switch after delay"
+msgstr "ì§€ì—° í›„ ìŠ¤ìœ„ì¹˜ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:547
+msgid "Side Selection"
+msgstr "ì¸¡ë©´ ì„ íƒ"
+
+#: includes/admin/class-strings.php:548, src/admin/routes/settings-routes.js:56
+msgid "Site Animation"
+msgstr "ì‚¬ì´íŠ¸ ì• ë‹ˆë©”ì´ì…˜"
+
+#: includes/admin/class-strings.php:549
+msgid "Small"
+msgstr "ìž‘ê²Œ"
+
+#: includes/admin/class-strings.php:550
+msgid "Social Share page"
+msgstr "ì†Œì…œ ê³µìœ  íŽ˜ì´ì§€"
+
+#: includes/admin/class-strings.php:551
+msgid "Spacing from bottom"
+msgstr "í•˜ë‹¨ì—ì„œì˜ ê°„ê²©"
+
+#: includes/admin/class-strings.php:552
+msgid "Spacing from %s"
+msgstr "%sì—ì„œì˜ ê°„ê²©"
+
+#: includes/admin/class-strings.php:553
+msgid "Start Time"
+msgstr "ì‹œìž‘ ì‹œê°„"
+
+#: includes/admin/class-strings.php:554, includes/admin/class-strings.php:664
+msgid "Support"
+msgstr "ì§€ì›"
+
+#: includes/admin/class-strings.php:555
+msgid "Switch Customization"
+msgstr "ìŠ¤ìœ„ì¹˜ ì‚¬ìš©ìž ì •ì˜"
+
+#: includes/admin/class-strings.php:556, src/admin/routes/settings-routes.js:37
+msgid "Configure the dark mode switch for your website"
+msgstr "ì›¹ì‚¬ì´íŠ¸ì˜ ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ë¥¼ êµ¬ì„±í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:557
+msgid "Switch Position"
+msgstr "ìŠ¤ìœ„ì¹˜ ìœ„ì¹˜"
+
+#: includes/admin/class-strings.php:558
+msgid "Choose the alignment of the floating toggle switch"
+msgstr "í”Œë¡œíŒ… ì „í™˜ ìŠ¤ìœ„ì¹˜ì˜ ì •ë ¬ì„ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:559, src/admin/routes/settings-routes.js:36
+msgid "Switch Settings"
+msgstr "ìŠ¤ìœ„ì¹˜ ì„¤ì •"
+
+#: includes/admin/class-strings.php:560, includes/admin/class-strings.php:561
+msgid "Switch to Dark Mode"
+msgstr "ë‹¤í¬ ëª¨ë“œë¡œ ì „í™˜"
+
+#: includes/admin/class-strings.php:562, includes/admin/class-strings.php:563
+msgid "Switch to Light Mode"
+msgstr "ë¼ì´íŠ¸ ëª¨ë“œë¡œ ì „í™˜"
+
+#: includes/admin/class-strings.php:564, src/admin/routes/settings-routes.js:97
+msgid "Switch Widget"
+msgstr "ìŠ¤ìœ„ì¹˜ ìœ„ì ¯"
+
+#: includes/admin/class-strings.php:565, src/admin/routes/settings-routes.js:98
+msgid "Display dark mode switch using WordPress widget"
+msgstr "ì›Œë“œí”„ë ˆìŠ¤ ìœ„ì ¯ì„ ì‚¬ìš©í•˜ì—¬ ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:567
+msgid "Tablet"
+msgstr "íƒœë¸”ë¦¿"
+
+#: includes/admin/class-strings.php:570
+msgid "Text"
+msgstr "í…ìŠ¤íŠ¸"
+
+#: includes/admin/class-strings.php:571
+msgid "Text & Link Colors"
+msgstr "í…ìŠ¤íŠ¸ ë° ë§í¬ ìƒ‰ìƒ"
+
+#: includes/admin/class-strings.php:572
+msgid "Thumb Background"
+msgstr "ì¸ ë°°ê²½"
+
+#: includes/admin/class-strings.php:574, includes/admin/class-strings.php:575
+msgid "Start time and end time cannot be same."
+msgstr "ì‹œìž‘ ì‹œê°„ê³¼ ì¢…ë£Œ ì‹œê°„ì´ ê°™ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:576
+msgid "To"
+msgstr "~ê¹Œì§€"
+
+#: includes/admin/class-strings.php:577
+msgid "to enable dark mode"
+msgstr "ë‹¤í¬ ëª¨ë“œ í™œì„±í™”"
+
+#: includes/admin/class-strings.php:578
+msgid "to enable light mode"
+msgstr "ë¼ì´íŠ¸ ëª¨ë“œ í™œì„±í™”"
+
+#: includes/admin/class-strings.php:579
+msgid "Toggle Dark Mode"
+msgstr "ë‹¤í¬ ëª¨ë“œ ì „í™˜"
+
+#: includes/admin/class-strings.php:580, src/admin/routes/settings-routes.js:138, src/admin/routes/settings-routes.js:146
+msgid "Tools"
+msgstr "ë„êµ¬"
+
+#: includes/admin/class-strings.php:581
+msgid "WP Dark Mode Tools"
+msgstr "WP Dark Mode ë„êµ¬"
+
+#: includes/admin/class-strings.php:582
+msgid "Track Background"
+msgstr "íŠ¸ëž™ ë°°ê²½"
+
+#: includes/admin/class-strings.php:583
+msgid "Track BG"
+msgstr "íŠ¸ëž™ ë°°ê²½"
+
+#: includes/admin/class-strings.php:584, includes/admin/class-strings.php:585
+msgid "Track Dynamic Content"
+msgstr "ë™ì  ì½˜í…ì¸  ì¶”ì "
+
+#: includes/admin/class-strings.php:586, includes/admin/class-strings.php:587
+msgid ""
+"Please turn on this feature only if you have any Ajax Loaded dynamic "
+"content like ajax product filters, ajax page loader, ajax image "
+"loaders/sliders, lazy loaded images etc."
+msgstr ""
+"Ajax ì œí’ˆ í•„í„°, Ajax íŽ˜ì´ì§€ ë¡œë”, Ajax ì´ë¯¸ì§€ ë¡œë”/ìŠ¬ë¼ì´ë”, ì§€ì—° ë¡œë”© ì´ë¯¸ì§€ ë“± Ajaxë¡œ ë¡œë“œë˜ëŠ” ë™ì  ì½˜í…ì¸ ê°€ "
+"ìžˆëŠ” ê²½ìš°ì—ë§Œ ì´ ê¸°ëŠ¥ì„ ì¼œì„¸ìš”."
+
+#: includes/admin/class-strings.php:588
+msgid "The following triggers will toggle dark mode when clicked"
+msgstr "í´ë¦­ ì‹œ ë‹¤ìŒ íŠ¸ë¦¬ê±°ê°€ ë‹¤í¬ ëª¨ë“œë¥¼ ì „í™˜í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:589
+msgid "Try Live Demo"
+msgstr "ë¼ì´ë¸Œ ë°ëª¨ ì²´í—˜í•˜ê¸°"
+
+#: includes/admin/class-strings.php:590
+msgid "Tutorial"
+msgstr "íŠœí† ë¦¬ì–¼"
+
+#: includes/admin/class-strings.php:591
+msgid ""
+"Here is a small full video tutorial for you incase you donâ€™t like to go "
+"through all the textual instruction"
+msgstr "í…ìŠ¤íŠ¸ ì§€ì¹¨ì„ ëª¨ë‘ ì½ëŠ” ê²ƒì´ ë²ˆê±°ë¡œìš´ ë¶„ë“¤ì„ ìœ„í•œ ì§§ì€ ì „ì²´ ë¹„ë””ì˜¤ íŠœí† ë¦¬ì–¼ìž…ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:592
+msgid "Check the WP Dark Mode playlist to become an expert dark mode user."
+msgstr "ì „ë¬¸ê°€ê°€ ë˜ê¸° ìœ„í•´ WP Dark Mode ìž¬ìƒ ëª©ë¡ì„ í™•ì¸í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:593
+msgid ""
+"Typography features are only available for <strong>Accessibility "
+"Switches</strong>"
+msgstr "íƒ€ì´í¬ê·¸ëž˜í”¼ ê¸°ëŠ¥ì€ <strong>ì ‘ê·¼ì„± ìŠ¤ìœ„ì¹˜</strong>ì—ì„œë§Œ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:595, includes/admin/class-strings.php:600
+msgid "Typography Settings"
+msgstr "íƒ€ì´í¬ê·¸ëž˜í”¼ ì„¤ì •"
+
+#: includes/admin/class-strings.php:596
+msgid "Typography features are only available for"
+msgstr "íƒ€ì´í¬ê·¸ëž˜í”¼ ê¸°ëŠ¥ì€ ë‹¤ìŒì—ì„œë§Œ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤:"
+
+#: includes/admin/class-strings.php:599
+msgid ""
+"Typography option is disabled in Accessibility Settings. Text scaling "
+"feature wonâ€™t work."
+msgstr "ì ‘ê·¼ì„± ì„¤ì •ì—ì„œ íƒ€ì´í¬ê·¸ëž˜í”¼ ì˜µì…˜ì´ ë¹„í™œì„±í™”ë˜ì–´ ìžˆìŠµë‹ˆë‹¤. í…ìŠ¤íŠ¸ ë¹„ìœ¨ ì¡°ì • ê¸°ëŠ¥ì´ ìž‘ë™í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:601
+msgid "ULTIMATE"
+msgstr "ULTIMATE"
+
+#: includes/admin/class-strings.php:602
+msgid ""
+"Advanced dark mode customizations are available in <span "
+"class=\"font-semibold\">WP Dark Mode Ultimate</span> ðŸ˜"
+msgstr ""
+"ê³ ê¸‰ ë‹¤í¬ ëª¨ë“œ ì‚¬ìš©ìž ì •ì˜ëŠ” <span class=\"font-semibold\">WP Dark Mode "
+"Ultimate</span>ì—ì„œ ì´ìš© ê°€ëŠ¥í•©ë‹ˆë‹¤ ðŸ˜"
+
+#: includes/admin/class-strings.php:603
+msgid "ULTIMATE PLAN"
+msgstr "ì–¼í‹°ë°‹(ULTIMATE) í”Œëžœ"
+
+#: includes/admin/class-strings.php:604
+msgid ""
+"The Floating Switch is <strong>currently unavailable</strong>. To access "
+"this feature, first you have to enable the â€œFrontend Dark Modeâ€ feature "
+"from the Control settings"
+msgstr ""
+"í”Œë¡œíŒ… ìŠ¤ìœ„ì¹˜ëŠ” <strong>í˜„ìž¬ ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤</strong>. ì´ ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ë ¤ë©´ ë¨¼ì € ì œì–´ ì„¤ì •ì—ì„œ â€œí”„ëŸ°íŠ¸ì—”ë“œ ë‹¤í¬ "
+"ëª¨ë“œâ€ ê¸°ëŠ¥ì„ í™œì„±í™”í•´ì•¼ í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:605
+msgid "This action cannot be undone."
+msgstr "ì´ ìž‘ì—…ì€ ì·¨ì†Œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:606
+msgid "Not sure about upgrading to Ultimate yet?"
+msgstr "ì•„ì§ ì–¼í‹°ë°‹ ì—…ê·¸ë ˆì´ë“œê°€ ê³ ë¯¼ë˜ì‹œë‚˜ìš”?"
+
+#: includes/admin/class-strings.php:607
+msgid ""
+"If you are having a second thought about upgrading, you can explore all the "
+"premium features on our demo website. Feel free to try every feature before "
+"making the decision."
+msgstr "ì—…ê·¸ë ˆì´ë“œê°€ ê³ ë¯¼ëœë‹¤ë©´ ë°ëª¨ ì›¹ì‚¬ì´íŠ¸ì—ì„œ ëª¨ë“  í”„ë¦¬ë¯¸ì—„ ê¸°ëŠ¥ì„ ì‚´íŽ´ë³´ì„¸ìš”. ê²°ì •ì„ ë‚´ë¦¬ê¸° ì „ì— ëª¨ë“  ê¸°ëŠ¥ì„ ìžìœ ë¡­ê²Œ ì²´í—˜í•´ ë³´ì„¸ìš”."
+
+#: includes/admin/class-strings.php:608
+msgid "Untitled"
+msgstr "ì œëª© ì—†ìŒ"
+
+#: includes/admin/class-strings.php:609
+msgid "Upcoming"
+msgstr "ì˜ˆì •ë¨"
+
+#: includes/admin/class-strings.php:610, includes/admin/class-strings.php:611
+msgid ""
+"Click update and you are done! The switch will now be visible in the menu "
+"where you placed."
+msgstr "ì—…ë°ì´íŠ¸ë¥¼ í´ë¦­í•˜ë©´ ëìž…ë‹ˆë‹¤! ì´ì œ ì§€ì •í•œ ë©”ë‰´ì— ìŠ¤ìœ„ì¹˜ê°€ í‘œì‹œë©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:612, includes/admin/class-strings.php:613
+msgid "Click update and you are done!"
+msgstr "ì—…ë°ì´íŠ¸ë¥¼ í´ë¦­í•˜ë©´ ëìž…ë‹ˆë‹¤!"
+
+#: includes/admin/class-strings.php:614
+msgid "Upgrade"
+msgstr "ì—…ê·¸ë ˆì´ë“œ"
+
+#: includes/admin/class-strings.php:615
+msgid "Upgrade All Features"
+msgstr "ëª¨ë“  ê¸°ëŠ¥ ì—…ê·¸ë ˆì´ë“œ"
+
+#: includes/admin/class-strings.php:616
+msgid "Upgrade to ultimate to get access to reports"
+msgstr "ë³´ê³ ì„œë¥¼ ì´ìš©í•˜ë ¤ë©´ ì–¼í‹°ë°‹ìœ¼ë¡œ ì—…ê·¸ë ˆì´ë“œí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:617, includes/wppool/class-plugin.php:371
+msgid "Upgrade to Pro"
+msgstr "Proë¡œ ì—…ê·¸ë ˆì´ë“œ"
+
+#: includes/admin/class-strings.php:637
+msgid "Upgrade to WP Dark Mode Ultimate"
+msgstr "WP Dark Mode Ultimateë¡œ ì—…ê·¸ë ˆì´ë“œ"
+
+#: includes/admin/class-strings.php:619
+msgid "URL Parameter"
+msgstr "URL ë§¤ê°œë³€ìˆ˜"
+
+#: includes/admin/class-strings.php:620
+msgid "Enable/Disable the dark mode using URL/domain parameter"
+msgstr "URL/ë„ë©”ì¸ ë§¤ê°œë³€ìˆ˜ë¥¼ ì‚¬ìš©í•˜ì—¬ ë‹¤í¬ ëª¨ë“œ í™œì„±í™”/ë¹„í™œì„±í™”"
+
+#: includes/admin/class-strings.php:621
+msgid "Toggle Dark Mode using URL parameter."
+msgstr "URL ë§¤ê°œë³€ìˆ˜ë¥¼ ì‚¬ìš©í•˜ì—¬ ë‹¤í¬ ëª¨ë“œë¥¼ ì „í™˜í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:622
+msgid "Use"
+msgstr "ì‚¬ìš©"
+
+#: includes/admin/class-strings.php:623
+msgid "Use %s?darkmode to enable dark mode and %s?lightmode to enable light mode"
+msgstr "%s?darkmodeë¥¼ ì‚¬ìš©í•˜ì—¬ ë‹¤í¬ ëª¨ë“œë¥¼ í™œì„±í™”í•˜ê³  %s?lightmodeë¥¼ ì‚¬ìš©í•˜ì—¬ ë¼ì´íŠ¸ ëª¨ë“œë¥¼ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:624
+msgid "Please upload a valid file."
+msgstr "ìœ íš¨í•œ íŒŒì¼ì„ ì—…ë¡œë“œí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:625
+msgid "Seems like <strong>WP Dark Mode</strong> is bringing you value ðŸ¥³"
+msgstr "<strong>WP Dark Mode</strong>ê°€ ê°€ì¹˜ë¥¼ ì œê³µí•˜ê³  ìžˆëŠ” ê²ƒ ê°™ë„¤ìš” ðŸ¥³"
+
+#: includes/admin/class-strings.php:626
+msgid ""
+"The version of the file you are trying to import is not compatible with the "
+"current version of WP Dark Mode."
+msgstr "ê°€ì ¸ì˜¤ë ¤ëŠ” íŒŒì¼ ë²„ì „ì´ í˜„ìž¬ WP Dark Mode ë²„ì „ê³¼ í˜¸í™˜ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:627
+msgid "Version Mismatch"
+msgstr "ë²„ì „ ë¶ˆì¼ì¹˜"
+
+#: includes/admin/class-strings.php:628
+msgid "Video Behavior"
+msgstr "ë¹„ë””ì˜¤ ë™ìž‘"
+
+#: includes/admin/class-strings.php:629
+msgid "Settings to change video appearance on dark mode"
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ ë¹„ë””ì˜¤ ëª¨ì–‘ì„ ë³€ê²½í•˜ëŠ” ì„¤ì •"
+
+#: includes/admin/class-strings.php:630
+msgid "Video Behavior When Dark Mode Is On"
+msgstr "ë‹¤í¬ ëª¨ë“œ ì¼œì§ ì‹œ ë¹„ë””ì˜¤ ë™ìž‘"
+
+#: includes/admin/class-strings.php:631
+msgid "Enable to set the brightness level of the videos on dark mode"
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ ë¹„ë””ì˜¤ì˜ ë°ê¸° ìˆ˜ì¤€ì„ ì„¤ì •í•˜ë ¤ë©´ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:632, src/admin/routes/settings-routes.js:52
+msgid "Customize video appearance in Dark Mode"
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ ë¹„ë””ì˜¤ ëª¨ì–‘ ì‚¬ìš©ìž ì •ì˜"
+
+#: includes/admin/class-strings.php:633
+msgid "Enable to set the grayscale level of the videos on dark mode"
+msgstr "ë‹¤í¬ ëª¨ë“œì—ì„œ ë¹„ë””ì˜¤ì˜ ê·¸ë ˆì´ìŠ¤ì¼€ì¼ ìˆ˜ì¤€ì„ ì„¤ì •í•˜ë ¤ë©´ í™œì„±í™”í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:634
+msgid "Video Replacement"
+msgstr "ë¹„ë””ì˜¤ ëŒ€ì²´"
+
+#: includes/admin/class-strings.php:635
+msgid "Replace specific videos when dark mode is enabled"
+msgstr "ë‹¤í¬ ëª¨ë“œê°€ í™œì„±í™”ë˜ì—ˆì„ ë•Œ íŠ¹ì • ë¹„ë””ì˜¤ ëŒ€ì²´"
+
+#: includes/admin/class-strings.php:636, src/admin/routes/settings-routes.js:51
+msgid "Video Settings"
+msgstr "ë¹„ë””ì˜¤ ì„¤ì •"
+
+#: includes/admin/class-strings.php:637
+msgid "Video Tutorial"
+msgstr "ë¹„ë””ì˜¤ íŠœí† ë¦¬ì–¼"
+
+#: includes/admin/class-strings.php:638
+msgid "Video URL"
+msgstr "ë¹„ë””ì˜¤ URL"
+
+#: includes/admin/class-strings.php:639
+msgid "View Dark Mode Usages inside WordPress Dashboard"
+msgstr "ì›Œë“œí”„ë ˆìŠ¤ ëŒ€ì‹œë³´ë“œ ë‚´ì—ì„œ ë‹¤í¬ ëª¨ë“œ ì‚¬ìš©ëŸ‰ ë³´ê¸°"
+
+#: includes/admin/class-strings.php:641
+msgid "Watch Video Tutorial"
+msgstr "ë¹„ë””ì˜¤ íŠœí† ë¦¬ì–¼ ì‹œì²­"
+
+#: includes/admin/class-strings.php:642
+msgid "Watch Videos"
+msgstr "ë¹„ë””ì˜¤ ì‹œì²­"
+
+#: includes/admin/class-strings.php:647, includes/admin/class-strings.php:654
+msgid "WooCommerce is not active"
+msgstr "ìš°ì»¤ë¨¸ìŠ¤ê°€ í™œì„±í™”ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:648, includes/admin/class-strings.php:655
+msgid "WooCommerce is not installed"
+msgstr "ìš°ì»¤ë¨¸ìŠ¤ê°€ ì„¤ì¹˜ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:651
+msgid "What is WP Dark Mode?"
+msgstr "WP Dark Modeëž€ ë¬´ì—‡ì¸ê°€ìš”?"
+
+#: includes/admin/class-strings.php:653
+msgid "WooCommerce"
+msgstr "ìš°ì»¤ë¨¸ìŠ¤"
+
+#: includes/admin/class-strings.php:657
+msgid "WP Dark Mode Support"
+msgstr "WP Dark Mode ì§€ì›"
+
+#: includes/admin/class-strings.php:659
+msgid "Yahoo"
+msgstr "ì•¼í›„"
+
+#: includes/admin/class-strings.php:660
+msgid "Yahoo in browser"
+msgstr "ë¸Œë¼ìš°ì €ì˜ ì•¼í›„"
+
+#: includes/admin/class-strings.php:661
+msgid "Yes, discard changes"
+msgstr "ë„¤, ë³€ê²½ ì‚¬í•­ì„ ì·¨ì†Œí•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:663
+msgid "Welcome to the #1 dark mode plugin for WordPress. Let's get started!"
+msgstr "ì›Œë“œí”„ë ˆìŠ¤ë¥¼ ìœ„í•œ #1 ë‹¤í¬ ëª¨ë“œ í”ŒëŸ¬ê·¸ì¸ì— ì˜¤ì‹  ê²ƒì„ í™˜ì˜í•©ë‹ˆë‹¤. ì‹œìž‘í•´ ë´…ì‹œë‹¤!"
+
+#: includes/admin/class-strings.php:671
+msgid "You might be looking for"
+msgstr "ë‹¤ìŒì„ ì°¾ê³  ê³„ì‹¤ ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:672
+msgid ""
+"Our support team is here 24/7 to answer your queries and resolve your "
+"issues. Don't hesitate to reach out to us!"
+msgstr "ë‹¹ì‚¬ ì§€ì›íŒ€ì€ ì—°ì¤‘ë¬´íœ´ 24ì‹œê°„ ê·€í•˜ì˜ ì§ˆë¬¸ì— ë‹µí•˜ê³  ë¬¸ì œë¥¼ í•´ê²°í•˜ê¸° ìœ„í•´ ëŒ€ê¸°í•˜ê³  ìžˆìŠµë‹ˆë‹¤. ì£¼ì €í•˜ì§€ ë§ê³  ì—°ë½ì£¼ì„¸ìš”!"
+
+#: includes/admin/class-strings.php:673
+msgid ""
+"If you don't have the time to go through the docs, check our tutorial to "
+"start using WP Dark Mode on Gutenberg."
+msgstr "ë¬¸ì„œë¥¼ ì‚´íŽ´ë³¼ ì‹œê°„ì´ ì—†ë‹¤ë©´ íŠœí† ë¦¬ì–¼ì„ í™•ì¸í•˜ì—¬ Gutenbergì—ì„œ WP Dark Mode ì‚¬ìš©ì„ ì‹œìž‘í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:674
+msgid ""
+"If you don't have the time to go through the docs, check our tutorial to "
+"start using WP Dark Mode on Elementor."
+msgstr "ë¬¸ì„œë¥¼ ì‚´íŽ´ë³¼ ì‹œê°„ì´ ì—†ë‹¤ë©´ íŠœí† ë¦¬ì–¼ì„ í™•ì¸í•˜ì—¬ Elementorì—ì„œ WP Dark Mode ì‚¬ìš©ì„ ì‹œìž‘í•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:677
+msgid "Social Share (Inline Button)"
+msgstr "ì†Œì…œ ê³µìœ  (ì¸ë¼ì¸ ë²„íŠ¼)"
+
+#: includes/admin/class-strings.php:678
+msgid "Social Channels"
+msgstr "ì†Œì…œ ì±„ë„"
+
+#: includes/admin/class-strings.php:681
+msgid "Above"
+msgstr "ìœ„"
+
+#: includes/admin/class-strings.php:682
+msgid "Below"
+msgstr "ì•„ëž˜"
+
+#: includes/admin/class-strings.php:683
+msgid "Above & Below"
+msgstr "ìœ„ì•„ëž˜"
+
+#: includes/admin/class-strings.php:685, includes/modules/elementor/widgets/class-elementor-widget.php:158
+msgid "Center"
+msgstr "ê°€ìš´ë°"
+
+#: includes/admin/class-strings.php:687
+msgid "Stretch"
+msgstr "ëŠ˜ë¦¬ê¸°"
+
+#: includes/admin/class-strings.php:688
+msgid "Rounded"
+msgstr "ë‘¥ê·¼í˜•"
+
+#: includes/admin/class-strings.php:689
+msgid "Circle"
+msgstr "ì›í˜•"
+
+#: includes/admin/class-strings.php:690
+msgid "Rectangular"
+msgstr "ì§ì‚¬ê°í˜•"
+
+#: includes/admin/class-strings.php:691
+msgid "Slanted"
+msgstr "ê¸°ìš¸ì–´ì§„í˜•"
+
+#: includes/admin/class-strings.php:692
+msgid "Channel Label"
+msgstr "ì±„ë„ ë ˆì´ë¸”"
+
+#: includes/admin/class-strings.php:693
+msgid "Share Count"
+msgstr "ê³µìœ  ìˆ˜"
+
+#: includes/admin/class-strings.php:694
+msgid "Both"
+msgstr "ë‘˜ ë‹¤"
+
+#: includes/admin/class-strings.php:695
+msgid "None"
+msgstr "ì—†ìŒ"
+
+#: includes/admin/class-strings.php:696
+msgid "More"
+msgstr "ë” ë³´ê¸°"
+
+#: includes/admin/class-strings.php:697
+msgid "Share"
+msgstr "ê³µìœ "
+
+#: includes/admin/class-strings.php:698
+msgid "Shares"
+msgstr "ê³µìœ "
+
+#: includes/admin/class-strings.php:699
+msgid "Ultimate"
+msgstr "ì–¼í‹°ë°‹(Ultimate)"
+
+#: includes/admin/class-strings.php:702
+msgid "Saved"
+msgstr "ì €ìž¥ë¨"
+
+#: includes/admin/class-strings.php:703
+msgid "Published"
+msgstr "ê²Œì‹œë¨"
+
+#: includes/admin/class-strings.php:704
+msgid "Save & Publish"
+msgstr "ì €ìž¥ ë° ê²Œì‹œ"
+
+#: includes/admin/class-strings.php:706
+msgid "Enable Social Share (Inline Button)"
+msgstr "ì†Œì…œ ê³µìœ  (ì¸ë¼ì¸ ë²„íŠ¼) í™œì„±í™”"
+
+#: includes/admin/class-strings.php:707
+msgid "Inline Button Template"
+msgstr "ì¸ë¼ì¸ ë²„íŠ¼ í…œí”Œë¦¿"
+
+#: includes/admin/class-strings.php:708
+msgid "Choose any inline button template that suits your style"
+msgstr "ìŠ¤íƒ€ì¼ì— ë§žëŠ” ì¸ë¼ì¸ ë²„íŠ¼ í…œí”Œë¦¿ì„ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:709
+msgid "Share Label"
+msgstr "ê³µìœ  ë¼ë²¨"
+
+#: includes/admin/class-strings.php:710
+msgid ""
+"Share label appears before the inline button. Provide engaging texts to "
+"make sure your visitors are sharing the content!"
+msgstr "ê³µìœ  ë¼ë²¨ì€ ì¸ë¼ì¸ ë²„íŠ¼ ì•žì— ë‚˜íƒ€ë‚©ë‹ˆë‹¤. ë°©ë¬¸ìžê°€ ì½˜í…ì¸ ë¥¼ ê³µìœ í•˜ë„ë¡ ë§¤ë ¥ì ì¸ í…ìŠ¤íŠ¸ë¥¼ ìž‘ì„±í•˜ì„¸ìš”!"
+
+#: includes/admin/class-strings.php:711
+msgid "Sharing is Caring: "
+msgstr "ê³µìœ ëŠ” ì‚¬ëž‘ìž…ë‹ˆë‹¤: "
+
+#: includes/admin/class-strings.php:712
+msgid "Button Position"
+msgstr "ë²„íŠ¼ ìœ„ì¹˜"
+
+#: includes/admin/class-strings.php:713
+msgid "Choose the position where you want show your inline button."
+msgstr "ì¸ë¼ì¸ ë²„íŠ¼ì„ í‘œì‹œí•  ìœ„ì¹˜ë¥¼ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:714
+msgid "Button Alignment"
+msgstr "ë²„íŠ¼ ì •ë ¬"
+
+#: includes/admin/class-strings.php:715
+msgid "Choose the alignment of the button."
+msgstr "ë²„íŠ¼ì˜ ì •ë ¬ì„ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:716
+msgid "Button Shape"
+msgstr "ë²„íŠ¼ ëª¨ì–‘"
+
+#: includes/admin/class-strings.php:717
+msgid "Choose the button shape that matches your site content."
+msgstr "ì‚¬ì´íŠ¸ ì½˜í…ì¸ ì™€ ì–´ìš¸ë¦¬ëŠ” ë²„íŠ¼ ëª¨ì–‘ì„ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:718
+msgid "Button Size"
+msgstr "ë²„íŠ¼ í¬ê¸°"
+
+#: includes/admin/class-strings.php:719
+msgid "Choose the default size for your inline button."
+msgstr "ì¸ë¼ì¸ ë²„íŠ¼ì˜ ê¸°ë³¸ í¬ê¸°ë¥¼ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:720
+msgid "Button Label"
+msgstr "ë²„íŠ¼ ë¼ë²¨"
+
+#: includes/admin/class-strings.php:721
+msgid "Button labels can display your channelâ€™s name and share count."
+msgstr "ë²„íŠ¼ ë¼ë²¨ì— ì±„ë„ ì´ë¦„ê³¼ ê³µìœ  íšŸìˆ˜ë¥¼ í‘œì‹œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:722
+msgid "Hide Buttons on"
+msgstr "ë‹¤ìŒì—ì„œ ë²„íŠ¼ ìˆ¨ê¸°ê¸°"
+
+#: includes/admin/class-strings.php:723
+msgid "Select where you want to hide your inline button."
+msgstr "ì¸ë¼ì¸ ë²„íŠ¼ì„ ìˆ¨ê¸¸ ìœ„ì¹˜ë¥¼ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:724
+msgid "Display Buttons on"
+msgstr "ë‹¤ìŒì—ì„œ ë²„íŠ¼ í‘œì‹œ"
+
+#: includes/admin/class-strings.php:725
+msgid "Choose where the inline button will appear on your website."
+msgstr "ê·€í•˜ì˜ ì›¹ì‚¬ì´íŠ¸ì—ì„œ ì¸ë¼ì¸ ë²„íŠ¼ì´ ë‚˜íƒ€ë‚  ìœ„ì¹˜ë¥¼ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:726
+msgid "Button Spacing"
+msgstr "ë²„íŠ¼ ê°„ê²©"
+
+#: includes/admin/class-strings.php:727
+msgid "Select default spacing between each channel."
+msgstr "ê° ì±„ë„ ê°„ì˜ ê¸°ë³¸ ê°„ê²©ì„ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/admin/class-strings.php:728
+msgid "Total Shares"
+msgstr "ì´ ê³µìœ  ìˆ˜"
+
+#: includes/admin/class-strings.php:729
+msgid ""
+"Enable total share counter. It will show how many times your content is "
+"shared via enabled channels."
+msgstr "ì´ ê³µìœ  ì¹´ìš´í„°ë¥¼ í™œì„±í™”í•©ë‹ˆë‹¤. í™œì„±í™”ëœ ì±„ë„ì„ í†µí•´ ì½˜í…ì¸ ê°€ ê³µìœ ëœ ì´ íšŸìˆ˜ë¥¼ í‘œì‹œí•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:730
+msgid "Minimum Share Count"
+msgstr "ìµœì†Œ ê³µìœ  íšŸìˆ˜"
+
+#: includes/admin/class-strings.php:731
+msgid ""
+"This is the minimum number of shares a page needs to have before the share "
+"counter is shown."
+msgstr "ê³µìœ  ì¹´ìš´í„°ê°€ í‘œì‹œë˜ê¸° ìœ„í•´ íŽ˜ì´ì§€ê°€ ê°€ì ¸ì•¼ í•˜ëŠ” ìµœì†Œ ê³µìœ  ìˆ˜ìž…ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:732
+msgid "Maximum Share Click"
+msgstr "ìµœëŒ€ ê³µìœ  í´ë¦­ ìˆ˜"
+
+#: includes/admin/class-strings.php:733
+msgid ""
+"This is the maximum number of click count on a social channel you want to "
+"show your visitors"
+msgstr "ë°©ë¬¸ìžì—ê²Œ ë³´ì—¬ì£¼ê³  ì‹¶ì€ ì†Œì…œ ì±„ë„ì˜ ìµœëŒ€ í´ë¦­ ìˆ˜ìž…ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:734
+msgid "Channel Visibility Count"
+msgstr "ì±„ë„ ë…¸ì¶œ ìˆ˜"
+
+#: includes/admin/class-strings.php:735
+msgid ""
+"Set the number of channels that you want to show on your website. The rest "
+"will be shown after clicking on the 'More' button."
+msgstr "ì›¹ì‚¬ì´íŠ¸ì— í‘œì‹œí•  ì±„ë„ ìˆ˜ë¥¼ ì„¤ì •í•˜ì„¸ìš”. ë‚˜ë¨¸ì§€ëŠ” 'ë” ë³´ê¸°' ë²„íŠ¼ì„ í´ë¦­í•œ í›„ì— í‘œì‹œë©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:736
+msgid "Search Channel"
+msgstr "ì±„ë„ ê²€ìƒ‰"
+
+#: includes/admin/class-strings.php:737
+msgid "See less channels"
+msgstr "ì±„ë„ ì ê²Œ ë³´ê¸°"
+
+#: includes/admin/class-strings.php:738
+msgid "See more channels"
+msgstr "ì±„ë„ ë” ë³´ê¸°"
+
+#: includes/admin/class-strings.php:739
+msgid "Unlock all channels"
+msgstr "ëª¨ë“  ì±„ë„ ìž ê¸ˆ í•´ì œ"
+
+#: includes/admin/class-strings.php:740
+msgid "Manage channels"
+msgstr "ì±„ë„ ê´€ë¦¬"
+
+#: includes/admin/class-strings.php:741
+msgid ""
+"Reorder your social channels. You can edit the channel label and device "
+"visibility for each. Drag channels to change their order."
+msgstr "ì†Œì…œ ì±„ë„ì˜ ìˆœì„œë¥¼ ë³€ê²½í•©ë‹ˆë‹¤. ê° ì±„ë„ì˜ ë¼ë²¨ê³¼ ê¸°ê¸°ë³„ ë…¸ì¶œ ì—¬ë¶€ë¥¼ íŽ¸ì§‘í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ì±„ë„ì„ ë“œëž˜ê·¸í•˜ì—¬ ìˆœì„œë¥¼ ë°”ê¾¸ì„¸ìš”."
+
+#: includes/admin/class-strings.php:742
+msgid "Visit this URL: {page_url} and summarize the content for me."
+msgstr "ì´ URLì„ ë°©ë¬¸í•˜ì—¬ ë‚´ìš©ì„ ìš”ì•½í•´ ì£¼ì„¸ìš”: {page_url}"
+
+#: includes/admin/class-strings.php:743
+msgid "Available variables:"
+msgstr "ì‚¬ìš© ê°€ëŠ¥í•œ ë³€ìˆ˜:"
+
+#: includes/admin/class-strings.php:744
+msgid "Reset to default"
+msgstr "ê¸°ë³¸ê°’ìœ¼ë¡œ ì´ˆê¸°í™”"
+
+#: includes/admin/class-strings.php:745
+msgid "Enable Preferred Channels"
+msgstr "ì„ í˜¸ ì±„ë„ í™œì„±í™”"
+
+#: includes/admin/class-strings.php:746
+msgid "Not found"
+msgstr "ì°¾ì„ ìˆ˜ ì—†ìŒ"
+
+#: includes/admin/class-strings.php:747
+msgid "Done"
+msgstr "ì™„ë£Œ"
+
+#: includes/admin/class-strings.php:748
+msgid "Plan"
+msgstr "ìš”ê¸ˆì œ"
+
+#: includes/admin/class-strings.php:750
+msgid "Frequently Asked Questions"
+msgstr "ìžì£¼ ë¬»ëŠ” ì§ˆë¬¸"
+
+#: includes/admin/class-strings.php:751
+msgid "official documentation"
+msgstr "ê³µì‹ ë¬¸ì„œ"
+
+#: includes/admin/class-strings.php:752
+msgid "and"
+msgstr "ë°"
+
+#: includes/admin/class-strings.php:753
+msgid "YouTube Playlist"
+msgstr "YouTube ìž¬ìƒëª©ë¡"
+
+#: includes/admin/class-strings.php:754
+msgid "customer support team"
+msgstr "ê³ ê° ì§€ì› íŒ€"
+
+#: includes/admin/class-strings.php:755
+msgid "pricing page"
+msgstr "ê°€ê²© íŽ˜ì´ì§€"
+
+#: includes/admin/class-strings.php:756
+msgid "For refunds on the premium plan, please contact our"
+msgstr "í”„ë¦¬ë¯¸ì—„ í”Œëžœ í™˜ë¶ˆì€ ë‹¹ì‚¬"
+
+#: includes/admin/class-strings.php:757
+msgid ""
+"directly. The procedure will be based on the terms of service in effect at "
+"the time of purchase."
+msgstr "ì— ì§ì ‘ ë¬¸ì˜í•˜ì‹­ì‹œì˜¤. ì ˆì°¨ëŠ” êµ¬ë§¤ ì‹œì ì— ìœ íš¨í•œ ì„œë¹„ìŠ¤ ì•½ê´€ì„ ë”°ë¦…ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:758
+msgid "Enabling dark mode on your website is easy and simple."
+msgstr "ì›¹ì‚¬ì´íŠ¸ì— ë‹¤í¬ ëª¨ë“œë¥¼ ì„¤ì •í•˜ëŠ” ê²ƒì€ ë§¤ìš° ì‰½ê³  ê°„ë‹¨í•©ë‹ˆë‹¤."
+
+#: includes/admin/class-strings.php:759
+msgid "Learn how to get started with WP Dark Mode within minutes."
+msgstr "ëª‡ ë¶„ ë§Œì— WP Dark Modeë¥¼ ì‹œìž‘í•˜ëŠ” ë°©ë²•ì„ ì•Œì•„ë³´ì„¸ìš”."
+
+#: includes/classes/class-config.php:68
+msgid "Default Light Mode"
+msgstr "ê¸°ë³¸ ë¼ì´íŠ¸ ëª¨ë“œ"
+
+#: includes/classes/class-config.php:69
+msgid ""
+"Enable this setting if you want light mode as the default mode of your "
+"site. Visitors will find the website in light mode first."
+msgstr "ì‚¬ì´íŠ¸ì˜ ê¸°ë³¸ ëª¨ë“œë¡œ ë¼ì´íŠ¸ ëª¨ë“œë¥¼ ì›í•˜ì‹œë©´ ì´ ì„¤ì •ì„ í™œì„±í™”í•˜ì„¸ìš”. ë°©ë¬¸ìžì—ê²Œ ì›¹ ì‚¬ì´íŠ¸ê°€ ì²˜ìŒ ë¼ì´íŠ¸ ëª¨ë“œë¡œ í‘œì‹œë©ë‹ˆë‹¤."
+
+#: includes/classes/class-config.php:72
+msgid "Default Dark Mode"
+msgstr "ê¸°ë³¸ ë‹¤í¬ ëª¨ë“œ"
+
+#: includes/classes/class-config.php:73
+msgid ""
+"Enable this setting if you want dark mode as the default mode of your site. "
+"Visitors will find the website in dark mode first."
+msgstr "ì‚¬ì´íŠ¸ì˜ ê¸°ë³¸ ëª¨ë“œë¡œ ë‹¤í¬ ëª¨ë“œë¥¼ ì›í•˜ì‹œë©´ ì´ ì„¤ì •ì„ í™œì„±í™”í•˜ì„¸ìš”. ë°©ë¬¸ìžì—ê²Œ ì›¹ ì‚¬ì´íŠ¸ê°€ ì²˜ìŒ ë‹¤í¬ ëª¨ë“œë¡œ í‘œì‹œë©ë‹ˆë‹¤."
+
+#: includes/classes/class-config.php:76
+msgid "Use system settings"
+msgstr "ì‹œìŠ¤í…œ ì„¤ì • ì‚¬ìš©"
+
+#: includes/classes/class-config.php:77
+msgid "Dark mode will be enabled/disabled depending on the user's device settings."
+msgstr "ì‚¬ìš©ìžì˜ ê¸°ê¸° ì„¤ì •ì— ë”°ë¼ ë‹¤í¬ ëª¨ë“œê°€ í™œì„±í™”/ë¹„í™œì„±í™”ë©ë‹ˆë‹¤."
+
+#: includes/classes/class-config.php:80
+msgid "Time based dark mode"
+msgstr "ì‹œê°„ ê¸°ë°˜ ë‹¤í¬ ëª¨ë“œ"
+
+#: includes/classes/class-config.php:81
+msgid "Automatically enable dark mode based on user's given time."
+msgstr "ì‚¬ìš©ìžê°€ ì§€ì •í•œ ì‹œê°„ì— ë”°ë¼ ìžë™ìœ¼ë¡œ ë‹¤í¬ ëª¨ë“œë¥¼ í™œì„±í™”í•©ë‹ˆë‹¤."
+
+#: includes/classes/class-config.php:84
+msgid "Sunset Mode"
+msgstr "ì¼ëª° ëª¨ë“œ"
+
+#: includes/classes/class-config.php:85
+msgid "Automatically enable dark mode at sunset based on the user's location."
+msgstr "ì‚¬ìš©ìžì˜ ìœ„ì¹˜ë¥¼ ê¸°ë°˜ìœ¼ë¡œ ì¼ëª° ì‹œ ìžë™ìœ¼ë¡œ ë‹¤í¬ ëª¨ë“œë¥¼ í™œì„±í™”í•©ë‹ˆë‹¤."
+
+#: includes/classes/class-config.php:162
+msgid "S"
+msgstr "S"
+
+#: includes/classes/class-config.php:166
+msgid "M"
+msgstr "M"
+
+#: includes/classes/class-config.php:170
+msgid "L"
+msgstr "L"
+
+#: includes/classes/class-config.php:174, includes/modules/elementor/widgets/class-elementor-widget.php:139
+msgid "XL"
+msgstr "XL"
+
+#: includes/classes/class-config.php:178
+msgid "XXL"
+msgstr "XXL"
+
+#: includes/classes/class-config.php:238
+msgid "Wobble"
+msgstr "í”ë“¤ë¦¼"
+
+#: includes/classes/class-config.php:239
+msgid "Vibrate"
+msgstr "ì§„ë™"
+
+#: includes/classes/class-config.php:240
+msgid "Flicker"
+msgstr "ê¹œë¹¡ìž„"
+
+#: includes/classes/class-config.php:241
+msgid "Shake"
+msgstr "ì‰ì´í¬"
+
+#: includes/classes/class-config.php:242
+msgid "Jello"
+msgstr "ì ¤ë¡œ"
+
+#: includes/classes/class-config.php:243
+msgid "Bounce"
+msgstr "ë°”ìš´ìŠ¤"
+
+#: includes/classes/class-config.php:244
+msgid "Heartbeat"
+msgstr "í•˜íŠ¸ë¹„íŠ¸"
+
+#: includes/classes/class-config.php:245
+msgid "Blink"
+msgstr "ë¸”ë§í¬"
+
+#: includes/classes/class-config.php:255
+msgid "Enable Dark Mode"
+msgstr "ë‹¤í¬ ëª¨ë“œ í™œì„±í™”"
+
+#: includes/classes/class-config.php:315
+msgid "Allow custom elements to toggle dark mode"
+msgstr "ë§žì¶¤ ìš”ì†Œë¡œ ì „í™˜ í—ˆìš©"
+
+#: includes/classes/class-config.php:320
+msgid "Custom Triggers List"
+msgstr "ë§žì¶¤ íŠ¸ë¦¬ê±° ëª©ë¡"
+
+#: includes/classes/class-config.php:321
+msgid "List of custom trigger configurations"
+msgstr "ë§žì¶¤ íŠ¸ë¦¬ê±° êµ¬ì„± ëª©ë¡"
+
+#: includes/classes/class-config.php:425
+msgid "Fade In"
+msgstr "íŽ˜ì´ë“œ ì¸"
+
+#: includes/classes/class-config.php:426
+msgid "Pulse"
+msgstr "íŽ„ìŠ¤"
+
+#: includes/classes/class-config.php:427
+msgid "Flip"
+msgstr "í”Œë¦½"
+
+#: includes/classes/class-config.php:428
+msgid "Roll"
+msgstr "ë¡¤"
+
+#: includes/classes/class-config.php:429
+msgid "Slide Left"
+msgstr "ì™¼ìª½ ìŠ¬ë¼ì´ë“œ"
+
+#: includes/classes/class-config.php:430
+msgid "Slide Up"
+msgstr "ìœ„ë¡œ ìŠ¬ë¼ì´ë“œ"
+
+#: includes/classes/class-config.php:431
+msgid "Slide Right"
+msgstr "ì˜¤ë¥¸ìª½ ìŠ¬ë¼ì´ë“œ"
+
+#: includes/classes/class-config.php:432
+msgid "Slide Down"
+msgstr "ì•„ëž˜ë¡œ ìŠ¬ë¼ì´ë“œ"
+
+#: includes/classes/class-config.php:450
+msgid "Best Dark Mode Performance"
+msgstr "ìµœì ì˜ ë‹¤í¬ ëª¨ë“œ ì„±ëŠ¥"
+
+#: includes/classes/class-config.php:451
+msgid ""
+"The dark mode scripts will load before the parsing and rendering of your "
+"page. Choose this option when executing dark mode is the first priority for "
+"you."
+msgstr "ë‹¤í¬ ëª¨ë“œ ìŠ¤í¬ë¦½íŠ¸ëŠ” íŽ˜ì´ì§€ ë¶„ì„ ë° ë Œë”ë§ ì „ì— ë¡œë“œë©ë‹ˆë‹¤. ë‹¤í¬ ëª¨ë“œ ì‹¤í–‰ì´ ìµœìš°ì„ ì¼ ë•Œ ì´ ì˜µì…˜ì„ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/classes/class-config.php:454
+msgid "Balanced Performance for My Website and Dark Mode"
+msgstr "ì›¹ì‚¬ì´íŠ¸ì™€ ë‹¤í¬ ëª¨ë“œì˜ ê· í˜• ìž¡ížŒ ì„±ëŠ¥"
+
+#: includes/classes/class-config.php:455
+msgid ""
+"The dark mode scripts will be executed at the same time as your page. "
+"Choose this option to get a moderate dark mode loading time without "
+"compromising website loading speed."
+msgstr ""
+"ë‹¤í¬ ëª¨ë“œ ìŠ¤í¬ë¦½íŠ¸ëŠ” íŽ˜ì´ì§€ì™€ ë™ì‹œì— ì‹¤í–‰ë©ë‹ˆë‹¤. ì›¹ì‚¬ì´íŠ¸ ë¡œë”© ì†ë„ë¥¼ ì†ìƒì‹œí‚¤ì§€ ì•Šìœ¼ë©´ì„œ ì ë‹¹í•œ ë‹¤í¬ ëª¨ë“œ ë¡œë”© ì‹œê°„ì„ ì–»ìœ¼ë ¤ë©´ ì´ "
+"ì˜µì…˜ì„ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/classes/class-config.php:458
+msgid "Prioritize My Website Loading"
+msgstr "ì›¹ì‚¬ì´íŠ¸ ë¡œë”© ìš°ì„ ìˆœìœ„ ì§€ì •"
+
+#: includes/classes/class-config.php:459
+msgid ""
+"The dark mode script will be fetched asynchronously and executed after page "
+"parsing, just before the \"DOMContentLoaded\" event. Choose this option if "
+"your focus is on optimizing your website's performance over the WP Dark "
+"Mode."
+msgstr ""
+"ë‹¤í¬ ëª¨ë“œ ìŠ¤í¬ë¦½íŠ¸ëŠ” ë¹„ë™ê¸°ì ìœ¼ë¡œ ê°€ì ¸ì™€ íŽ˜ì´ì§€ ë¶„ì„ í›„ ì‹¤í–‰ë©ë‹ˆë‹¤. WP Dark Modeë³´ë‹¤ ì›¹ì‚¬ì´íŠ¸ ì„±ëŠ¥ ìµœì í™”ì— ì¤‘ì ì„ ë‘ëŠ” "
+"ê²½ìš° ì´ ì˜µì…˜ì„ ì„ íƒí•˜ì„¸ìš”."
+
+#: includes/classes/class-config.php:571
+msgid "Daily"
+msgstr "ë§¤ì¼"
+
+#: includes/classes/class-config.php:572
+msgid "Weekly"
+msgstr "ë§¤ì£¼"
+
+#: includes/classes/class-config.php:573
+msgid "Bi-Weekly"
+msgstr "ê²©ì£¼"
+
+#: includes/classes/class-config.php:574
+msgid "Monthly"
+msgstr "ë§¤ì›”"
+
+#: includes/classes/class-config.php:575
+msgid "Quarterly"
+msgstr "ë¶„ê¸°ë³„"
+
+#: includes/classes/class-config.php:576
+msgid "Yearly"
+msgstr "ë§¤ë…„"
+
+#: includes/classes/class-config.php:586
+msgid "WP Dark Mode Analytics Report"
+msgstr "WP ë‹¤í¬ ëª¨ë“œ ë¶„ì„ ë³´ê³ ì„œ"
+
+#: includes/models/class-visitor.php:97
+msgid "Failed to insert visitor data."
+msgstr "ë°©ë¬¸ìž ë°ì´í„° ì‚½ìž…ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤."
+
+#: includes/models/class-visitor.php:118
+msgid "Failed to update visitor data."
+msgstr "ë°©ë¬¸ìž ë°ì´í„° ì—…ë°ì´íŠ¸ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤."
+
+#: includes/modules/class-shortcode.php:82
+msgid "Dark Mode Settings"
+msgstr "ë‹¤í¬ ëª¨ë“œ ì„¤ì •"
+
+#: includes/modules/class-shortcode.php:82, src/gutenberg/block/index.js:36
+msgid "Dark Mode Toggle"
+msgstr "ë‹¤í¬ ëª¨ë“œ ì „í™˜"
+
+#: includes/modules/elementor/widgets/class-elementor-widget.php:50, includes/modules/elementor/widgets/class-elementor-widget.php:104, src/gutenberg/block/index.js:9
+msgid "Dark Mode Switch"
+msgstr "ë‹¤í¬ ëª¨ë“œ ìŠ¤ìœ„ì¹˜"
+
+#: includes/modules/elementor/widgets/class-elementor-widget.php:113, src/gutenberg/block/DarkModeSwitchEditor.js:29
+msgid "Switch Style"
+msgstr "ìŠ¤ìœ„ì¹˜ ìŠ¤íƒ€ì¼"
+
+#: includes/modules/elementor/widgets/class-elementor-widget.php:133, src/gutenberg/block/DarkModeSwitchEditor.js:37
+msgid "Switch Size"
+msgstr "ìŠ¤ìœ„ì¹˜ í¬ê¸°"
+
+#: includes/modules/elementor/widgets/class-elementor-widget.php:136
+msgid "XS"
+msgstr "XS"
+
+#: includes/modules/elementor/widgets/class-elementor-widget.php:137
+msgid "SM"
+msgstr "SM"
+
+#: includes/modules/elementor/widgets/class-elementor-widget.php:138
+msgid "MD"
+msgstr "MD"
+
+#: includes/modules/elementor/widgets/class-elementor-widget.php:140
+msgid "2XL"
+msgstr "2XL"
+
+#: includes/modules/elementor/widgets/class-elementor-widget.php:141
+msgid "3XL"
+msgstr "3XL"
+
+#: includes/modules/elementor/widgets/class-elementor-widget.php:150
+msgid "Alignment"
+msgstr "ì •ë ¬"
+
+#: includes/modules/social-share/class-social-share.php:462
+msgid "Social Share - WP Dark Mode"
+msgstr "ì†Œì…œ ê³µìœ  - WP Dark Mode"
+
+#: includes/modules/social-share/class-social-share.php:641
+msgid "Invalid security key"
+msgstr "ìœ íš¨í•˜ì§€ ì•Šì€ ë³´ì•ˆ í‚¤"
+
+#: includes/modules/social-share/class-social-share.php:646
+msgid "Permission denied"
+msgstr "ê¶Œí•œ ê±°ë¶€ë¨"
+
+#: includes/modules/social-share/class-social-share.php:827
+msgid "Invalid permission"
+msgstr "ìœ íš¨í•˜ì§€ ì•Šì€ ê¶Œí•œ"
+
+#: includes/modules/social-share/class-social-share.php:834
+msgid "Invalid channel"
+msgstr "ìœ íš¨í•˜ì§€ ì•Šì€ ì±„ë„"
+
+#: includes/modules/social-share/class-social-share.php:868
+msgid "Something went wrong"
+msgstr "ë¬¸ì œê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤."
+
+#: includes/wppool/class-plugin.php:329
+msgid "Deal Ends In"
+msgstr "ë”œ ì¢…ë£Œê¹Œì§€"
+
+#: includes/wppool/class-plugin.php:334, includes/wppool/class-plugin.php:343, includes/wppool/class-plugin.php:352, includes/wppool/class-plugin.php:361
+msgid "00"
+msgstr "00"
+
+#: includes/wppool/class-plugin.php:337
+msgid "Days"
+msgstr "ì¼"
+
+#: includes/wppool/class-plugin.php:346
+msgid "Hours"
+msgstr "ì‹œê°„"
+
+#: includes/wppool/class-plugin.php:355
+msgid "Minutes"
+msgstr "ë¶„"
+
+#: includes/wppool/class-plugin.php:364
+msgid "Seconds"
+msgstr "ì´ˆ"
+
+#: includes/wppool/class-plugin.php:375
+msgid "Try a free demo"
+msgstr "ë¬´ë£Œ ë°ëª¨ ì²´í—˜"
+
+#: templates/admin/upgrade-popup.php:54
+msgid "Black Friday & Cyber Monday"
+msgstr "ë¸”ëž™ í”„ë¼ì´ë°ì´ ë° ì‚¬ì´ë²„ ë¨¼ë°ì´"
+
+#: templates/admin/upgrade-popup.php:54
+msgid "Unlock all the features"
+msgstr "ëª¨ë“  ê¸°ëŠ¥ ìž ê¸ˆ í•´ì œ"
+
+#: templates/admin/upgrade-popup.php:57
+msgid "Flash Sale"
+msgstr "í”Œëž˜ì‹œ ì„¸ì¼"
+
+#: templates/admin/upgrade-popup.php:57
+msgid "SPECIAL"
+msgstr "íŠ¹ë³„"
+
+#: templates/admin/upgrade-popup.php:64
+msgid "DAYS"
+msgstr "ì¼"
+
+#: templates/admin/upgrade-popup.php:68
+msgid "HOURS"
+msgstr "ì‹œê°„"
+
+#: templates/admin/upgrade-popup.php:72
+msgid "MINUTES"
+msgstr "ë¶„"
+
+#: templates/admin/upgrade-popup.php:76
+msgid "SECONDS"
+msgstr "ì´ˆ"
+
+#: templates/admin/upgrade-popup.php:80
+msgid "Claim 50% Discount"
+msgstr "50% í• ì¸ ìš”ì²­"
+
+#: templates/frontend/social-share.php:209
+msgid "Share via:"
+msgstr "ê³µìœ  ë°©ë²•:"
+
+#: includes/admin/class-strings.php:763
+msgid "What's New"
+msgstr "ìƒˆë¡œìš´ ê¸°ëŠ¥"
+
+#: templates/admin/upgrade-popup.php:82
+msgid "Try a FREE demo"
+msgstr "ë¬´ë£Œ ë°ëª¨ ì‹œë„"
+
+#: templates/admin/upgrade-popup.php:58
+msgid "%1$s%2$s OFF"
+msgstr "%1$s%2$s í• ì¸"
+
+#: templates/admin/upgrade-popup.php:80
+msgid "Claim %1$s%2$s Discount"
+msgstr "%1$s%2$s í• ì¸ ë°›ê¸°"
+
+#: includes/admin/class-strings.php:27
+msgid "Sweet Dark"
+msgstr "ìŠ¤ìœ„íŠ¸ ë‹¤í¬"
+
+#: includes/admin/class-strings.php:28
+msgid "Gold"
+msgstr "ê³¨ë“œ"
+
+#: includes/admin/class-strings.php:29
+msgid "Sapphire"
+msgstr "ì‚¬íŒŒì´ì–´"
+
+#: includes/admin/class-strings.php:30
+msgid "Tailwind"
+msgstr "Tailwind"
+
+#: includes/admin/class-strings.php:31
+msgid "Midnight Bloom"
+msgstr "ë¯¸ë“œë‚˜ìž‡ ë¸”ë£¸"
+
+#: includes/admin/class-strings.php:32
+msgid "Fuchsia"
+msgstr "í“¨ì‹œì•„"
+
+#: includes/admin/class-strings.php:33
+msgid "Rose"
+msgstr "ë¡œì¦ˆ"
+
+#: includes/admin/class-strings.php:34
+msgid "Violet"
+msgstr "ë°”ì´ì˜¤ë ›"
+
+#: includes/admin/class-strings.php:35
+msgid "Pink"
+msgstr "í•‘í¬"
+
+#: includes/admin/class-strings.php:36
+msgid "Kelly"
+msgstr "ì¼ˆë¦¬"
+
+#: includes/admin/class-strings.php:37
+msgid "Magenta"
+msgstr "ë§ˆì  íƒ€"
+
+#: includes/admin/class-strings.php:38
+msgid "Green"
+msgstr "ê·¸ë¦°"
+
+#: includes/admin/class-strings.php:39
+msgid "Orange"
+msgstr "ì˜¤ë Œì§€"
+
+#: includes/admin/class-strings.php:40
+msgid "Yellow"
+msgstr "ì˜ë¡œìš°"
+
+#: includes/admin/class-strings.php:41
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/admin/class-strings.php:42
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/admin/class-strings.php:783
+msgid "Last 24 Hours"
+msgstr "ì§€ë‚œ 24ì‹œê°„"
+
+#: includes/admin/class-strings.php:784
+msgid "Last 7 Days"
+msgstr "ì§€ë‚œ 7ì¼"
+
+#: includes/admin/class-strings.php:785
+msgid "Last 30 Days"
+msgstr "ì§€ë‚œ 30ì¼"
+
+#: includes/admin/class-strings.php:786
+msgid "Last 1 Year"
+msgstr "ì§€ë‚œ 1ë…„"
+
+#: includes/admin/class-strings.php:787
+msgid "Dark Mode Users"
+msgstr "ë‹¤í¬ ëª¨ë“œ ì‚¬ìš©ìž"
+
+#: includes/admin/class-strings.php:788
+msgid "Total Visitors"
+msgstr "ì´ ë°©ë¬¸ìž"
+
+#: includes/admin/class-strings.php:789
+msgid "12 AM"
+msgstr "ì˜¤ì „ 12ì‹œ"
+
+#: includes/admin/class-strings.php:790
+msgid "1 AM"
+msgstr "ì˜¤ì „ 1ì‹œ"
+
+#: includes/admin/class-strings.php:791
+msgid "2 AM"
+msgstr "ì˜¤ì „ 2ì‹œ"
+
+#: includes/admin/class-strings.php:792
+msgid "3 AM"
+msgstr "ì˜¤ì „ 3ì‹œ"
+
+#: includes/admin/class-strings.php:793
+msgid "4 AM"
+msgstr "ì˜¤ì „ 4ì‹œ"
+
+#: includes/admin/class-strings.php:794
+msgid "5 AM"
+msgstr "ì˜¤ì „ 5ì‹œ"
+
+#: includes/admin/class-strings.php:795
+msgid "6 AM"
+msgstr "ì˜¤ì „ 6ì‹œ"
+
+#: includes/admin/class-strings.php:796
+msgid "7 AM"
+msgstr "ì˜¤ì „ 7ì‹œ"
+
+#: includes/admin/class-strings.php:797
+msgid "8 AM"
+msgstr "ì˜¤ì „ 8ì‹œ"
+
+#: includes/admin/class-strings.php:798
+msgid "9 AM"
+msgstr "ì˜¤ì „ 9ì‹œ"
+
+#: includes/admin/class-strings.php:799
+msgid "10 AM"
+msgstr "ì˜¤ì „ 10ì‹œ"
+
+#: includes/admin/class-strings.php:800
+msgid "11 AM"
+msgstr "ì˜¤ì „ 11ì‹œ"
+
+#: includes/admin/class-strings.php:801
+msgid "12 PM"
+msgstr "ì˜¤í›„ 12ì‹œ"
+
+#: includes/admin/class-strings.php:802
+msgid "1 PM"
+msgstr "ì˜¤í›„ 1ì‹œ"
+
+#: includes/admin/class-strings.php:803
+msgid "2 PM"
+msgstr "ì˜¤í›„ 2ì‹œ"
+
+#: includes/admin/class-strings.php:804
+msgid "3 PM"
+msgstr "ì˜¤í›„ 3ì‹œ"
+
+#: includes/admin/class-strings.php:805
+msgid "4 PM"
+msgstr "ì˜¤í›„ 4ì‹œ"
+
+#: includes/admin/class-strings.php:806
+msgid "5 PM"
+msgstr "ì˜¤í›„ 5ì‹œ"
+
+#: includes/admin/class-strings.php:807
+msgid "6 PM"
+msgstr "ì˜¤í›„ 6ì‹œ"
+
+#: includes/admin/class-strings.php:808
+msgid "7 PM"
+msgstr "ì˜¤í›„ 7ì‹œ"
+
+#: includes/admin/class-strings.php:809
+msgid "8 PM"
+msgstr "ì˜¤í›„ 8ì‹œ"
+
+#: includes/admin/class-strings.php:810
+msgid "9 PM"
+msgstr "ì˜¤í›„ 9ì‹œ"
+
+#: includes/admin/class-strings.php:811
+msgid "10 PM"
+msgstr "ì˜¤í›„ 10ì‹œ"
+
+#: includes/admin/class-strings.php:812
+msgid "11 PM"
+msgstr "ì˜¤í›„ 11ì‹œ"
+
+#: includes/admin/class-strings.php:813
+msgid "Sun"
+msgstr "ì¼"
+
+#: includes/admin/class-strings.php:814
+msgid "Mon"
+msgstr "ì›”"
+
+#: includes/admin/class-strings.php:815
+msgid "Tue"
+msgstr "í™”"
+
+#: includes/admin/class-strings.php:816
+msgid "Wed"
+msgstr "ìˆ˜"
+
+#: includes/admin/class-strings.php:817
+msgid "Thu"
+msgstr "ëª©"
+
+#: includes/admin/class-strings.php:818
+msgid "Fri"
+msgstr "ê¸ˆ"
+
+#: includes/admin/class-strings.php:819
+msgid "Sat"
+msgstr "í† "
+
+#: includes/admin/class-strings.php:820
+msgid "Jan"
+msgstr "1ì›”"
+
+#: includes/admin/class-strings.php:821
+msgid "Feb"
+msgstr "2ì›”"
+
+#: includes/admin/class-strings.php:822
+msgid "Mar"
+msgstr "3ì›”"
+
+#: includes/admin/class-strings.php:823
+msgid "Apr"
+msgstr "4ì›”"
+
+#: includes/admin/class-strings.php:824
+msgid "May"
+msgstr "5ì›”"
+
+#: includes/admin/class-strings.php:825
+msgid "Jun"
+msgstr "6ì›”"
+
+#: includes/admin/class-strings.php:826
+msgid "Jul"
+msgstr "7ì›”"
+
+#: includes/admin/class-strings.php:827
+msgid "Aug"
+msgstr "8ì›”"
+
+#: includes/admin/class-strings.php:828
+msgid "Sep"
+msgstr "9ì›”"
+
+#: includes/admin/class-strings.php:829
+msgid "Oct"
+msgstr "10ì›”"
+
+#: includes/admin/class-strings.php:830
+msgid "Nov"
+msgstr "11ì›”"
+
+#: includes/admin/class-strings.php:831
+msgid "Dec"
+msgstr "12ì›”"
+
+#: includes/admin/class-strings.php:836
+msgid "No results found"
+msgstr "ê²€ìƒ‰ ê²°ê³¼ê°€ ì—†ìŠµë‹ˆë‹¤"
+
+
+#: includes/admin/class-strings.php:837
+msgid "No results found for \"{search}\""
+msgstr "\"{search}\"ì— ëŒ€í•œ ê²€ìƒ‰ ê²°ê³¼ê°€ ì—†ìŠµë‹ˆë‹¤"

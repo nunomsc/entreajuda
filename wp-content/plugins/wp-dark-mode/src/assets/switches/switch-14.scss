@@ -1,0 +1,24 @@
+@use '_global' as *;
+
+.wp-dark-mode-switch-14 {
+    @extend .wp-dark-mode-switch-special;
+
+    @mixin _active {
+        background-color: rgba(30, 58, 138, 1) !important;
+    }
+
+    // &.active {
+    //     ._scheme {
+    //         @include _active();
+    //     }
+    // }
+
+    ._scheme.active {
+        @include _active();
+    }
+    
+    ._font.active {
+        @include _active();
+    }
+
+}

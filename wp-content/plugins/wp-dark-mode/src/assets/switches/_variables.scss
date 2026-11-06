@@ -1,0 +1,17 @@
+$switchScale: var(--wpdm-switch-scale, 1);
+@function scaled($value) {
+    @return calc( $value * $switchScale );
+}
+
+$switchHeight: scaled( 34px );
+$switchWidth: scaled( 75px );
+$switchSpace: scaled( 2px );
+$switchRadius: scaled( 15px );
+$switchTransition: .3s ease-in-out;
+
+
+// create a function that takes two args and return a string
+@function move_right($width : 100%, $space : $switchSpace) {
+    @return translate( calc($width - (50% - $space * 2) - ( $space * 2)), -50% );
+}
+

@@ -1,0 +1,5 @@
+@use '_global' as *;
+
+.wp-dark-mode-switch-16 {
+    @extend .wp-dark-mode-switch-special;
+}

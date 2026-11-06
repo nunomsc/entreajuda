@@ -1,0 +1,24 @@
+@use 'variables' as *;
+@use 'switch-7' as *;
+
+
+.wp-dark-mode-switch-12 {
+    @extend .wp-dark-mode-switch-7;
+
+    ._track {
+        background-color: linear-gradient(97.13deg, #2B3CCC 15.81%, rgba(71, 131, 236, 0.32) 82.31%),
+        linear-gradient(88.44deg, #653FDF 0.97%, #32B1F4 98.68%),
+        linear-gradient(0deg, #FFFFFF, #FFFFFF) !important;
+        ._thumb {
+            @apply shadow-none;
+        }
+    }
+
+    &.active {
+        ._track {
+            background: linear-gradient(97.13deg, #2B3CCC 15.81%, rgba(71, 131, 236, 0.32) 82.31%),
+        linear-gradient(88.44deg, #653FDF 0.97%, #32B1F4 98.68%),
+        linear-gradient(0deg, #FFFFFF, #FFFFFF) !important;
+        }
+    }
+}  

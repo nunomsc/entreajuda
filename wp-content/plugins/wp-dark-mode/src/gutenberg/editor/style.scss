@@ -1,0 +1,35 @@
+// _globals.scss or themes.scss
+@use './themes/darkmode' as darkmode;
+@use './themes/chathams' as chathams;
+@use './themes/pumpkin' as pumpkin;
+@use './themes/mustard' as mustard;
+@use './themes/concord' as concord;
+@use './themes/common' as common;
+
+
+// Your main SCSS file or specific styles for theme application
+
+// Apply Darkmode theme
+html.wp-dark-mode-theme-darkmode {
+  @include darkmode.darkmode-theme;
+}
+
+// Apply Chathams theme
+html.wp-dark-mode-theme-chathams {
+  @include chathams.chatham-theme;
+}
+
+// Apply Pumpkin theme
+html.wp-dark-mode-theme-pumpkin {
+  @include pumpkin.pumpkin-theme;
+}
+
+// Apply Mustard theme
+html.wp-dark-mode-theme-mustard {
+  @include mustard.mustard-theme;
+}
+
+// Apply Concord theme
+html.wp-dark-mode-theme-concord {
+  @include concord.concord-theme;
+}

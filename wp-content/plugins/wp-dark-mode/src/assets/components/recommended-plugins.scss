@@ -1,0 +1,28 @@
+.recommended-plugins {
+  .the-list,
+  .plugin-items {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .plugin-card {
+    float: none;
+    width: auto;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 782px) {
+    .the-list,
+    .plugin-items {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .the-list,
+    .plugin-items {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}

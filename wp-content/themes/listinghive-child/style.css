@@ -1,0 +1,300 @@
+/**
+ * Theme Name: ListingHive Child   
+ * Description: ListingHive theme
+ * Author: Nuno Cordeiro
+ * Template: ListingHive
+ * Text Domain: listinghive
+ */
+
+ /* Botão de alternância: funciona nos dois modos. */
+button.ej-theme-toggle {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    padding: 10px 16px;
+    border: 1px solid #0f766e;
+    border-radius: 24px;
+    background: #0f766e;
+    background-image: none;
+    color: #fff;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgb(0 0 0 / 20%);
+}
+
+button.ej-theme-toggle[hidden] {
+    display: none;
+}
+
+button.ej-theme-toggle:focus-visible {
+    outline: 3px solid #5eead4;
+    outline-offset: 3px;
+}
+
+/* Paleta do modo escuro. */
+html[data-ej-theme="dark"] {
+    color-scheme: dark;
+    --ej-bg: #111827;
+    --ej-surface: #1f2937;
+    --ej-border: #374151;
+    --ej-heading: #f3f4f6;
+    --ej-text: #cbd5e1;
+    --ej-link: #5eead4;
+}
+
+/* Fundo e texto geral. */
+html[data-ej-theme="dark"] body,
+html[data-ej-theme="dark"] .site-content {
+    background-color: var(--ej-bg);
+    color: var(--ej-text);
+}
+
+html[data-ej-theme="dark"] .site-header,
+html[data-ej-theme="dark"] .site-footer {
+    background-color: var(--ej-surface);
+    color: var(--ej-text);
+    border-color: var(--ej-border);
+}
+
+html[data-ej-theme="dark"] :is(h1, h2, h3, h4, h5, h6),
+html[data-ej-theme="dark"] .site-title a {
+    color: var(--ej-heading);
+}
+
+html[data-ej-theme="dark"] a {
+    color: var(--ej-link);
+}
+
+html[data-ej-theme="dark"] a:hover {
+    color: #99f6e4;
+}
+
+/* Cartões, pesquisa e painéis. */
+html[data-ej-theme="dark"] :is(
+    .hp-listing--view-block,
+    .hp-listing-category__content,
+    .hp-listing__attributes--primary,
+    .hp-form--listing-search,
+    .hp-widget,
+    .widget,
+    .hp-modal
+) {
+    background-color: var(--ej-surface) !important;
+    color: var(--ej-text);
+    border-color: var(--ej-border) !important;
+}
+
+html[data-ej-theme="dark"] :is(
+    .hp-listing__header,
+    .hp-listing__content,
+    .hp-listing__footer
+) {
+    border-color: var(--ej-border);
+}
+
+html[data-ej-theme="dark"] :is(
+    .hp-listing__title a,
+    .hp-listing-category__name,
+    .hp-listing-category__name a
+) {
+    color: var(--ej-heading) !important;
+}
+
+html[data-ej-theme="dark"] :is(
+    .site-description,
+    .hp-meta,
+    .hp-listing__details,
+    .hp-field__label,
+    .hp-field__description
+) {
+    color: var(--ej-text);
+}
+
+/* Etiquetas de categoria. */
+html[data-ej-theme="dark"] .hp-listing__categories a {
+    background: #374151;
+    color: #e2e8f0;
+}
+
+html[data-ej-theme="dark"] .hp-listing__categories a:hover {
+    background: #0f766e;
+    color: #fff;
+}
+
+/* Campos dos formulários. */
+html[data-ej-theme="dark"] :is(
+    input:not([type="checkbox"]):not([type="radio"])
+         :not([type="submit"]):not([type="button"]):not([type="hidden"]),
+    textarea,
+    select,
+    .select2-container .select2-selection
+) {
+    background-color: var(--ej-bg);
+    color: var(--ej-heading);
+    border-color: var(--ej-border);
+}
+
+html[data-ej-theme="dark"] input::placeholder,
+html[data-ej-theme="dark"] textarea::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+html[data-ej-theme="dark"] .select2-dropdown {
+    background: var(--ej-surface);
+    color: var(--ej-heading);
+    border-color: var(--ej-border);
+}
+
+html[data-ej-theme="dark"]
+.select2-container--default .select2-selection__rendered {
+    color: var(--ej-heading);
+}
+
+/* Botões principais. */
+html[data-ej-theme="dark"] :is(
+    .hp-form__button,
+    .hp-menu__item--listing-submit .button,
+    input[type="submit"],
+    .ej-theme-toggle
+) {
+    background: #0f766e !important;
+    color: #fff !important;
+    border-color: #0f766e !important;
+}
+
+/* Não inverter nem escurecer fotografias e ilustrações. */
+html[data-ej-theme="dark"] :is(
+    .hp-listing__image img,
+    .hp-listing-category__image img
+) {
+    filter: none;
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    button.ej-theme-toggle {
+        right: 12px;
+        bottom: 12px;
+        padding: 9px 12px;
+    }
+}
+
+/* Cabeçalho e rodapé no modo escuro */
+html[data-ej-theme="dark"] .site-header,
+html[data-ej-theme="dark"] .site-footer {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+/* Nome do site e respetiva descrição */
+html[data-ej-theme="dark"] .header-logo,
+html[data-ej-theme="dark"] .header-logo a,
+html[data-ej-theme="dark"] .header-logo__name {
+    color: #f3f4f6 !important;
+}
+
+html[data-ej-theme="dark"] .header-logo__description {
+    color: #cbd5e1 !important;
+}
+
+/* Navegação e ícones */
+html[data-ej-theme="dark"] .site-header nav a,
+html[data-ej-theme="dark"] .site-footer a,
+html[data-ej-theme="dark"] .site-header .hp-icon {
+    color: #cbd5e1 !important;
+}
+
+html[data-ej-theme="dark"] .site-header nav a:hover,
+html[data-ej-theme="dark"] .site-footer a:hover {
+    color: #5eead4 !important;
+}
+
+/* Submenus, incluindo o menu da conta */
+html[data-ej-theme="dark"] .site-header .sub-menu {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+/* Campos de texto e número */
+html[data-ej-theme="dark"] input.hp-field:not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="hidden"]):not([type="submit"]):not([type="button"]) {
+    background: #111827;
+    color: #f3f4f6;
+    border: 1px solid #374151;
+}
+
+/* Botões secundários, incluindo selecionar imagens */
+html[data-ej-theme="dark"] button.hp-field--button {
+    background: #374151;
+    color: #f3f4f6;
+    border-color: #4b5563;
+}
+
+/* Cartão do prestador */
+html[data-ej-theme="dark"] .hp-vendor--view-block {
+    background: #1f2937;
+    color: #cbd5e1;
+    border-color: #374151;
+}
+
+html[data-ej-theme="dark"] .hp-vendor__footer {
+    border-color: #374151;
+}
+
+html[data-ej-theme="dark"] .hp-vendor__name a {
+    color: #f3f4f6;
+}
+
+/* Mensagens recebidas */
+html[data-ej-theme="dark"] .hp-message--view-block {
+    background: #1f2937;
+    color: #f3f4f6;
+}
+
+/* Mensagens enviadas */
+html[data-ej-theme="dark"] .hp-message--sent {
+    background: #134e4a;
+}
+
+/* Retirar as pequenas setas com as cores antigas */
+html[data-ej-theme="dark"] .hp-message--view-block::before,
+html[data-ej-theme="dark"] .hp-message--view-block::after {
+    display: none;
+}
+
+html[data-ej-theme="dark"] .hp-message__sender,
+html[data-ej-theme="dark"] .hp-message__text {
+    color: #f3f4f6;
+}
+
+html[data-ej-theme="dark"] .hp-message__date {
+    color: #cbd5e1;
+}
+
+/* Ícones de contacto */
+html[data-ej-theme="dark"] .hp-listing__actions .hp-icon,
+html[data-ej-theme="dark"] .hp-vendor__actions .hp-icon {
+    color: #5eead4;
+}
+
+/* Separador ativo e seleção dos filtros */
+html[data-ej-theme="dark"] .hp-menu__item--current > a {
+    color: #5eead4 !important;
+}
+
+html[data-ej-theme="dark"]
+.select2-container--default
+.select2-results__option--highlighted[aria-selected] {
+    background: #0f766e;
+    color: #fff;
+}
+
+html[data-ej-theme="dark"] .hp-icon.fa-edit {
+   color: #5eead4;
+}
+
+html[data-ej-theme="dark"] .hp-listing-category__item-count {
+   background-color: rgba(7, 36, 86, 0.085);
+}

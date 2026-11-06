@@ -1,0 +1,245 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+@use './switches/switches.scss';
+@use './components/upgrade-popup.scss';
+@use './components/dashboard-widget.scss';
+@use './components/notices.scss';
+@use './components/get-started.scss';
+@use './components/recommended-plugins.scss';
+@use './../gutenberg/style.scss';
+
+.wp-dark-mode-admin-switches {
+    @apply flex items-center gap-2 flex-wrap;
+
+    .wp-dark-mode-switch-item {
+        @apply flex items-center w-32 h-32 justify-center gap-2 p-0 border border-gray-300 rounded-lg cursor-pointer bg-red-600;
+    }
+}
+
+.wp-dark-mode-admin-bar-switch {
+    .ab-item {
+
+        @apply text-gray-700;
+        @apply flex cursor-pointer items-center justify-center #{!important};
+
+        &:hover {
+            @apply bg-transparent opacity-100 #{!important};
+        }
+
+        ._track {
+            @apply flex items-center relative justify-between w-24 bg-gray-600 rounded-full h-7 #{!important};
+
+            &>span {
+                @apply w-1/2 text-xs text-center flex items-center justify-center z-10 #{!important};
+
+                &:first-child {
+                    @apply text-gray-600 #{!important};
+                }
+
+                &:last-child {
+                    @apply text-white #{!important};
+                }
+            }
+
+            ._thumb {
+                @apply top-0.5 transform translate-x-0.5 flex items-center justify-center z-0 w-1/2 absolute bg-white rounded-full transition duration-100 h-6 #{!important};
+            }
+        }
+
+        .active {
+            ._track {
+                &>span {
+
+                    &:nth-child(2) {
+                        @apply text-slate-500 hover:text-slate-500 #{!important};
+                    }
+
+                    &:first-child {
+                        @apply text-white hover:text-white #{!important};
+                    }
+                }
+
+                ._thumb {
+                    transform: translateX(calc(100% - 2.5px)) !important;
+                }
+            }
+        }
+
+    }
+}
+
+
+.wp-dark-mode-switches-panel {
+
+    @apply flex flex-col gap-3 w-full;
+
+    .label {
+        @apply text-gray-600;
+    }
+
+    .wp-dark-mode-switches {
+        @apply grid w-full relative items-center justify-between gap-3 border border-gray-200 rounded-lg;
+
+        &.cols-1 {
+            @apply grid-cols-1;
+        }
+
+        &.cols-2 {
+            @apply grid-cols-2;
+        }
+
+        &.cols-3 {
+            @apply grid-cols-3;
+        }
+
+        &.cols-4 {
+            @apply grid-cols-4;
+        }
+
+        &-item {
+            @apply cursor-pointer relative hover:bg-gray-100 transition duration-100 h-24 flex items-center justify-center bg-gray-50 border-transparent rounded-lg #{!important};
+
+            border-width: 4px !important;
+            border-style: solid !important;
+
+            &.active {
+                border-color: #5aa5e2 !important;
+            }
+
+            &.disabled {
+                >*:not(.wp-dark-mode-switches-item-lock) {
+                    @apply opacity-50 cursor-not-allowed;
+                }
+            }
+
+            &-lock {
+                @apply absolute top-0 left-0 w-full h-full flex items-start justify-end text-gray-500;
+            }
+
+            input {
+                @apply sr-only;
+            }
+
+            img {
+                @apply max-w-full max-h-full pointer-events-none;
+            }
+
+            &-new {
+                @apply absolute right-2 top-2 inline-flex items-center justify-center py-px px-3 font-medium rounded-full bg-emerald-500 text-white absolute right-2 top-2;
+            }
+        }
+    }
+}
+
+.pointer-events-none {
+    pointer-events: none !important;
+}
+
+html.wp-dark-mode-theme-darkmode {
+    .wp-dark-mode-switches-panel .wp-dark-mode-switches-item {
+        background-color: #222 !important;
+    }
+
+    .wp-dark-mode-switches-panel .wp-dark-mode-switches-item.active {
+        background-color: #333 !important;
+    }
+}
+
+
+._wp-dark-mode-elementor {
+    &-switches {
+        @apply grid grid-cols-2 gap-3;
+        &-item {
+
+            input {
+                @apply sr-only;
+            }
+
+            label {
+                @apply flex items-center border-4 inset-0 border-solid border-transparent gap-2 justify-center transition cursor-pointer w-full h-full bg-white p-3 rounded-lg;
+            }
+
+            // When input is checked
+            input:checked + label {
+                @apply bg-slate-200 text-white border-blue-400 #{!important};
+            }
+
+            &.wp-dark-mode-locked {
+                @apply opacity-50 ;
+            }
+        }
+    }
+}
+
+html[data-wp-dark-mode-active] {
+    // @apply scrollbar-w-20 scrollbar scrollbar-thumb-slate-700 scrollbar-track-slate-300 overflow-y-scroll;
+    
+    &::-webkit-scrollbar {
+        @apply w-3.5;
+    }
+    &::-webkit-scrollbar-track {
+    @apply bg-transparent rounded;
+    }
+    &::-webkit-scrollbar-thumb {
+     @apply bg-gray-500 rounded hover:bg-gray-600 transition duration-100;   
+    }
+
+    .darkmode {
+        @apply bg-[#333] text-white ;
+        *:not(a), table * {
+            @apply text-white;
+        }
+        a {
+            @apply text-white hover:text-slate-200 transition;
+        }
+        input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), textarea {
+            @apply bg-[#333] text-white border-gray-600;
+        }
+    }
+
+    // Jetpack 
+    .jpcrm-admin {
+
+        .jpcrm-button {
+            &.transparent-bg, &.white-bg {
+                @apply hover:text-white hover:bg-[#333] #{!important};
+            }
+        }
+
+        .jpcrm-dashcount-card,  {
+            @extend .darkmode;
+        }
+        #jpcrm-first-use-dash {
+            .jpcrm-modal-footer { 
+                @extend .darkmode;
+            }
+        } 
+    }
+
+    
+
+}
+
+
+
+.wp-dark-mode-new-badge {
+    @apply absolute right-1 top-1 inline-flex items-center justify-center py-px px-3 font-medium rounded-full bg-emerald-500 text-white;
+    font-size: 12px !important;
+  }
+
+.wp-dark-mode-new-badge--compact {
+    @apply py-0 px-2;
+    font-size: 11px !important;
+}
+
+@media screen and (max-width: 782px) {
+    #wp-toolbar>ul>li.wp-dark-mode-admin-bar-switch {
+        display: flex !important;
+    }
+}
+
+// [data-wp-dark-mode-active] .wp-dark-mode-ignore  {
+//     fill: #fff !important;
+// }

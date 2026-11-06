@@ -1,0 +1,87 @@
+/* Themify's `layout`/`sprite` field renders a compact icon-picker grid by default (built for
+   small UI icons like the Icon module's size/shape pickers), which packs our much larger switch
+   preview SVGs into cramped auto-width tiles laid out in one long horizontal run. Override to
+   the same roomy 2-per-row grid used by the Elementor/WPBakery/SiteOrigin switch pickers.
+
+   Themify's own editor stylesheet also targets `.tfl-icon` and can load after this file, so
+   equal specificity would lose the cascade. Scoping through `.tb_input` and marking the
+   layout-critical declarations `!important` is what actually holds the grid. These rules are
+   duplicated in `active.js`, which injects them into the parent document for the frontend
+   builder — keep the two in sync. */
+.tb_field.style .tb_input .themify-layout-icon {
+	display: grid !important;
+	grid-template-columns: repeat(2, 1fr) !important;
+	gap: 12px !important;
+	flex-wrap: initial !important;
+}
+
+.tb_field.style .tb_input .themify-layout-icon .tfl-icon {
+	display: flex !important;
+	align-items: center;
+	justify-content: flex-start;
+	width: auto !important;
+	max-width: none !important;
+	height: auto !important;
+	min-height: 64px !important;
+	margin: 0 !important;
+	padding: 12px !important;
+	border: 4px solid transparent;
+	border-radius: 8px;
+	/* Visible even unselected — without this, tiles whose preview SVG is small/narrow (e.g. the
+	   moon icon) look wildly different in size from tiles with a wide preview (e.g. the pill
+	   toggle), since there'd be nothing marking the shared tile boundary between them. A uniform
+	   card background makes every tile read as the same size regardless of what its SVG looks like. */
+	background: #f6f7f7;
+	box-sizing: border-box;
+	/* Themify's core CSS puts its own orange focus/selected outline on .tfl-icon; without
+	   overriding it here, that outline stacks visibly alongside this border, showing as a
+	   double ring around the selected tile. */
+	outline: none;
+}
+
+.tb_field.style .tb_input .themify-layout-icon .tfl-icon.selected {
+	border-color: #4d7de1;
+	background: #eaf0fd;
+	outline: none;
+}
+
+.tb_field.style .tb_input .themify-layout-icon .tfl-icon .tb_sprite {
+	background-size: contain !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: 100% !important;
+	height: 40px !important;
+	display: block;
+}
+
+.tb_field.style .tb_input .themify-layout-icon .tfl-icon .themify_tooltip {
+	display: none;
+}
+
+/* Locked tile: dim the preview and disable interaction, matching the lock badge
+   treatment already used by the Elementor/WPBakery/SiteOrigin style pickers. */
+.tb_field.style .tb_input .themify-layout-icon .tfl-icon.wp-dark-mode-locked {
+	position: relative;
+	cursor: pointer;
+}
+
+.tb_field.style .tb_input .themify-layout-icon .tfl-icon.wp-dark-mode-locked .tb_sprite {
+	opacity: 0.4;
+}
+
+.tb_field.style .tb_input .themify-layout-icon .tfl-icon.wp-dark-mode-locked::after {
+	content: '';
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	width: 24px;
+	height: 24px;
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px #fff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23 23' fill='none'%3E%3Cpath d='M14.75 9.55H9.55V8.25c0-.52.195-.975.585-1.365.78-.78 2.015-.78 2.73 0 .26.26.39.585.52.91.065.325.455.52.78.455.325-.065.585-.455.455-.78-.13-.585-.455-1.105-.845-1.495C13.19 5.325 12.345 5 11.5 5 9.68 5 8.25 6.43 8.25 8.25v1.3c-1.105 0-1.95.845-1.95 1.95v4.55c0 1.105.845 1.95 1.95 1.95h6.5c1.105 0 1.95-.845 1.95-1.95V11.5c0-1.105-.845-1.95-1.95-1.95Zm-2.6 5.2c0 .39-.26.65-.65.65-.39 0-.65-.26-.65-.65v-1.95c0-.39.26-.65.65-.65.39 0 .65.26.65.65v1.95Z' fill='%23FB923C'/%3E%3C/svg%3E");
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	background-position: center;
+	pointer-events: none;
+}

@@ -1,0 +1,32 @@
+@use 'variables' as *;
+@use 'switch-4' as *;
+
+.wp-dark-mode-switch-6 {
+
+    @extend .wp-dark-mode-switch-4;
+
+   ._track {
+        width: calc($switchWidth * 1);
+        ._thumb {
+            background-color: transparent !important;
+
+            ._icon {
+
+                transform: translateY(-50%) !important;
+                svg, img {
+                    width: 90% !important;
+                }
+            }
+        }
+   }
+
+   &.active {
+    ._track {
+        background-color: linear-gradient(276.67deg, #2875DC 2.77%, #73ABFF 163.19%), linear-gradient(0deg, #EA580C, #EA580C);
+
+        ._thumb { 
+            @apply text-white;
+        }
+    }
+   }
+}  

@@ -1,0 +1,85 @@
+.wp-dark-mode-editor-theme {
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &-placeholder {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #f1f1f1;
+    }
+
+    svg {
+      transition: transform 0.3s;
+      width: 12px;
+      height: 12px;
+      fill: currentColor;
+    
+      &.active {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+      }
+    } 
+  }
+
+  &-dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute !important;
+    top: 50px !important;
+    background: white !important;
+    color: black !important;
+    width: max-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+    animation: drop-fade 1s;
+
+    &-item {
+      cursor: pointer;
+      padding: 7px 15px;
+      border-radius: 5px;
+      transition: background 0.3s;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      justify-content: space-between;
+      color: black !important;
+      font-weight: normal !important;
+
+      & > span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      &:hover {
+        background: #f1f1f1 !important;
+      }
+
+      &.active {
+        color: var(--wp-dark-color-primary);
+      }
+    }
+  }
+}
+
+// Animate the dropdown
+@keyframes drop-fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

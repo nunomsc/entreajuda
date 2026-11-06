@@ -1,0 +1,21 @@
+@use 'variables' as *;
+@use 'switch-3' as *;
+
+.wp-dark-mode-switch-8 {
+
+    @extend .wp-dark-mode-switch-3;
+    ._track {
+        background: linear-gradient(88.44deg, #653FDF 0.97%, #32B1F4 98.68%) !important;
+    }
+
+    &.active {
+        ._track {
+            @apply text-white;
+            background: linear-gradient(88.44deg, #653FDF 0.97%, #32B1F4 98.68%), linear-gradient(0deg, #FFFFFF, #FFFFFF) !important;
+            
+            ._thumb {
+                background: #FFF !important;
+            }
+        }
+    }
+}  

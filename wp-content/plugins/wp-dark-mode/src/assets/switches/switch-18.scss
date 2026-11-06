@@ -1,0 +1,18 @@
+@use '_global' as *;
+
+.wp-dark-mode-switch-18 {
+    @extend .wp-dark-mode-switch-special;
+    @extend .horizontal;
+    width: scaled(108px) !important;
+    height: scaled(46px) !important;
+    @apply flex-row divide-y-0 divide-x #{!important};
+
+    ._scheme, ._font {
+        @apply h-full w-1/2 #{!important};
+    }
+
+    ._icon {
+        width: 70% !important;
+    }
+
+}

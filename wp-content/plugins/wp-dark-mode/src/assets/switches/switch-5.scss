@@ -1,0 +1,30 @@
+@use 'variables' as *;
+@use 'switch-3' as *;
+
+.wp-dark-mode-switch-5 {
+
+    @extend .wp-dark-mode-switch-3;
+
+    ._track {
+        height: scaled(8px) !important;
+        width: calc($switchWidth * 1.2) !important;
+        background-color: linear-gradient(90deg, #F59E0B 4.27%, #F8681E 106.71%) !important;
+        color: #fff !important;
+
+        ._icon {
+            transform: translateY(-50%) !important;
+        }
+
+        ._thumb {
+            background: rgba(234, 88, 12, 1) !important;
+            margin-left: scaled(7.5px) !important;
+            @apply flex items-center justify-center;
+        }
+    }
+
+    &.active {
+        ._track {
+            background-color: linear-gradient(90deg, #2875DC -19.51%, #73ABFF 100%) !important;
+        }
+    }
+}  

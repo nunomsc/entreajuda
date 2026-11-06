@@ -1,0 +1,11 @@
+@use '../components/theme-vars.scss';
+
+[data-wp-dark-mode-active][data-wp-dark-mode-preset="0"] {
+    .fusion-body .fusion-is-sticky.fusion-header-wrapper .fusion-header, .fusion-body .fusion-is-sticky.fusion-header-wrapper .fusion-secondary-main-menu {
+        background-color: rgb(36 37 37) !important;
+
+        li:not(.current-menu-item) a {
+            color: #fff !important;
+        }
+    }
+}

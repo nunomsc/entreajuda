@@ -1,0 +1,64 @@
+
+@use '_global' as *;
+
+
+@function scaled($value) {
+    @return calc( $value * var(--wpdm-switch-scale, 1) );
+}
+
+$size : scaled(60px);
+
+
+.wp-dark-mode-switch-1 {
+    // @extend .wp-dark-mode-switch-normal;
+    // width: scaled(60px) !important;
+    // height: scaled(60px) !important;;
+
+    display: inline-flex;
+    
+    ._track {
+
+        width: $size !important;
+        height: $size !important; 
+
+        border-radius: scaled(15px) !important;
+        background: rgba(85, 85, 85, 1);
+        color: #fefefefe;
+        @apply shadow-lg;
+ 
+        ._icon {
+            @apply w-full h-full flex items-center justify-center #{!important};
+
+            &:nth-child(1) {
+                @apply inline-flex #{!important};
+            }
+
+            &:nth-child(2) {
+                @apply hidden #{!important};
+            }
+
+            svg, img {
+                width: 60% !important;
+                height: 60% !important;
+            }
+        }
+    }
+
+    &.active {
+        ._track {
+            background: rgba(236, 236, 236, 1);
+            color: rgba(139, 92, 246, 1);
+
+            ._icon {
+                &:nth-child(2) {
+                    @apply inline-flex #{!important};
+                }
+
+                &:nth-child(1) {
+                    @apply hidden #{!important};
+                }
+            }
+        }
+    }
+}
+

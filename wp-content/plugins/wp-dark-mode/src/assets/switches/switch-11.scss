@@ -1,0 +1,37 @@
+@use 'variables' as *;
+@use 'switch-7' as *;
+
+.wp-dark-mode-switch-11 {
+    @extend .wp-dark-mode-switch-7;
+
+    ._track {
+        background-color: linear-gradient(97.13deg, #2B3CCC 15.81%, rgba(71, 131, 236, 0.32) 82.31%),
+        linear-gradient(88.44deg, #653FDF 0.97%, #32B1F4 98.68%),
+        linear-gradient(0deg, #FFFFFF, #FFFFFF) !important;
+        
+        border: scaled(3px) solid rgba(43, 60, 204, 1);
+         
+        width: calc($switchWidth - 3px) !important;
+
+        ._thumb {
+            @apply shadow-none;
+
+            ._icon svg {
+                width: 70% !important;
+            }
+        }
+    }
+
+    &.active {
+        ._track {
+            background: linear-gradient(97.13deg, #2B3CCC 15.81%, rgba(71, 131, 236, 0.32) 82.31%),
+            linear-gradient(88.44deg, #653FDF 0.97%, #32B1F4 98.68%),
+            linear-gradient(0deg, #FFFFFF, #FFFFFF) !important;
+            
+            
+            ._thumb {
+                transform: translateX( calc( $switchWidth - 6px - $switchHeight ) ) !important;
+            }
+        }
+    }
+}  

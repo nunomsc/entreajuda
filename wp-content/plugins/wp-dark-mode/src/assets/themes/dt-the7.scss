@@ -1,0 +1,7 @@
+@use '../components/theme-vars' as *;
+
+[data-wp-dark-mode-active][data-wp-dark-mode-preset="0"] {
+    .phantom-sticky .sticky-on.masthead:not(.masthead-mobile) {
+        background-color: transparent !important;
+    }
+}

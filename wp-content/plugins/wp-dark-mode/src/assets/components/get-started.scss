@@ -1,0 +1,36 @@
+
+.wp-dark-mode-get-started-header {
+    @apply bg-indigo-900 text-white relative flex flex-col justify-between after:content-[''] after:absolute after:w-full after:h-full after:bg-gradient-to-t after:from-[black] after:to-[#1513390A] after:opacity-100 after:z-0;
+
+    background: var( --wpdm-get-started-hero-background, rgb(65, 65, 210) ) no-repeat center center;
+    background-size: cover;
+
+    * {
+        @apply z-10;
+        font-family: Inter, sans-serif;
+    }
+
+    .support-button {
+        @apply sm:absolute m-3 text-center sm:top-3 right-3 sm:mt-4 sm:mr-4 text-white text-sm rounded-full px-4 py-2 inline-flex items-center gap-2 ring-1 ring-[#B2BFF4];
+        background: linear-gradient(180deg, rgba(103, 122, 200, 0.40) 0%, rgba(103, 122, 200, 0.00) 100%);
+        backdrop-filter: blur(4px);
+    }
+
+    .header-nav {
+
+        @apply bg-cover bg-no-repeat bg-top text-sm flex items-center flex-wrap text-center justify-center gap-2 p-3 w-full max-w-4xl mx-auto h-auto sm:h-24;
+
+        background: var( --wpdm-get-started-nav-background ) no-repeat top;
+        background-size: 99%;
+        .nav-item {
+            @apply py-1.5 px-2 sm:py-2.5 sm:px-4 whitespace-nowrap rounded-full flex items-center gap-1.5 sm:gap-2 text-white transition duration-75;
+
+            &.active {
+                @apply text-gray-700  hover:opacity-100;
+                background: linear-gradient(0deg, rgba(200, 200, 255, 1), rgba(255, 255, 255, 1));
+                // glow 
+                box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+}

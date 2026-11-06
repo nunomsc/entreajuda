@@ -1,0 +1,452 @@
+@use "sass:meta";
+@use 'sass:color';
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@include meta.load-css('components/site-animations.scss');
+@include meta.load-css('components/accordion.scss');
+@include meta.load-css('switches/switches.scss');
+
+@font-face {
+    font-family: Inter;
+    src: url('../fonts/Inter.ttf') format('truetype');
+}
+
+
+.wp-dark-mode-admin {
+   font-family: Inter, sans-serif;
+
+    button, .button {
+        font-family: Inter, sans-serif;
+    }
+
+    a {
+        @apply text-blue-600 hover:opacity-75 transition duration-75;
+    }
+
+    .range {
+        @apply appearance-none h-2 w-full rounded-full;
+
+        @mixin range-thumb {
+            @apply appearance-none border-4 bg-white border-blue-600 rounded-full ring ring-blue-600 h-3 w-3 -mt-0.5 cursor-grab;
+        }
+
+        /** Chrome, Safari, Edge, Opera */
+        &::-webkit-slider-thumb {
+            @include range-thumb;
+        }
+
+        /** Firefox */
+        &::-moz-range-thumb {
+            @include range-thumb;
+        }
+
+        /** IE */
+        &::-ms-thumb {
+            @include range-thumb;
+        }
+
+
+        @mixin range-track {
+            background-color: linear-gradient(to right, #2663eb var(--range-track-width), #ececec var(--range-track-width)) !important;
+            @apply appearance-none h-2 rounded-full w-full ;
+        }
+
+        /** Chrome, Safari, Edge, Opera */
+        &::-webkit-slider-runnable-track {
+            @include range-track;
+        }
+
+        /** Firefox */
+        &::-moz-range-track {
+            @include range-track;
+        }
+
+        /** IE */
+        &::-ms-track {
+            @include range-track;
+        }
+    }
+
+    
+    .app-wrapper {
+        @apply flex relative flex-col sm:flex-row items-center sm:items-start;
+    }
+
+    &-sidebar {
+        @apply w-full sm:max-w-sm  mb-2 sm:mb-0 p-5 outline-none transition sm:sticky top-8 left-auto overflow-auto scrollbar-none;
+
+        @screen sm {
+            height: calc(100vh + 58px);
+            @apply h-screen;
+        }
+
+        &-header {
+            @apply flex items-center justify-center sm:justify-between gap-5;
+
+            &-logo {
+                @apply flex items-center gap-2;
+            }
+
+            &-title {
+                @apply text-base font-semibold whitespace-nowrap;
+            }
+
+            &-button {
+                @apply cursor-pointer text-gray-500 hover:text-gray-700;
+
+                &.collapsed {
+                    @apply w-14 px-4;
+                }
+
+                &-logo {
+                    @apply fill-current w-5;
+
+                    &.collapsed {
+                        @apply rotate-180 w-7;
+                    }
+                }
+            }
+        }
+
+        &-nav {
+            @apply flex flex-col transition duration-300 flex-wrap my-8 gap-4 justify-start clear-both absolute sm:relative w-72 h-[100vh] rounded-br-md sm:rounded-br-none sm:h-auto sm:w-auto bg-white sm:bg-transparent left-0 sm:left-auto top-10 sm:top-auto z-50 sm:z-auto;
+
+            div {
+                @apply p-0 m-0;
+            }
+
+            &-container {
+                @apply flex flex-col hover:bg-gray-50 rounded-lg;
+
+
+                .nav-item-child {
+                    @apply flex transition outline-none focus:outline-none duration-75 rounded-lg text-sm py-5 sm:py-3 px-4 hover:opacity-100 focus:bg-blue-100 focus:text-blue-700 focus:font-semibold ;
+
+                    &.active {
+                        @apply bg-blue-100 text-blue-700 font-semibold;
+                    }
+
+                    &.inactive {
+                        @apply text-gray-600 bg-transparent hover:bg-white;
+                    }
+                }
+            }
+
+            .nav-item {
+                @apply transition duration-75 rounded-xl outline-none focus:outline-none focus:border-transparent text-sm w-14 h-14 flex hover:opacity-100 items-center justify-center focus:bg-blue-100 focus:text-blue-700 focus:font-semibold ;
+            }
+        }
+
+        // max width 300 in desktop
+        @screen sm {
+            @apply w-full;
+            max-width: 300px;
+        }
+
+    }
+
+    .main-content {
+        @apply w-full bg-gray-50 text-black;
+
+        &-header {
+            @apply flex p-5 sm:items-center sm:justify-between flex-col sm:flex-row gap-4;
+
+            &-title {
+                @apply flex flex-col gap-1;
+            }
+
+            &-items {
+                @apply flex items-center text-sm leading-7 font-medium gap-6;
+
+                & > div, a {
+                    @apply flex items-center gap-1.5 clear-both hover:opacity-90 outline-none focus:outline-none text-gray-700 focus:border-transparent;
+                }
+
+                &>button {
+                    @apply flex items-center gap-2 bg-orange-100 outline-none text-orange-600 px-3 py-2 rounded-md hover:bg-orange-600 hover:text-orange-100 transition duration-75;
+                }
+            }
+        }
+
+        ;
+
+        &-body {
+            @apply p-5 pb-5 flex flex-col gap-5;
+        }
+    }
+
+    .save-buttons {
+        @apply sticky w-full bottom-0 bg-blue-50 flex items-end justify-center sm:justify-start gap-4 p-4;
+    }
+
+    .wpdm-textarea {
+        @apply outline-none focus:outline-none border-none disabled:bg-gray-50 disabled:opacity-60 disabled:cursor-not-allowed ring-1 focus:ring ring-gray-200 focus:ring-blue-400 bg-slate-100 focus:bg-white transition px-4 py-2.5 rounded ;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    #wpbody {
+        padding-top: 30px;
+    }
+}
+
+html:not(.wp-dark-mode-active){
+    #wpbody {
+        @apply bg-gray-50;
+    }
+    .wp-dark-mode-admin-tools {
+        @apply bg-white;
+    }
+}
+
+// Tools 
+.wp-dark-mode-admin-tools {
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.01);
+
+    .wpdm-flex {
+        display: flex;
+
+        &.flex-middle {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .section-title {
+        @extend .wpdm-flex;
+        background-color: rgba(0, 0, 0, 0.01);
+        padding: 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        align-items: center;
+        gap: 10px;
+
+        span {
+            @extend .wpdm-flex;
+            @extend .flex-middle;
+            background-color: cadetblue;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 17px;
+            font-weight: 500;
+        }
+    }
+
+    .section-body {
+        padding: 15px;
+
+        .__form-group {
+            @extend .wpdm-flex;
+            margin-bottom: 2rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .__form-label {
+                width: 30%;
+                margin: 0;
+                margin-top: 6px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            .__form-content {
+                width: 100%;
+                min-width: 70%;
+            }
+
+            .__form-text {
+                margin-top: 8px;
+                font-size: 13px;
+                color: #999;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .__form-group {
+                flex-direction: column;
+                gap: 10px;
+
+                .__form-label {
+                    width: 100%;
+                }
+
+                .__form-content {
+                    width: 100%;
+                    min-width: 100%;
+                }
+            }
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center !important;
+            justify-content: center;
+            gap: 5px;
+            font-size: 14px;
+
+            &.button-danger {
+                background-color: crimson;
+                color: #fff;
+                border-color: crimson;
+                transition: 0.1s all;
+                opacity: 0.7;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .dashicons {
+                font-size: 16px;
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+
+// Attention effect 
+@keyframes shakeAnimation {
+    0%, 100% {
+      transform: translateX(0); /* Initial and final position */
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px); /* Move left */
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px); /* Move right */
+    }
+  }
+  
+  .wp-dark-mode-highlight {
+    animation: shakeAnimation 2s ease-in-out 1; /* Adjust the duration as needed */
+    will-change: transform;
+    @apply bg-gray-100;
+  }
+
+._selected {
+    @apply ring ring-blue-400 ;
+}
+
+
+//   Dark mode fixing overrides 
+html[data-wp-dark-mode-active] {
+    h2.wp-dark-mode-admin-sidebar-header-title {
+        color: #fff !important;
+
+        span {
+            color: #f0f0f0 !important;
+        }
+    }   
+
+    .wp-dark-mode-white {
+        color: #fff !important;
+    }
+
+    .wp-dark-mode-bg-white {
+        background-color: #fff !important;
+        background-color: #fff !important;
+    }
+
+    .text-gray-500 {
+        color: #f0f0f0 !important;
+    }
+
+    .wp-dark-mode-admin {
+        .save-buttons {
+            background-color: #222 !important;
+        }
+ 
+        &-sidebar {
+            &-nav {
+                &-container {
+                    .nav-item-child {
+                        &.inactive {
+                            :hover {
+                                background-color: #222 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .wp-dark-mode-admin-sidebar-nav-container .nav-item-child.active {
+            // &:hover {
+            //     background-color: #222 !important;
+            // }
+            @apply hover:bg-gray-300 ;
+        }
+
+        ._selected {
+            box-shadow: 0 0 0 4px #fff, 0 0 0 4px #5aa5e2 !important;
+            background-color:  #444 !important;
+        }
+    }
+
+    .range {
+        &::-webkit-slider-thumb {
+            @apply bg-blue-500 h-5 w-5 -mt-[5px] ;
+        }
+
+        /** Firefox */
+        &::-moz-range-thumb {
+            background-color: blue !important;
+            border: 3px solid blue !important;
+        }
+
+        /** IE */
+        &::-ms-thumb {
+            background-color: blue !important;
+            border: 3px solid blue !important;
+        }
+    }
+}
+
+// attention-effect
+/* Slide-down transition */
+.slide-twinkle-enter-active {
+    animation: slideDown 0.1s ease-out;
+  }
+  .slide-twinkle-leave-active {
+    transition: all 0.1s ease-out;
+  }
+  .slide-twinkle-enter, .slide-twinkle-leave-to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+  /* Keyframes for sliding down */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  .wp-dark-mode-appsero-notice {
+    @apply my-4 ;
+  }
+  .wp-dark-mode-notice {
+    @apply pl-5;
+  }
+

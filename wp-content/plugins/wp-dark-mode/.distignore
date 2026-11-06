@@ -1,0 +1,27 @@
+.git
+.github
+.gitattributes
+.gitignore
+.wordpress-org
+node_modules
+public
+ai-docs
+docs
+phpcs.xml
+includes/admin/compare_keys.js
+includes/admin/deduplicate.js
+includes/admin/deduplicated_array.txt
+includes/admin/find_duplicates.js
+includes/admin/sync_strings.js
+# Leftover build artifact, not used at runtime (real code is the extracted vendor/appsero/ folder).
+vendor/*.zip
+# Sourcemaps are dev-only debug files. They embed literal URL strings from bundled
+# libraries (e.g. Pinia's own devtools metadata, "pinia.vuejs.org/logo.svg") that are
+# never fetched by this plugin at runtime. Excluding them avoids WP.org's automated
+# scanner flagging those inert strings as "calling files remotely". Human-readable
+# source for every bundle already ships in src/ (see readme.txt "Build Instructions").
+*.map
+# Local dev/debug leftovers that should never ship in a plugin release.
+*.sql
+*.log
+*.bak

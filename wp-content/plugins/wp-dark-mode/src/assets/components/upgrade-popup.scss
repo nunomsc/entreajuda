@@ -1,0 +1,216 @@
+.wp-dark-mode-promo {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    left: 0;
+    backdrop-filter: blur(1px);
+    z-index: 9999;
+  
+    &.hidden {
+      display: none;
+    }
+  
+    &-inner {
+      background-color: #000;
+      position: relative;
+      padding: 25px;
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid;
+      margin-top: 130px;
+      width: 400px;
+  
+      .close-promo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px 12px;
+        font-size: 30px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        justify-content: center;
+        cursor: pointer;
+      }
+  
+      h3 {
+        color: #fff;
+      }
+  
+      .offer-img{
+        max-width: 120px;
+        height: auto;
+        margin-bottom: 15px;
+      }
+  
+      .promo-img {
+        width: 250px;
+        position: absolute;
+        top: -115px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+        border-radius: 50%;
+      }
+  
+      .limited-title {
+        font-size: 24px;
+      }
+  
+      .discount {
+        position: relative;
+        margin: 35px 0 10px;
+  
+        .discount-special {
+          color: #FF631A;
+          position: absolute;
+          font-size: 32px;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -24px;
+          background-color: #000;
+          z-index: 12;
+          padding: 5px;
+        }
+  
+        .discount-text {
+          border: 2px solid #FF631A;
+          display: inline-block;
+          font-size: 48px;
+          padding: 20px 20px 28px;
+          border-radius: 5px;
+          font-weight: bold;
+          color: #fff;
+        }
+      }
+  
+      .wp-dark-popup-button {
+        display: block;
+        max-width: 220px;
+        margin: 0 auto;
+  
+        background-color: #FF631A;
+        color: #fff;
+        padding: 20px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .wp-dark-popup-demo-link {
+        color: #ddd;
+        text-decoration: none;
+        cursor: pointer;
+        display: block;
+        margin-top: 15px;
+        font-size: 14px;
+        transition: all 0.3s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+  
+      .black-friday-wrap {
+        h3 {
+          color: #FF631A;
+          font-size: 25px;
+          margin: 30px;
+        }
+      }
+  
+      .promo-title {
+        margin-top: 40px;
+      }
+  
+      &.black-friday{
+        .promo-title {
+          margin-top: 120px;
+        }
+      }
+  
+    }
+  
+    .ribbon {
+      margin-left: -50px;
+      width: 527px;
+      position: absolute;
+      text-align: center;
+      font-size: 23px !important;
+      background-color: #ddd;
+      box-shadow: rgba(000, 000, 000, 0.3) 0 1px 1px;
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    }
+  
+    .ribbon h1 {
+      font-size: 38px !important;
+      font-weight: bold;
+      color: #000;
+      text-shadow: #240c0c 0 1px 0;
+      margin: 0;
+      padding: 10px;
+    }
+  
+    .ribbon:before, .ribbon:after {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: -1em;
+      border: 1.5em solid #ddd;
+      z-index: -1;
+    }
+  
+    .ribbon:before {
+      left: -2em;
+      border-right-width: 1.5em;
+      border-left-color: transparent;
+      box-shadow: rgba(000, 000, 000, 0.4) 1px 1px 1px;
+    }
+  
+    .ribbon:after {
+      right: -2em;
+      border-left-width: 1.5em;
+      border-right-color: transparent;
+      box-shadow: rgba(000, 000, 000, 0.4) -1px 1px 1px;
+    }
+  
+    .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+      border-color: #7D7D7D transparent transparent transparent;
+      position: absolute;
+      display: block;
+      border-style: solid;
+      bottom: -1em;
+      content: '';
+    }
+  
+    .ribbon .ribbon-content:before {
+      left: 0;
+      border-width: 1em 0 0 1em;
+    }
+  
+    .ribbon .ribbon-content:after {
+      right: 0;
+      border-width: 1em 1em 0 0;
+    }
+  
+    .ribbon-stitches-top {
+      margin-top: 2px;
+      border-top: 1px dashed rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    }
+  
+    .ribbon-stitches-bottom {
+      margin-bottom: 2px;
+      border-top: 1px dashed rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
+    }
+  
+  }

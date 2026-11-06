@@ -1,0 +1,40 @@
+@use 'variables' as *;
+@use 'switch-3' as *;
+
+.wp-dark-mode-switch-10 {
+
+    @extend .wp-dark-mode-switch-3;
+
+    ._track {
+        background: rgba(229, 231, 235, 1) !important;
+        @apply ring-1 ring-transparent;
+        & > ._icon {
+            width: $switchHeight !important;
+            height: $switchHeight !important;
+            color: rgba(245, 158, 11, 1) !important;
+            @apply relative -ml-0.5 delay-100 #{!important};
+            svg, img {
+                width: 50% !important;
+            }
+        }
+
+        ._thumb {
+            color: rgba(245, 158, 11, 1) !important;
+
+            ._icon {
+                transform: translateY(-50%) !important;
+            }
+        }
+    }
+     
+    &.active {
+         ._track {
+            @apply ring-gray-400;
+            background-color: rgba(107, 114, 128, 1) !important;
+
+            & > ._icon {
+                color: rgba(255, 237, 140, 1) !important;
+            }
+         }
+    }
+}  

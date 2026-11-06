@@ -1,0 +1,182 @@
+@use "sass:meta";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@include meta.load-css("components/social-icons.scss");
+
+$color: darkblue;
+$bgcolor: white;
+
+.wpdarkmode-section {
+  .sidebar-width {
+    min-width: 165px;
+  }
+
+  ._content-section{
+    @apply flex gap-2 justify-between w-full p-3;
+    min-height: 500px;
+    // height: calc(100vh - 150px);
+  }
+
+  ._preview-section{
+    width: 100%;
+    max-width: 550px;  
+    @apply md:h-full md:absolute top-0 right-0 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl;
+ 
+  }
+
+  ._switcher {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 26px;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    span {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+      border-radius: 29px;
+      border-radius: 29px;
+
+      &:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.2s;
+        border-radius: 50%;
+      }
+    }
+
+    input:checked + span {
+      @apply bg-blue-500;
+    }
+
+    input:focus + span {
+      box-shadow: 0 0 1px rgb(59 130 246);
+    }
+
+    input:checked + span:before {
+      -webkit-transform: translateX(18px);
+      -ms-transform: translateX(18px);
+      transform: translateX(18px);
+    }
+  }
+
+  .input-text {
+    @apply ring-1 text-sm ring-gray-300 border-0 rounded-sm py-2 px-3 focus:outline-none focus:ring-blue-200 w-full transition duration-150 focus:border-0;
+  }
+
+  .wpdarkmode-tooltip {
+    @apply relative mx-1 opacity-60 transition duration-150 hover:opacity-100 cursor-pointer;
+
+    .wpdarkmode-tooltip-content {
+      @apply absolute inline-block text-gray-100 font-normal text-sm px-3 py-2 border border-gray-700 shadow rounded block text-left ml-2 z-50;
+      font-size: 13px;
+      max-width: 90%;
+      min-width: 270px;
+      bottom: 27px;
+      left: -18px;
+      
+
+      background-color: #50616a;
+
+      &::before {
+        content: "";
+        @apply absolute top-full left-2;
+        border: 7px solid transparent;
+        border-top-color: #4b555a;
+      }
+    }
+  }
+
+
+  ._icons-grid {
+    display: grid !important;
+  }
+
+   
+  .wpdm-button-group,
+  .wp-dark-button-group {
+    @apply inline-flex items-center rounded-sm;
+
+    .wpdm-button,
+    .wp-dark-button {
+      @apply font-bold flex items-center justify-center border-r border-gray-300 last:border-0 h-8 transition duration-150 px-3 flex items-center gap-1.5 transition duration-150 bg-slate-200 hover:text-blue-500;
+
+      &.active {
+        @apply bg-blue-500 text-white hover:text-white;
+      } 
+    }
+  }
+
+  ._icon-svg {
+    svg {
+      @apply w-4 h-4 fill-current;
+    }
+  }
+
+
+  .badge-pro {
+    @apply bg-orange-500 font-normal text-white rounded-xl px-2 py-0.5 text-xs;
+  }
+  .badge-ultimate {
+    @apply bg-purple-700 font-normal text-white rounded-xl px-2 py-0.5 text-xs;
+  }
+
+  ._icon-tooltip {
+    svg {
+      @apply text-slate-700 hover:text-slate-600 w-3 h-3 fill-current mt-1;
+    }
+  }
+
+  ._max-height {
+    max-height: 320px;
+  }
+}
+
+
+._upgrade-now {
+  font-size: 12px;
+  @apply flex items-center font-semibold justify-center gap-1 px-2.5 py-1 bg-purple-100 border border-purple-200 text-indigo-500 rounded-full uppercase;
+  // no word wrap 
+  white-space: nowrap;
+}
+
+._drag-cursor {
+  // hand drag cursor
+  cursor: grab;
+}
+
+
+@keyframes checkPop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

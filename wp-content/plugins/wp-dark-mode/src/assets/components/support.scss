@@ -1,0 +1,61 @@
+.wp-dark-mode-support-modal {
+
+    @apply fixed w-full h-full top-0 left-0 z-50 flex items-center justify-center;
+
+    .overlay {
+        @apply absolute top-0 left-0 h-full w-full bg-black opacity-50;
+    }
+
+    .modal {
+        @apply relative z-50 w-full max-w-lg bg-white shadow-xl rounded-md outline-none p-6 flex flex-col gap-6;
+
+        z-index: 9999;
+    }
+
+    .header {
+        @apply flex flex-col gap-3 items-start;
+    }
+
+    .close-button {
+        @apply absolute right-3 top-5 opacity-50 hover:opacity-100 transition cursor-pointer;
+    }
+
+    .link-list {
+        @apply flex flex-col gap-4 pt-2 text-sm tracking-wide;
+
+        &-item {
+            @apply relative flex items-center gap-4 hover:opacity-100 cursor-pointer p-4 bg-gray-50 rounded transition duration-75 font-medium tracking-wide;
+
+            &-icon {
+                @apply bg-white rounded-lg w-14 h-12 flex items-center justify-center;
+            }
+
+            &-text {
+                @apply flex flex-col items-start gap-2.5;
+
+                span {
+                    @apply inline-flex text-xs  leading-4;
+
+                    &:first-child {
+                        @apply text-gray-800 whitespace-nowrap font-semibold;
+                    }
+
+                    &:last-child {
+                        @apply font-normal text-gray-500;
+                    }
+                }
+            }
+
+            &-arrow {
+                @apply absolute inline-flex text-blue-600 z-50 top-1/2 -mt-2.5 right-8 transition opacity-0 duration-300;
+            }
+            &:hover {
+                @apply shadow shadow-gray-200;
+
+                .link-list-item-arrow {
+                    @apply opacity-100 right-8;
+                }
+            }
+        }
+    }
+}

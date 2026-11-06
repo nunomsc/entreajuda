@@ -1,0 +1,19 @@
+{
+    "name": "wppool/wp-dark-mode",
+    "description": "WP Dark Mode - Accessibility Focused Dark Mode Plugin",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "appsero/client": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WP_Dark_Mode\\Appsero\\": "vendor/appsero/client/src"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    }
+}

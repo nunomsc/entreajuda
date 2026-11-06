@@ -1,0 +1,118 @@
+
+@use './support';
+
+[data-wp-dark-mode-active] {
+    
+    $animation_duration: .6s;
+
+    // fade
+    &[data-wp-dark-mode-animation="fade-in"] {
+        animation: fade $animation_duration;
+    }
+    // pulse
+    &[data-wp-dark-mode-animation="pulse"] {
+        animation: pulse $animation_duration;
+    }
+    // flip
+    &[data-wp-dark-mode-animation="flip"] {
+        animation: flip $animation_duration;
+    }
+
+    // roll
+    &[data-wp-dark-mode-animation="roll"] {
+        animation: roll $animation_duration;
+    }
+
+    // slide-left
+    &[data-wp-dark-mode-animation="slide-left"] {
+        animation: slide-left $animation_duration;
+    }
+
+    // slide-up
+    &[data-wp-dark-mode-animation="slide-up"] {
+        animation: slide-up $animation_duration;
+    }
+
+    // slide-down
+    &[data-wp-dark-mode-animation="slide-down"] {
+        animation: slide-down $animation_duration;
+    }
+
+    // slide-right
+    &[data-wp-dark-mode-animation="slide-right"] {
+        animation: slide-right $animation_duration;
+    }
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes flip {
+    from {
+        transform: perspective(400px) rotateY(0);
+    }
+    to {
+        transform: perspective(400px) rotateY(180deg);
+    }
+}
+
+@keyframes roll {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}

@@ -1,0 +1,30 @@
+@use 'variables' as *;
+@use 'switch-3' as *;
+
+.wp-dark-mode-switch-4 {
+    @extend .wp-dark-mode-switch-3;
+
+    ._track {
+        background: rgba(234, 88, 12, 1)!important;
+        width: $switchWidth;
+    }
+
+    ._icon {
+        width: scaled(20px);
+        img, svg {
+            width: 100% !important;
+        }
+    }
+
+    &.active {
+        @apply text-white;
+
+        ._track {
+            background: rgba(84, 84, 84, 1) !important;
+
+            ._thumb {
+                background: #FFF !important;
+            }
+        }
+    }
+}  

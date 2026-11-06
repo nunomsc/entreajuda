@@ -1,0 +1,25 @@
+@use 'variables' as *;
+@use 'base-switch' as *;
+
+
+.wp-dark-mode-switch-3 {
+    @extend .wp-dark-mode-switch-normal;
+    ._track {
+        @apply text-white;
+        background: rgba(57, 57, 61, 1) !important;
+
+        ._thumb {
+            background: #FFF !important;
+        }
+    }
+
+    &.active {
+        ._track {
+            @apply text-gray-700;
+            background: #FFF !important;
+        } 
+        ._thumb {
+            background: rgba(57, 57, 61, 1) !important;
+        }
+    }
+}  

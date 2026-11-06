@@ -1,0 +1,9 @@
+@use 'variables' as *;
+@use 'switch-6' as *;
+
+.wp-dark-mode-switch-7 {
+    @extend .wp-dark-mode-switch-6;
+    ._track {
+        width: calc($switchWidth * 1) !important;
+    }
+}

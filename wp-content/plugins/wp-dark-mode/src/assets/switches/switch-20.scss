@@ -1,0 +1,46 @@
+@use '_global' as *;
+
+@function scaled($value) {
+    @return calc(#{$value} * var(--wpdm-switch-scale, 1));
+}
+
+.wp-dark-mode-switch-20 {
+
+    @extend .wp-dark-mode-switch-normal;
+    ._track {
+        display: block;
+        --width-of-switch: #{scaled(56px)}; /* Scaled from 56px */
+        --height-of-switch: #{scaled(32px)}; /* Scaled from 32px */
+        --size-of-icon: #{scaled(22.4px)}; /* Scaled from 22.4px */
+        --slider-offset: #{scaled(4.8px)}; /* Scaled from 4.8px */
+        position: relative;
+        width: var(--width-of-switch);
+        height: var(--height-of-switch);
+        background: #f4f4f5 !important;
+        transition: 0.4s;
+        border-radius: scaled(30px);
+    }
+
+    ._thumb {
+        position: absolute;
+        height: var(--size-of-icon);
+        width: var(--size-of-icon);
+        border-radius: scaled(20px);
+        left: var(--slider-offset);
+        top: 50%;
+        transform: translateY(-50%) scale(.8);
+        background: linear-gradient(40deg, #ff0080, #ff8c00 70%) !important;
+        transition: 0.4s;
+    }
+
+    &.active ._track {
+        background: #303136;
+    }
+
+    &.active ._thumb {
+        left: calc(100% - (var(--size-of-icon) + var(--slider-offset) + calc(var(--size-of-icon) * 20 / 100))) !important;
+        transform: translateY(-50%) scale(.8) !important; /* Ensure it remains centered vertically */
+        background: transparent !important;
+        box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb !important;
+    }
+}

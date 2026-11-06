@@ -1,0 +1,121 @@
+@use "components/social-icons";
+
+._hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  ._hide-on-desktop {
+    display: none !important;
+  }
+
+  ._hide-on-mobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  ._hide-on-mobile {
+    display: none !important;
+  }
+
+  ._hide-on-desktop {
+    display: flex;
+  }
+  
+}
+
+
+// ._wpdm-social-share-modal
+
+._wpdm-social-share-modal-overlay,
+._wp-dark-social-share-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999999;
+}
+
+._wpdm-social-share-modal,
+._wp-dark-social-share-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  max-width: 560px;
+  max-height: 400px;
+  background-color: rgba(255, 255, 255, 0.999);
+  z-index: 99999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.06);
+
+  overflow-y: auto;
+
+  ._wpdm-social-share-modal-header,
+  ._wp-dark-social-share-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    ._wpdm-social-share-modal-title,
+    ._wp-dark-social-share-modal-title {
+      font-size: 15px;
+      font-weight: bold;
+      color: #333;
+      padding: 0 17px;
+    }
+
+    ._wpdm-social-share-modal-close,
+    ._wp-dark-social-share-modal-close {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: rgba(#000, .5);
+      padding: 10px;
+      transition: 0.2s ease-in-out;
+      height: 50px;
+      width: 50px;
+
+      svg {
+        fill: currentColor;
+        width: 25px;
+        height: 25px;
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+        color: #222;
+      }
+    }
+  }
+
+  ._wpdm-social-share-modal-body,
+  ._wp-dark-social-share-modal-body {
+    padding: 15px;
+  }
+}
+
+// no print modal and overlay
+@media print {
+  ._wpdm-social-share-modal,
+  ._wp-dark-social-share-modal {
+    display: none !important;
+  }
+  ._wpdm-social-share-modal-overlay,
+  ._wp-dark-social-share-modal-overlay {
+    display: none !important;
+  }
+}

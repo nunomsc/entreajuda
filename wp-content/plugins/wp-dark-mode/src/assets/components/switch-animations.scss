@@ -1,0 +1,100 @@
+
+@use 'site-animations';
+
+.bounce-in {
+    animation: bounce-in 0.3s;
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(.6);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bounce-out {
+    animation: bounce-out 0.3s;
+}
+
+@keyframes bounce-out {
+    0% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(.6);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+// Fade in
+.fade-in {
+    animation: fade-in 0.3s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// Fade out
+.fade-out {
+    animation: fade-out 0.3s;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+// Scale in
+.scale-in {
+    animation: scale-in 0.2s;
+}
+
+@keyframes scale-in {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+// Scale out
+.scale-out {
+    animation: scale-out 0.2s;
+}
+
+@keyframes scale-out {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}

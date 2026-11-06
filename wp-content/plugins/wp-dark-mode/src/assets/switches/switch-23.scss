@@ -1,0 +1,276 @@
+@use 'variables' as *;
+@use 'switch-3' as *;
+
+$blur : 3px;
+
+/**
+ * Switch 23 - Glass morphism toggle switch
+ * Features liquid glass animation effects with backdrop filters
+ */
+.wp-dark-mode-switch-23 {
+    // Base layout and dimensions
+    @apply cursor-default inline-flex justify-center z-50;
+    width: scaled(110px) !important;
+    max-width: scaled(110px) !important;
+    height: scaled(40px) !important;
+    border-radius: scaled(50px);
+
+    line-height: normal;
+
+
+    // Common SVG styles for all states
+    .switch-inner svg {
+        @apply fill-current cursor-pointer transition-all duration-150;
+        width: scaled(18px);
+        stroke-width: 0px;
+
+        &:hover {
+            transform: scale(1.2) !important;
+        }
+    }
+
+    .switch-inner {
+        @apply relative w-full h-full flex items-center inset-0 z-0 overflow-hidden;
+        border-radius: scaled(50px);
+        isolation: isolate;
+        // filter: drop-shadow(-8px -10px 46px #0000005f);
+
+        
+        // Icon spans styling
+        span:not(.glass) {
+            @apply  w-1/2 h-full flex items-center  justify-center font-normal;
+            
+            font-size: scaled(12px);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+            // First icon (sun/light mode)
+            &:first-child svg {
+                @apply fill-current hover:text-[#03d5ff] transition-all duration-150;
+            }
+
+            // Second icon (moon/dark mode)  
+            &:nth-child(2) svg {
+                @apply stroke-current hover:text-[#05a9c9] transition-all duration-150;
+            }
+        }
+
+        // Glass selector element
+        .glass {
+            clear: both;
+            @apply p-0 m-0 absolute z-10 w-1/2 focus:outline-none active:outline-none;
+            height: scaled(35px) !important;
+            top: scaled(2.5px) !important;
+            left: scaled(2.5px) !important;
+            border-radius: scaled(50px) !important;
+            // border: inset 1px solid rgba(255, 255, 255, 0.1) !important;
+            // backdrop-filter: brightness(0.9) !important;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    }
+
+    // Active state (dark mode)
+    &.active {
+
+       // Glass morphism effects
+
+        -webkit-backdrop-filter: blur( $blur ) saturate(var(--saturation, 1.5)) !important;
+        -moz-backdrop-filter: brightness(1.5) blur( $blur ) url(#glassEffect); 
+        -o-backdrop-filter: brightness(1.5) blur( $blur ) url(#glassEffect) ;
+        backdrop-filter: brightness(1.5) blur( $blur ) url(#glassEffect) ;
+        -webkit-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.2);
+        
+        .switch-inner {
+            animation: liquid-glass 10s linear infinite;
+        }
+
+        .glass {
+            animation: liquid-glass-moving-right 0.3s ease-in-out forwards;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: inset 0 0 scaled(5px) 0 rgba(255, 255, 255, 0.15);
+        }
+    }
+
+    // Inactive state (light mode)
+    &:not(.active) {
+
+        -webkit-backdrop-filter: blur( $blur ) saturate(var(--saturation, 1.2)) !important;
+        -moz-backdrop-filter: brightness(1.2) blur( $blur ) url(#glassEffect); 
+        -o-backdrop-filter: brightness(1.2) blur( $blur ) url(#glassEffect) ;
+        backdrop-filter: brightness(1.2) blur( $blur ) url(#glassEffect) ;
+        -webkit-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.2);
+        
+        .switch-inner {
+            animation: liquid-glass 10s linear infinite;
+        }
+    
+        .glass {
+            animation: liquid-glass-moving-left 0.4s ease-in-out forwards;
+            background: rgba(0, 0, 0, 0.05);
+            box-shadow: inset 0 0 scaled(5px) 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    // Smart text color for visibility
+    &.active .switch-inner span:not(.glass) {
+        color: #f8fafc; // Light color for dark background
+        text-shadow: 0 1px 2px rgba(0,0,0,0.25); // Optional: subtle shadow for clarity
+    }
+
+    &:not(.active) .switch-inner span:not(.glass) {
+        color: #22292f; // Dark color for light background
+        text-shadow: 0 1px 0 rgba(255,255,255,0.15); // Optional: subtle highlight
+    }
+}
+
+/* ========================================
+   ANIMATION KEYFRAMES
+======================================== */
+
+/**
+ * Liquid glass animation for active state (light background)
+ */
+@keyframes liquid-glass {
+    0%, 100% {
+        box-shadow: inset 6px 9px 2px -9px rgba(255, 255, 255, .4),
+                    inset -6px -9px 2px -9px rgba(255, 255, 255, 0.4);
+    }
+
+    70% {
+        box-shadow: inset 6px 9px 2px -9px rgba(255, 255, 255, .4),
+                    inset -6px -9px 2px -9px rgba(255, 255, 255, 0.4);
+    }
+
+    80% {
+        box-shadow: inset 9px 6px 2px -9px rgba(255, 255, 255, .4),
+                    inset -9px -6px 2px -9px rgba(255, 255, 255, 0.4);
+    }
+
+    90% {
+        box-shadow: inset 9px -6px 2px -9px rgba(255, 255, 255, .4),
+                    inset -9px 6px 2px -9px rgba(255, 255, 255, 0.4);
+    }
+}
+
+/**
+ * Liquid glass animation for inactive state (dark background)
+ */
+@keyframes liquid-glass-dark {
+    0%, 100% {
+        box-shadow: inset 6px 9px 2px -9px rgba(0, 0, 0, .3),
+                    inset -6px -9px 2px -9px rgba(0, 0, 0, 0.3);
+    }
+
+    70% {
+        box-shadow: inset 6px 9px 2px -9px rgba(0, 0, 0, .2),
+                    inset -6px -9px 2px -9px rgba(0, 0, 0, 0.2);
+    }
+
+    80% {
+        box-shadow: inset 9px 6px 2px -9px rgba(0, 0, 0, .2),
+                    inset -9px -6px 2px -9px rgba(0, 0, 0, 0.2);
+    }
+
+    90% {
+        box-shadow: inset 9px -6px 2px -9px rgba(0, 0, 0, .2),
+                    inset -9px 6px 2px -9px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/**
+ * Glass selector moving right animation (to dark mode)
+ */
+@keyframes liquid-glass-moving-right {
+    0% {
+        transform: translateX(0) scale(1);
+        border-radius: scaled(50px);
+        background: rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    20% {
+        transform: translateX(calc(20% - scaled(1px))) scale(1.1, 0.9);
+        border-radius: scaled(60px);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: inset 0 0 10px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    40% {
+        transform: translateX(calc(40% - scaled(2px))) scale(1.2, 0.85);
+        border-radius: scaled(65px);
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    60% {
+        transform: translateX(calc(60% - scaled(3px))) scale(1.1, 0.9);
+        border-radius: scaled(55px);
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    80% {
+        transform: translateX(calc(80% - scaled(4px))) scale(1.05, 0.95);
+        border-radius: scaled(45px);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    95% {
+        transform: translateX(calc(100% - scaled(5px))) scale(0.9, 1.1);
+        border-radius: scaled(50px);
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    100% {
+        transform: translateX(calc(100% - scaled(5px))) scale(1, 1);
+        border-radius: scaled(50px);
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: inset 0 0 8px 0 rgba(255, 255, 255, 0.15);
+    }
+}
+
+/**
+ * Glass selector moving left animation (to light mode)
+ */
+@keyframes liquid-glass-moving-left {
+    0% {
+        transform: translateX(calc(100% - scaled(5px))) scale(1);
+        border-radius: scaled(50px);
+        background: rgba(0, 0, 0, 0.05);
+        box-shadow: inset 0 0 10px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    20% {
+        transform: translateX(calc(80% - scaled(4px))) scale(1.1, 0.9);
+        border-radius: scaled(60px);
+    }
+
+    40% {
+        transform: translateX(calc(60% - scaled(3px))) scale(1.2, 0.85);
+        border-radius: scaled(65px);
+    }
+
+    60% {
+        transform: translateX(calc(40% - scaled(2px))) scale(1.1, 0.9);
+        border-radius: scaled(55px);
+    }
+
+    80% {
+        transform: translateX(calc(20% - scaled(1px))) scale(1.05, 0.95);
+        border-radius: scaled(45px);
+    }
+
+    95% {
+        transform: translateX(0) scale(0.9, 1.1);
+        border-radius: scaled(50px);
+    }
+
+    100% {
+        transform: translateX(0) scale(1);
+        border-radius: scaled(50px);
+        background: rgba(0, 0, 0, 0.05);
+        box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    }
+}

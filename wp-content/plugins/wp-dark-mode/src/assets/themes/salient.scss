@@ -1,0 +1,9 @@
+[data-wp-dark-mode-active] {
+    .nectar-drag-indicator {
+        background: transparent !important;
+        background-color: transparent !important;
+    }
+    svg.nectar-shape-divider {
+        fill: var(--wpdm-background-color) !important;
+    }
+}

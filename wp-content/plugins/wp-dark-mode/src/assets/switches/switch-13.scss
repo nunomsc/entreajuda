@@ -1,0 +1,12 @@
+@use 'variables' as *;
+@use 'switch-1' as *;
+
+.wp-dark-mode-switch-13 {
+    @extend .wp-dark-mode-switch-1;
+
+    &.active {
+        ._icon {
+            color: rgba(37, 99, 235, 1) !important;
+        }
+    }
+}

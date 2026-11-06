@@ -1,0 +1,772 @@
+@use "sass:list";
+// variables
+
+$baseSize: var(--wpdm-social-share-scale, var(--wp-dark-social-share-scale, 1.2));
+
+$baseWidth: 30px;
+$width: calc($baseWidth * $baseSize);
+
+$baseIconSize: 12px;
+$iconSize: calc($baseIconSize * $baseSize);
+
+$baseSpacing: 8px;
+$spacing: calc(($baseSpacing * $baseSize));
+
+$baseRadius: 3px;
+$radius: calc($baseRadius * $baseSize);
+
+$baseMargin: 14px;
+$margin: calc($baseMargin * $baseSize);
+
+$baseFontSize: 14px;
+$fontSize: calc($baseFontSize * $baseSize);
+
+$overlay: rgba(
+  $color: #000000,
+  $alpha: 0.15,
+);
+
+// list of social colors
+$colors: (
+  ("facebook", #3b5998),
+  ("twitter", #000000),
+  ("messenger", #0084ff),
+  ("instagram", #833ab4),
+  ("whatsapp", #008532),
+  ("telegram", #0088cc),
+  ("google", #dd4b39),
+  ("pinterest", #cb2027),
+  ("linkedin", #007bb6),
+  ("buffer", #00aced),
+  ("tumblr", #32506d),
+  ("reddit", #ff4500),
+  ("stumbleupon", #f74425),
+  ("delicious", #3399ff),
+  ("evernote", #5ba525),
+  ("wordpress", #21759b),
+  ("pocket", #ef4023),
+  ("email", #0088cc),
+  ("print", #8c0741),
+  ("copy", #4b555a),
+  ("dark", #333),
+  ("light", rgb(238, 235, 235)),
+  ("sms", #463718),
+  ("chatgpt", #74AA9C),
+  ("grok", #000),
+  ("perplexity", #21808D),
+  ("gemini", #4796E3),
+  ("claude", #D97757)
+); 
+   
+// common 
+  
+._center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+._start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+._between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+._end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/**
+  * Main style
+  * Social Share
+  */
+
+._social-share-container {
+  display: flex;
+  gap: $spacing;
+  flex-direction: column;
+ 
+  // share labels
+  ._share-label {
+    display: inline-block;
+    font-weight: 500;
+    font-size: $baseFontSize;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  // main container
+  ._channels-container {
+    display: inline-flex;
+    align-items: center;
+    gap: calc($spacing / 2);
+
+    ._total-share {
+      display: inline-flex;
+      align-items: center;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: .75px;
+        height: calc($baseSize * $baseWidth * 0.9);
+        background-color: #d8d8d8;
+        margin: 0 calc($spacing);
+      }
+
+      ._total-share-count {
+        @extend ._center;
+        margin: 0 calc($spacing / 1.75);
+        margin-left: 0;
+        line-height: 1;
+        height: calc($baseSize * $baseWidth);
+        flex-direction: column;
+        gap: calc($baseSize * 1px);
+        & > span {
+          @extend ._center;
+          text-align: center;
+          line-height: calc($baseSize * 1.2);
+          &:first-child {
+            font-weight: 700;
+            font-size: calc($baseSize * 16px);   
+          }
+          &:last-child {
+            font-weight: 400;
+            font-size: calc($baseSize * 10px); 
+            opacity: .8;
+          }
+        }
+      }
+    }
+
+    // channels wrapper
+    ._channels {
+      @extend ._start;
+      display: inline-flex;
+      flex-wrap: wrap;
+
+      ._channel {
+        @extend ._between;
+        cursor: pointer;
+        height: calc($baseSize * $baseWidth);
+        text-align: center;
+        border-color: rgba($color: #000000, $alpha: 0.04);
+        font-size: calc($baseSize * 10px);
+        gap: $spacing;
+        position: relative; 
+        // padding-right: $spacing;
+
+        ._channel-icon {
+          @extend ._center;
+          height: calc($baseSize * $baseWidth);
+          font-size: calc($baseSize * 14px);
+          width: auto;
+          padding: 0;
+          margin-left: -0.5px;
+          // transition: 0.2s;
+
+          span {
+            @extend ._center;
+            width: calc($baseSize * $baseWidth);
+            height: calc($baseSize * $baseWidth);
+
+            svg {
+              fill: currentColor;
+              width: $iconSize;
+              height: $iconSize;
+            }
+          }
+
+          &._channel-icon-full {
+            width: calc(($baseSize) * $baseWidth);
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+          }
+        }
+
+        ._channel-label {
+          @extend ._center;
+          gap: $spacing;
+          padding-right: $spacing;
+
+          ._channel-name {
+            @extend ._center;
+            text-align: center;
+            // transition: 0.3s;
+            font-weight: 500;
+            white-space: nowrap;
+          }
+
+          ._channel-count {
+            @extend ._center;
+            width: calc($baseSize * 17.5px);
+            height: calc($baseSize * 16px);
+            font-size: calc($baseSize * 9px);
+            background-color: rgba($color: #000000, $alpha: 0.25);
+            // transition: 0.3s;
+            padding: calc($baseSize * 1px) calc($baseSize * 1.5px);
+            border-radius: calc($baseSize * 6px);
+            border-bottom-left-radius: 0px;
+
+            span {
+              @extend ._center;
+              width: calc($baseSize * 17.5px);
+              height: calc($baseSize * 16px);
+            }
+          }
+        }
+
+        ._channel-tooltip {
+          position: absolute;
+          top: 114%;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: #404244;
+          color: #fff;
+          padding: calc($baseSize * 5px) calc($baseSize * 10px);
+          border-radius: calc($baseSize * 2px);
+          font-size: calc($baseSize * 10px);
+          font-weight: 500;
+          white-space: nowrap;
+          pointer-events: none;
+          z-index: 9999 !important;
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: calc($baseSize * 3px) solid transparent;
+            border-bottom-color: rgb(35, 35, 35);
+          }
+        }
+
+        ._channel-overlay {
+          position: absolute;
+          z-index: 0; 
+          background-color: transparent;
+        }
+
+        & > *:not(._channel-overlay) {
+          z-index: 1;
+        }
+      }
+
+      &._no-wrap {
+        flex-wrap: nowrap;
+      }
+
+      // inside modal
+      &._channels-inside-modal { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: calc($baseSize * 7px);
+        width: 100%;
+
+        ._channel {
+           
+          ._channel-label {
+            width: 100%;
+            text-align: left;
+
+            ._channel-name {
+              width: 100%;text-align: left;
+              span {
+                width: 100%;text-align: left;
+              }
+            }
+          }
+           
+          ._channel-icon {
+            svg {
+              width: calc($baseSize * $baseWidth);
+              padding: 0 $spacing;
+            }
+          }
+        }
+      }
+    }
+
+    &._both-label {
+      ._channels {
+        ._channel-name {
+          padding-right: 0;
+        }
+      }
+    }
+
+    &._inside_modal {
+      align-items: flex-start;
+    }
+
+    &._rounded {
+      &._spaced {
+        ._channel {
+          border-radius: $radius;
+          ._channel-icon {
+            border-radius: $radius;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+          ._channel-overlay {
+            border-radius: $radius; 
+          }
+        }
+      }
+      &._no-spaced {
+        ._channels {
+          border-radius: $radius !important;  
+
+          ._channel {
+            border-radius: 0;
+
+            &:first-child {
+              border-top-left-radius: $radius !important;
+              border-bottom-left-radius: $radius !important;
+
+              ._channel-overlay {
+                border-top-left-radius: $radius !important;
+                border-bottom-left-radius: $radius !important;
+              }
+            }
+
+            &:last-child {
+              border-top-right-radius: $radius !important;
+              border-bottom-right-radius: $radius !important;
+
+              ._channel-icon {
+                border-top-right-radius: $radius !important;
+                border-bottom-right-radius: $radius !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &._circle {
+      ._channels {
+        ._channel {
+          border-radius: 50px;
+          ._channel-icon {
+            border-radius: 50px;
+          }
+          ._channel-overlay {
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+
+    &._slanted {
+      ._total-share {
+
+        
+       
+
+        &::after {
+          transform: skewX(-20deg);
+          margin-right: $spacing;
+          margin-left: $spacing;
+        }
+      }
+      ._channels {
+        transform: skewX(-20deg);
+        ._channel {
+          
+
+          ._channel-icon svg,
+          ._channel-name,
+          ._channel-count {
+            transform: skewX(20deg);
+          }
+
+          ._channel-overlay {
+            transform: skewX(20deg);
+          }
+        }
+      }
+    }
+
+    &._spaced {
+      ._channels {
+        gap: calc($spacing / 1.5);
+
+        ._channel-icon {
+          background-color: $overlay;
+        }
+      }
+    }
+    &._no-spaced {
+      ._channels {
+        ._channel {
+          ._channel-icon {
+            span {
+              background-color: transparent;
+              width: auto !important;
+              padding-left: $spacing !important;
+            }
+          }
+        }
+      }
+    }
+
+    /**
+  * Button animation
+  */
+
+    &._channel-animation-1 {
+      ._channel {  
+        transition: scale .1s ease-in-out;
+        &:hover {
+          scale: 0.98
+        }
+      }
+    }
+
+    &._channel-animation-2 {
+      ._channels {
+        ._channel {
+          // overflow: hidden;
+          ._channel-overlay {
+            transition: 0.3s all;
+            opacity: 0;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%) scale(0);
+            background-color: rgba($color: #fff, $alpha: 0.1);
+            border-color: rgba($color: #fff, $alpha: 0.1);
+          }
+
+          &:hover {
+            ._channel-overlay {
+              opacity: 1;
+              transform: translate(-50%, -50%) scale(1);
+            }
+          }
+        }
+      }
+    }
+
+    &._channel-animation-3 {
+      @extend ._channel-animation-2;
+      ._channel-overlay {
+        background-color: rgba($color: #000, $alpha: 0.1) !important;
+        border-color: rgba($color: #000, $alpha: 0.1) !important;
+      }
+    }
+
+    &._channel-animation-4 {
+      ._channels {
+        ._channel {
+          // overflow: hidden;
+          ._channel-overlay {
+            transition: 0.3s all;
+            top: -1px;
+            left: -1px;
+            width: 0%;
+            height: calc(100% + 2px);
+            background-color: rgba($color: #fff, $alpha: 0.1);
+            border-color: rgba($color: #fff, $alpha: 0.1);
+          }
+
+          &:hover {
+            ._channel-overlay {
+              width: calc(100% + 2px);
+            }
+          }
+        }
+      }
+    }
+
+    &._channel-animation-5 {
+      @extend ._channel-animation-4;
+      ._channel-overlay {
+        background-color: rgba($color: #000, $alpha: 0.075) !important;
+        border-color: rgba($color: #000, $alpha: 0.075) !important;
+      }
+    }
+
+    &._channel-animation-6 {
+      ._channel {
+        ._channel-label {
+          position: absolute;
+          width: 0;
+          opacity: 0;
+          transition: 0.3s width;
+        }
+
+        &:hover {
+          ._channel-label {
+            width: 100%;
+            opacity: 1;
+            position: inherit;
+          }
+        }
+      }
+    }
+
+    /**
+  * Button template 2
+  */
+    &._channel-template-2 {
+      ._channel {
+        background-color: #fff !important;
+        gap: calc($spacing / 1.8);
+        padding-right: calc($spacing / 2);
+        
+        // base colors for social icons
+        @each $color in $colors {
+          &._icon-#{list.nth($color, 1)} {
+            // nth color opacity outline
+            // outline: 1px
+            //   solid
+            //   if(
+            //     nth($color, 1) == "light",
+            //     rgba(#000, 0.02),
+            //     rgba($color: nth($color, 2), $alpha: 0.07)
+            //   );
+
+            ._channel-icon {
+              background-color: transparent !important;
+              color: if(
+                #{list.nth($color, 1)} == "light",
+                rgba(#000, 0.8),
+                #{list.nth($color, 2)}
+              ) !important;
+            }
+
+            ._channel-icon {
+              width: calc($baseSize * $baseWidth);
+              span {
+                background-color: transparent !important;
+                width: auto !important;
+                padding-left: calc($spacing / 1.25) !important;
+              }
+            }
+
+            ._channel-name {
+              color: if(
+                #{list.nth($color, 1)} == "light",
+                rgba(#000, 0.8),
+                #{list.nth($color, 2)}
+              ) !important;
+              
+            }
+
+            ._channel-count {
+              background-color: #{list.nth($color, 2)} !important;
+            }
+          }
+        }
+      }
+
+      &._spaced {
+        
+        ._channels {
+          box-shadow: none !important;
+          gap: calc($spacing * 1.5);
+          ._channel {
+            border: 1px solid rgba($color: #000, $alpha: 0.1) !important;
+            box-shadow: 0px 0px 5px 2px rgba($color: #000000, $alpha: 0.06) !important;
+          }
+        }
+      }
+      &._no-spaced {
+        ._channels {
+          
+          border: 1px solid rgba($color: #000, $alpha: 0.09) !important;
+          box-shadow: 0px 0px 5px 2px rgba($color: #000000, $alpha: 0.06) !important;
+        }
+
+        &._circle {
+          ._channels {
+            border-radius: 50px !important;
+            flex-wrap: nowrap;
+            box-shadow: none !important;
+            border-color: transparent !important;
+
+            ._channel {
+              border: 1px solid rgba($color: #000, $alpha: 0.1) !important;
+            }
+          }
+        }
+
+        &._rectangular {
+          ._channels {
+            border-radius: 0px !important;
+            flex-wrap: nowrap;
+          }
+        }
+
+        &._slanted {
+          ._channels {  
+            flex-wrap: nowrap;
+            // border-color: transparent !important; 
+          }
+        }
+      } 
+
+      ._icon-light {
+        ._channel-label {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  /**
+   * Sibling support classes
+   */
+
+  // &._margined {
+  //   margin: calc($baseSize * 15px) 0;
+  // }
+
+  &.inline {
+    flex-direction: row;
+  }
+
+  // ._rounded {
+  //   ._icon-more {
+  //     padding: 0 ;
+  //   }
+  // }
+
+  //
+
+  /**
+  Customization
+  */
+  &._align-left {     
+    ._channels-container {
+      @extend ._start;
+    }
+  }
+
+  &._align-center {
+    @extend ._center;
+    ._channels-container {
+      @extend ._center;
+      text-align: center;
+    }
+  }
+
+  &._align-right {
+    justify-content: flex-end;
+    text-align: right;
+    
+    ._channels-container {
+      justify-content: flex-end;
+      text-align: right; 
+    }
+  }
+
+  &._align-stretch {
+    justify-content: space-between;
+    width: 100%;    
+    text-align: justify;
+    ._channels-container {
+      justify-content: space-between;
+      width: 100%;    
+
+      ._channels {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+        ._channel-label {
+          width: 100%;
+
+          ._channel-name {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  /**
+    Responsiveness
+  */
+  ._hide-on-mobile {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  ._hide-on-desktop {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  /**
+  * Button Animations
+  */
+
+  /**
+  * Others
+  */
+  // social icons
+
+  
+  ._icon-light {
+    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+    ._channel-label {
+      padding-right: 0 !important;
+      padding-left: calc($spacing / 2);
+
+      ._channel-name {
+        padding: 0 !important;
+        margin: 0;
+      }
+    }
+
+    svg {
+      width: calc($baseSize * 15px) !important;
+      height: calc($baseSize * 15px) !important;
+    }
+ 
+    gap: calc($spacing / 2) !important; 
+ 
+  }
+
+  // base colors for social icons
+  @each $color in $colors {
+    ._icon-#{list.nth($color, 1)} {
+      background-color: rgba($color: list.nth($color, 2), $alpha: 1);
+      color: if(#{list.nth($color, 1)} == "light", #333, #fff);
+      border: 1px solid if(#{list.nth($color, 1)} == "light", rgba(#000000, 0.8), rgba($color: list.nth($color, 2), $alpha: 0.7));
+    }
+  }
+
+  /**
+  * Responsive control
+  */
+
+  // mobile
+  @media (max-width: 576px) {
+  
+
+    ._channels-container {
+      align-items: center;
+      // flex-direction: column;
+      gap: $spacing;
+
+      ._channels {
+       justify-content: flex-start;
+      }
+    }
+  }
+}

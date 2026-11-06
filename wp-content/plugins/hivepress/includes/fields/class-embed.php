@@ -1,0 +1,96 @@
+<?php
+/**
+ * Embed field.
+ *
+ * @package HivePress\Fields
+ */
+
+namespace HivePress\Fields;
+
+use HivePress\Helpers as hp;
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+/**
+ * Embedded content.
+ */
+class Embed extends URL {
+
+	/**
+	 * Class initializer.
+	 *
+	 * @param array $meta Class meta values.
+	 */
+	public static function init( $meta = [] ) {
+		$meta = hp\merge_arrays(
+			[
+				'label' => esc_html_x( 'Embed', 'field', 'hivepress' ),
+			],
+			$meta
+		);
+
+		parent::init( $meta );
+	}
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Field arguments.
+	 */
+	public function __construct( $args = [] ) {
+		$args = hp\merge_arrays(
+			$args,
+			[
+				'display_type' => 'url',
+			]
+		);
+
+		parent::__construct( $args );
+	}
+
+	/**
+	 * Gets field value for display.
+	 *
+	 * @return mixed
+	 */
+	public function get_display_value() {
+		global $wp_embed;
+
+		if ( ! is_null( $this->value ) ) {
+			$embed = $wp_embed->shortcode( [], $this->value );
+
+			if ( $embed ) {
+
+				// @todo ensure it runs before rendering template.
+				wp_enqueue_style( 'wp-block-embed' );
+
+				return $embed;
+			}
+		}
+	}
+
+	/**
+	 * Escapes field value for display.
+	 *
+	 * @param mixed $value Field value.
+	 * @param bool  $raw Is raw value?
+	 * @return mixed
+	 */
+	protected function escape_display_value( $value, $raw = false ) {
+		if ( ! $raw ) {
+			return $value;
+		}
+
+		return parent::escape_display_value( $value, $raw );
+	}
+
+	/**
+	 * Sets field display template.
+	 *
+	 * @param string $display_template Display template.
+	 */
+	protected function set_display_template( $display_template ) {
+		Field::set_display_template( $display_template );
+	}
+}

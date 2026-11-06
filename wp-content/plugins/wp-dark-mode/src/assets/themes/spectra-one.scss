@@ -1,0 +1,5 @@
+[data-wp-dark-mode-active]:not([data-wp-dark-mode-preset='0']){
+   .elementor-button-content-wrapper , .elementor-button-content-wrapper * {
+    background-color: transparent !important;
+   }
+}

@@ -1,0 +1,424 @@
+@use 'sass:color';
+
+// Variables
+$bg_color: #171717;
+$text_color: #bfb7c0;
+$link_color: #f776f0;
+$border_color: color.adjust($bg_color, $lightness: 20%);
+$btn_color: color.adjust($bg_color, $lightness: 10%);
+
+// Mixin for chatham theme styles
+@mixin chatham-theme {
+  .interface-interface-skeleton__header,
+  .interface-interface-skeleton__body > div:not(.interface-interface-skeleton__content) {
+    // Main styles
+    :not(.wp-dark-mode-ignore):not(.wp-dark-mode-ignore *):not(mark):not(code):not(pre):not(ins):not(option):not(input):not(select):not(textarea):not(button):not(a):not(video):not(canvas):not(progress):not(iframe):not(svg):not(path):not(.mejs-iframe-overlay):not(.mejs-time-slider):not(.mejs-overlay-play):not(.block-editor-default-block-appender__content):not(.block-editor-inserter__search):not(.block-editor-inserter__search *) {
+      background-color: $bg_color !important;
+      color: $text_color !important;
+      border-color: $border_color !important;
+    }
+  }
+
+  // Link styles
+  a:not(.wp-dark-mode-ignore):not(.wp-dark-mode-ignore *),
+  a *:not(.wp-dark-mode-ignore) {
+    background-color: transparent !important;
+    color: $link_color !important;
+  }
+
+  // Link pseudo styles
+  a:active,
+  a:visited {
+    color: $link_color !important;
+    border-color: $border_color !important;
+  }
+
+  // Input styles
+  button:not(#collapse-button),
+  iframe, iframe *,
+  input,
+  select,
+  textarea:not(.block-editor-default-block-appender__content):not(.editor-post-title__input),
+  i:not(.wp-dark-mode-ignore):not(.wp-dark-mode-ignore *) {
+    background-color: $btn_color !important;
+    color: $text_color !important;
+    border-color: $border_color !important;
+    * {
+      background: transparent !important;
+    }
+  }
+
+  // Editor area styles
+  .interface-interface-skeleton__content,
+  .edit-post-visual-editor {
+    background: $bg_color;
+    color: $text_color;
+
+    :not(.wp-dark-mode-ignore):not(.wp-dark-mode-ignore *):not(img):not(a) {
+      color: $text_color !important;
+      border-color: $border_color !important;
+      background-color: $bg_color !important;
+    }
+
+    a,
+    a * {
+      &:not(.wp-dark-mode-ignore):not(.wp-dark-mode-ignore *) {
+        color: $link_color !important;
+      }
+    }
+
+    iframe,
+    iframe *,
+    input,
+    select,
+    textarea,
+    button {
+      &:not(.wp-dark-mode-ignore):not(.wp-dark-mode-ignore *) {
+        background: $btn_color !important;
+      }
+    }
+  }
+
+  // Popover and modal styles (portalled to body, outside skeleton)
+  .components-popover,
+  .components-modal__frame {
+    background-color: $bg_color !important;
+    color: $text_color !important;
+    border-color: $border_color !important;
+
+    :not(.wp-dark-mode-ignore):not(.wp-dark-mode-ignore *):not(svg):not(path):not(input):not(select):not(textarea) {
+      color: $text_color !important;
+      border-color: $border_color !important;
+    }
+
+    input {
+      background-color: $btn_color !important;
+      color: $text_color !important;
+      border-color: $border_color !important;
+    }
+
+    input::placeholder {
+      color: $text_color !important;
+      opacity: 0.6 !important;
+    }
+
+    svg {
+      color: $text_color !important;
+      fill: $text_color !important;
+    }
+
+    button {
+      background-color: transparent !important;
+      color: $text_color !important;
+
+      &:hover {
+        background-color: $btn_color !important;
+      }
+    }
+
+    a {
+      color: $link_color !important;
+      background-color: transparent !important;
+    }
+  }
+
+  // Classic block TinyMCE toolbar and statusbar inside modal
+  .mce-toolbar,
+  .mce-toolbar-grp,
+  .mce-top-part,
+  .mce-menubar,
+  .mce-statusbar,
+  .mce-panel,
+  .mce-container,
+  .mce-container-body,
+  .mce-flow-layout,
+  .mce-btn-group {
+    background-color: $btn_color !important;
+    border-color: $border_color !important;
+  }
+
+  .mce-btn {
+    background-color: $btn_color !important;
+    border-color: $border_color !important;
+
+    button {
+      color: $text_color !important;
+    }
+
+    &:hover,
+    &.mce-active {
+      background-color: $bg_color !important;
+    }
+  }
+
+  .mce-ico {
+    color: $text_color !important;
+  }
+
+  .mce-resizehandle {
+    background-color: $btn_color !important;
+  }
+
+  .mce-edit-area iframe {
+    background-color: $btn_color !important;
+  }
+
+  // Search input container â€” prefix area uses hashed Emotion classes, override via container
+  .components-input-control__container {
+    background-color: $btn_color !important;
+  }
+
+  .components-input-control__prefix,
+  .components-input-control-prefix-wrapper {
+    background-color: $btn_color !important;
+  }
+
+  // Inserter panel containers â€” override WP hashed-class bg rules
+  .block-editor-inserter__panel-content,
+  .block-editor-inserter__search,
+  .block-editor-inserter__quick-inserter,
+  .block-editor-inserter__menu,
+  .block-editor-tabbed-sidebar,
+  .editor-inserter-sidebar__content {
+    background-color: $bg_color !important;
+  }
+
+  // Inserter search input â€” override WP hashed-class color rules
+  .components-popover .components-input-control__input,
+  .components-popover .components-input-control__input:focus,
+  .components-modal__frame .components-input-control__input,
+  .components-modal__frame .components-input-control__input:focus,
+  .editor-inserter-sidebar__content .components-input-control__input,
+  .editor-inserter-sidebar__content .components-input-control__input:focus,
+  .block-editor-inserter__menu .components-input-control__input,
+  .block-editor-inserter__menu .components-input-control__input:focus,
+  .block-editor-inserter__quick-inserter .components-input-control__input,
+  .block-editor-inserter__quick-inserter .components-input-control__input:focus {
+    color: $text_color !important;
+    background-color: $btn_color !important;
+    -webkit-text-fill-color: $text_color !important;
+  }
+
+  .components-popover .components-input-control__input::placeholder,
+  .components-modal__frame .components-input-control__input::placeholder,
+  .editor-inserter-sidebar__content .components-input-control__input::placeholder,
+  .block-editor-inserter__menu .components-input-control__input::placeholder,
+  .block-editor-inserter__quick-inserter .components-input-control__input::placeholder {
+    color: $text_color !important;
+    opacity: 0.6 !important;
+  }
+
+  .components-popover svg,
+  .components-modal__frame svg,
+  .editor-inserter-sidebar__content svg,
+  .block-editor-inserter__menu svg,
+  .block-editor-inserter__quick-inserter svg {
+    color: $text_color !important;
+    fill: $text_color !important;
+  }
+
+  // Command palette modal overlay
+  .components-modal__screen-overlay {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+
+  // cmdk list items â€” keep selected item highlight, dark everything else
+  [cmdk-item] {
+    background-color: $bg_color !important;
+    color: $text_color !important;
+
+    &[data-selected="true"] {
+      background-color: $btn_color !important;
+    }
+
+    * {
+      background-color: transparent !important;
+      color: $text_color !important;
+    }
+  }
+
+  [cmdk-list],
+  [cmdk-group-items],
+  [cmdk-group],
+  [cmdk-list-sizer] {
+    background-color: $bg_color !important;
+  }
+
+  // WP media modal â€” sidebar/toolbar = $bg_color, content area = $btn_color
+  .media-modal,
+  .media-modal-backdrop,
+  .media-frame,
+  .media-frame-router,
+  .media-frame-toolbar,
+  .media-toolbar,
+  .media-toolbar-primary,
+  .media-toolbar-secondary,
+  .media-menu {
+    background-color: $bg_color !important;
+    color: $text_color !important;
+    border-color: $border_color !important;
+  }
+
+  .media-frame-content .attachments-browser {
+    background-color: $bg_color !important;
+    color: $text_color !important;
+    border-color: $border_color !important;
+  }
+
+  .media-frame-content,
+  .media-frame-content .attachments,
+  .media-frame-content .uploader-inline,
+  .media-frame-content .uploader-inline-content,
+  .media-frame-content .uploader-inline .upload-ui,
+  .media-frame-content .uploader-inline .upload-instructions,
+  .media-frame-content .uploader-window,
+  .media-frame-content .drag-drop-area,
+  .media-sidebar {
+    background-color: $btn_color !important;
+    color: $text_color !important;
+    border-color: $border_color !important;
+  }
+
+  .media-menu .media-menu-item {
+    color: $text_color !important;
+
+    &.active,
+    &:hover {
+      background-color: $btn_color !important;
+      color: $text_color !important;
+    }
+  }
+
+  .media-router .media-menu-item {
+    color: $text_color !important;
+    border-color: $border_color !important;
+
+    &.active {
+      background-color: $btn_color !important;
+    }
+  }
+
+  .media-frame-content .attachments {
+    background-color: $bg_color !important;
+  }
+
+  .attachment,
+  .attachment .attachment-preview,
+  .attachment .thumbnail,
+  .attachment .centered,
+  .attachment .filename,
+  .attachment .thumbnail img {
+    background-color: $btn_color !important;
+    color: $text_color !important;
+    border-color: $border_color !important;
+  }
+
+  .attachment:focus,
+  .attachment.selected,
+  .attachment:hover {
+    background-color: color.adjust($btn_color, $lightness: 5%) !important;
+  }
+
+  .media-toolbar-primary,
+  .media-toolbar-secondary {
+    background-color: $bg_color !important;
+
+    input,
+    select {
+      background-color: $btn_color !important;
+      color: $text_color !important;
+      border-color: $border_color !important;
+    }
+  }
+
+  .media-frame .media-frame-title h1,
+  .media-modal .media-frame-title h1 {
+    color: $text_color !important;
+  }
+
+  .media-modal .media-button-select,
+  .media-modal .button {
+    color: $text_color !important;
+    border-color: $border_color !important;
+  }
+
+  .media-modal-close .media-modal-icon {
+    color: $text_color !important;
+  }
+
+  .media-modal h1,
+  .media-modal h2,
+  .media-modal h3,
+  .media-modal label,
+  .media-modal p,
+  .media-modal span,
+  .media-modal .media-frame-menu-heading,
+  .media-modal .attachment-details,
+  .media-modal .settings-save-status,
+  .media-modal .describe,
+  .media-modal .compat-meta {
+    color: $text_color !important;
+  }
+
+  // Editor title styles
+  .editor-post-title {
+    color: $text_color;
+  }
+
+  // Sidebar styles
+  .interface-interface-skeleton__sidebar {
+    background-color: $bg_color;
+  }
+
+  // WP 7.0+: editor canvas lives inside an iframe. editor_style CSS is injected
+  // into the iframe by WordPress. JS mirrors wp-dark-mode-theme-* to iframe html,
+  // so these selectors targeting iframe-internal .editor-styles-wrapper activate.
+  // html bg set here prevents white flash before body bg rule activates.
+  html {
+    background-color: $bg_color !important;
+  }
+
+  .editor-styles-wrapper {
+    background-color: $bg_color !important;
+    color: $text_color !important;
+  }
+
+  .editor-styles-wrapper :not(.wp-dark-mode-ignore):not(.wp-dark-mode-ignore *):not(img):not(a):not(video):not(canvas):not(svg):not(path) {
+    color: $text_color !important;
+    border-color: $border_color !important;
+  }
+
+  .editor-styles-wrapper a:not(.wp-dark-mode-ignore):not(.wp-dark-mode-ignore *),
+  .editor-styles-wrapper a *:not(.wp-dark-mode-ignore):not(.wp-dark-mode-ignore *) {
+    color: $link_color !important;
+    background-color: transparent !important;
+  }
+
+  .editor-styles-wrapper input,
+  .editor-styles-wrapper select,
+  .editor-styles-wrapper textarea:not(.block-editor-default-block-appender__content),
+  .editor-styles-wrapper button {
+    background-color: $btn_color !important;
+    color: $text_color !important;
+    border-color: $border_color !important;
+  }
+
+  .editor-styles-wrapper .wp-block-post-title,
+  .editor-styles-wrapper .editor-post-title {
+    color: $text_color !important;
+    caret-color: $text_color !important;
+  }
+
+  .editor-styles-wrapper .components-placeholder,
+  .editor-styles-wrapper .wc-blocks-components-select__container,
+  .editor-styles-wrapper .wc-block-components-order-summary-item__quantity {
+    background-color: $btn_color !important;
+    color: $text_color !important;
+  }
+
+  .editor-styles-wrapper textarea::placeholder,
+  .editor-styles-wrapper input::placeholder {
+    color: $text_color !important;
+    opacity: 0.6 !important;
+  }
+}

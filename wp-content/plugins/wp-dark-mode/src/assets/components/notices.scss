@@ -1,0 +1,51 @@
+// Notice.
+@tailwind utilities;
+
+#wp-dark-mode-admin-notices {
+    @apply m-0 p-0;
+
+}
+
+.wp-dark-mode-admin-notices {
+    @apply pr-5;
+}
+
+.wp-dark-mode-notice {
+    @apply relative pb-4 first:pt-4;
+
+    &-wrapper {
+        @apply bg-white px-2 py-4 sm:py-3 sm:px-5 flex gap-3 rounded flex-col sm:flex-row relative clear-both;
+    }
+
+    .notice-logo {
+        @apply w-fit;
+
+        & > div {
+            @apply w-20 h-20 bg-red-50 flex items-center justify-center rounded-full;;
+        }
+    }
+
+    .notice-content {
+        @apply w-full flex flex-col gap-5 font-normal;
+    }
+
+    .notice-header {
+        @apply flex items-center justify-between gap-3;
+    }
+
+    .notice-text {
+        @apply flex flex-col gap-0;
+
+        & > div {
+            @apply flex items-center gap-4;
+        }
+    }
+}
+
+.wp-dark-mode-flex {
+    @apply flex;
+}
+
+.wp-dark-mode-fixed {
+    @apply fixed;
+}

@@ -1,0 +1,4 @@
+// Write a Function scaled.
+@function scaled($value) {
+    @return calc( $value * var(--wpdm-switch-scale, 1) );
+}

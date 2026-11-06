@@ -1,0 +1,86 @@
+
+// inline switches 
+.wp-dark-mode-switch {
+    @apply inline-flex items-center justify-center cursor-pointer z-auto;
+
+    &>div {
+        @apply inline-flex items-center justify-center w-full h-full;
+    }
+}
+
+// floating switch 
+.wp-dark-mode-floating-switch {
+    @apply fixed flex items-center gap-2 z-[9999999999];
+
+    &-hidden {
+        display: none !important;
+        opacity: 0 !important;
+        pointer-events: none;
+        width: 0;
+        margin: 0;
+        padding: 0;
+        height: 0;
+    }
+
+    &.reverse {
+        @apply flex-row-reverse;
+    }
+
+    $unit: 20px;
+
+    // all positions
+    &.top-left {
+        top: $unit;
+        left: $unit;
+    }
+
+    &.top-right {
+        top: $unit;
+        right: $unit;
+    }
+
+    &.bottom-left {
+        bottom: $unit;
+        left: $unit;
+    }
+
+    &.bottom-right {
+        bottom: $unit;
+        right: $unit;
+    }
+
+    // Hide classes for different devices, no conflict
+    // &.wp-dark-mode-hide-desktop {
+    //     @apply hidden md:flex;
+    // }
+
+    // &.wp-dark-mode-hide-mobile {
+    //     @apply hidden sm:flex md:hidden;
+    // }
+
+    // &.wp-dark-mode-hide-tablet {
+    //     @apply hidden sm:flex;
+    // }
+
+    &.wp-dark-mode-hide-mobile {
+        // Hide when screen size is less than 640px
+        @media (max-width: 480px) {
+            @apply hidden #{!important};
+        }
+    }
+
+    &.wp-dark-mode-hide-tablet {
+        // Hide when screen size is more than 640px and less than 768px
+        @media (min-width: 481px) and (max-width: 1024px) {
+            @apply hidden #{!important};
+        }
+    }
+
+    &.wp-dark-mode-hide-desktop {
+        // Hide when screen size is more than 768px
+        @media (min-width: 1025px) {
+            @apply hidden #{!important};
+        }
+    }
+
+}

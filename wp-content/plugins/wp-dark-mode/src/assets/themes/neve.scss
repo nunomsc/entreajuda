@@ -1,0 +1,13 @@
+@use '../components/theme-vars.scss';
+
+.wp-dark-mode-switch-2.active {
+    ._track ._thumb {
+        left: theme-vars.scaled( 3px ) !important;
+    }
+}
+
+[data-wp-dark-mode-active][data-wp-dark-mode-preset="0"] {
+    .header-menu-sidebar-bg, [class*=row-inner], #header {
+        background-color: transparent !important;
+    }
+}

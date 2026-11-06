@@ -1,0 +1,114 @@
+@use "sass:color";
+@use 'components/switch-animations.scss';
+@use 'components/site-animations.scss';
+@use 'switches/switches.scss';
+
+// Define variables
+$dark-background: #222;
+$secondary-background: #212121;
+$text-color: #f0f0f0;
+$border-color: #dcdcdc;
+
+@mixin dark-mode-link-styles {
+    color: var(--wp-dark-link-color, inherit) !important;
+
+    &:hover {
+        color: var(--wp-dark-link-hover-color, inherit) !important;
+        filter: brightness(1.2);
+    }
+}
+
+@mixin dark-mode-media-styles {
+    filter: brightness(var(--wp-dark-img-brightness, 100%)) grayscale(var(--wp-dark-img-grayscale, 0%)) !important;
+}
+
+// Dark mode activation classes
+html {
+    
+    $elements: ('div', 'aside', 'header', 'footer', 'main', 'section', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'article', 'nav', 'ul', 'ol', 'li', 'span', 'i', 'b', 'strong', 'em', 'small', 'big', 'pre', 'code', 'blockquote', 'q', 'cite');
+
+    &[data-wp-dark-mode-active]:not([data-wp-dark-mode-preset="0"]),
+    &.wp-dark-mode-active:not([data-wp-dark-mode-preset="0"]),
+    &[data-wp-dark-mode-loading]:not([data-wp-dark-mode-preset="0"]) {
+
+        body {
+            // Links
+            a:not(.wp-dark-mode-ignore, .wp-dark-mode-ignore *, .button, .btn, .wp-element-button, .wp-block-button__link) {
+                @include dark-mode-link-styles;
+            }
+
+            // Buttons
+            button, .button, .btn, .wp-element-button, .wp-block-button__link, .elementor-button, input[type="submit"] {
+                &:not(.wp-dark-mode-ignore, .wp-dark-mode-ignore *) {
+                    color: var(--wp-dark-button-text-color, inherit) !important;
+                    background-color: var(--wp-dark-button-background-color, inherit) !important;
+                    border-color: var(--wp-dark-button-border-color, inherit) !important;
+
+                    &:hover {
+                        color: var(--wp-dark-button-hover-text-color, inherit) !important;
+                        background-color: var(--wp-dark-button-hover-background-color, inherit) !important;
+                        border-color: var(--wp-dark-button-hover-border-color, inherit) !important;
+                    }
+                }
+            }
+
+            // Images, videos, and iframes
+            img, video, iframe {
+                &:not(.wp-dark-mode-ignore, .wp-dark-mode-bg-image, .wp-dark-mode-bg-image *) {
+                    @include dark-mode-media-styles;
+                }
+            }
+
+            // Input fields
+            input:not(.wp-dark-mode-ignore, .wp-dark-mode-ignore *, [type="radio"], [type="checkbox"]),
+            textarea:not(.wp-dark-mode-ignore, .wp-dark-mode-ignore *),
+            select:not(.wp-dark-mode-ignore, .wp-dark-mode-ignore *) {
+                color: var(--wp-dark-input-text-color, $text-color) !important;
+                background-color: var(--wp-dark-input-background-color, $dark-background) !important;
+                border-color: var(--wp-dark-input-border-color, $text-color) !important;
+
+                &::placeholder {
+                    color: var(--wp-dark-input-placeholder-color, $text-color) !important;
+                }
+            }
+
+            // SVG elements
+            // svg {
+            //     fill: var(--wpdm-text-color, $text-color) !important;
+            // }
+        }
+
+    }
+
+
+
+
+
+    &.wp-dark-mode-large-font * {
+        font-size: var(--wp-dark-large-font-sized, 1.0rem) !important;
+    }
+
+    // Preset-specific styles
+    &[data-wp-dark-mode-preset='0'] {
+        filter: grayscale(var(--wp-dark-grayscale, 0%));
+    }
+
+    // Loading state styles
+    &[data-wp-dark-mode-loading] {
+        .wp-dark-mode-image {
+            transition: opacity 0.02s ease-in-out !important;
+        }
+
+        // &.wp-dark-mode-large-font * {
+        //     font-size: var(--wpdm-large-font-size, 1.0rem) !important;
+        // }
+    }
+}
+
+.wp-dark-mode-floating-switch {
+    transition: opacity 0.1s linear;
+    opacity: 1;
+}
+.wp-dark-mode-floating-switch-hidden {
+    opacity: 0 !important;
+}

@@ -1,0 +1,29 @@
+<?php
+/**
+ * Plugin Name: HivePress Messages
+ * Description: Allow users to send private messages.
+ * Requires at least: 5.7
+ * Requires PHP: 7.4
+ * Version: 1.4.1
+ * Author: HivePress
+ * Author URI: https://hivepress.io/
+ * License: GPLv3
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.html
+ * Text Domain: hivepress-messages
+ * Domain Path: /languages/
+ *
+ * @package HivePress
+ */
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+// Register extension directory.
+add_filter(
+	'hivepress/v1/extensions',
+	function( $extensions ) {
+		$extensions[] = __DIR__;
+
+		return $extensions;
+	}
+);

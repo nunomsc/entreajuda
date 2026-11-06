@@ -1,0 +1,49 @@
+@use "./editor/style"; 
+
+.image-choose-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-choose-opt {
+    width: 32.5%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.image-choose-opt img {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0;
+    margin: 0;
+}
+
+.image-choose-opt.active {
+    border: 1px solid #555;
+}
+
+.image-choose-opt input {
+    display: none;
+}
+
+.switch-disabled {
+    opacity: .6;
+    filter: brightness(.6);
+}
+
+
+[for="style_8"],
+[for="style_9"],
+[for="style_10"],
+[for="style_11"],
+[for="style_12"],
+[for="style_13"] {
+  border: 1px solid #ddd;
+  img {
+    height: auto;
+    width: 90%;
+  }
+
+}

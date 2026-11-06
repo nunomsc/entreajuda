@@ -1,0 +1,8 @@
+@use 'variables' as *;
+@use 'switch-18' as *;
+
+.wp-dark-mode-switch-19 {
+    @extend .wp-dark-mode-switch-special;
+    @extend .wp-dark-mode-switch-18;
+
+}

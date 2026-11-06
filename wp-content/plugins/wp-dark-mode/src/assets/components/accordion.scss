@@ -1,0 +1,5 @@
+.wp-dark-mode-accordion {
+    &-item {
+        @apply flex flex-col gap-2;
+    }
+}

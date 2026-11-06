@@ -1,0 +1,60 @@
+# WordPress core (installed separately)
+# /wp-admin/
+# /wp-includes/
+# /index.php
+# /wp-*.php
+!/wp-config-sample.php
+#/xmlrpc.php
+#/license.txt
+#/readme.html
+
+# Local configuration and secrets
+/wp-config.php
+/.htaccess
+/.htpasswd
+.env
+.env.*
+!.env.example
+!.env.sample
+/.user.ini
+/php.ini
+/local-xdebuginfo.php
+
+# Uploaded media, translations and generated WordPress files
+# /wp-content/uploads/
+# /wp-content/languages/
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/upgrade-temp-backup/
+/wp-content/debug.log
+/wp-content/advanced-cache.php
+/wp-content/object-cache.php
+/wp-content/wp-cache-config.php
+
+# Backup and migration plugin output
+/wp-content/ai1wm-backups/
+/wp-content/updraft/
+/wp-content/backups/
+/wp-content/backup-db/
+/wp-content/wpvividbackups/
+/wp-snapshots/
+/wp-content/dup-installer/
+
+# Keep themes, plugins and mu-plugins versioned
+# Dependencies can be restored with their package managers
+node_modules/
+vendor/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# Editor and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini

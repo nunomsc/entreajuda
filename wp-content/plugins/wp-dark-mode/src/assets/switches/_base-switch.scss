@@ -1,0 +1,234 @@
+@use '_variables'   as *;
+// normal switches 
+
+.wp-dark-mode-switch-normal {
+    @apply inline-flex items-center justify-center cursor-pointer gap-1 z-auto;
+    * {
+        @apply cursor-pointer;
+    }
+
+    & > span {
+        @apply inline-flex items-center justify-center text-center whitespace-nowrap text-xs;
+    }
+
+    // track 
+    & > ._track {
+        @apply inline-flex items-center justify-between relative rounded-full gap-0.5 transition-all duration-300;
+        width: $switchWidth;
+        height: $switchHeight;
+        padding: $switchSpace;
+
+        // the thumb 
+       & > ._thumb {
+            @apply absolute shadow-lg rounded-full inline-flex items-center justify-center transition-all duration-300;
+            // @apply top-1/2 -translate-y-1/2 #{!important};
+            width: calc($switchHeight - $switchSpace * 2);
+            height: calc($switchHeight - $switchSpace * 2);
+            left: scaled( 2px ) !important;
+
+            // icon inside the thumb 
+           & > ._icon {
+                @apply inline-flex items-center justify-center w-fit transition-all duration-300 absolute top-1/2 -translate-y-1/2;
+
+                svg,
+                img {
+                    @apply max-w-full  bg-transparent;
+                    width: 60%;
+                }
+
+                &:nth-child(2) {
+                    @extend ._hide;
+                }
+            }
+        }
+
+        // icon outside the thumb, inside the track 
+       & > ._icon {
+            @apply inline-flex items-center justify-center w-fit;
+
+            margin-left: $switchSpace;
+            margin-right: $switchSpace;
+
+            svg,
+            img {
+                @apply max-w-full;
+                width: 80%;
+            }
+        }
+    }
+
+    // icon outside the track 
+    & > ._icon {
+        @apply inline-flex items-center justify-center w-fit;
+
+        svg,
+        img {
+            @apply max-w-full bg-transparent;
+            width: 50% !important;
+        }
+    }
+
+    &.active {
+        ._track {
+            ._thumb {
+                transform: translateX(calc($switchWidth - $switchHeight));
+                margin-right: scaled( 4px ) !important;
+
+                ._icon {
+                    &:nth-child(1) {
+                        @extend ._hide;
+                    }
+
+                    &:nth-child(2){
+                        @extend ._show;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+// accessibility switches
+
+.wp-dark-mode-switch-special {
+
+    &:not(.horizontal) {
+        height: scaled(108px) !important;
+        width: scaled(46px) !important;
+    }
+
+    &.horizontal {
+        height: scaled(46px) !important;
+        width: scaled(108px) !important;
+    }
+    
+    & {
+        border-radius: 8px !important;
+        border: scaled(2px) solid #4a5568 !important;
+        
+        @apply bg-white inline-flex flex-col text-gray-700 items-center overflow-hidden justify-center cursor-pointer border border-gray-600 divide-y divide-gray-600  z-auto #{!important};
+    }
+   
+
+    ._scheme, ._font {
+        @apply inline-flex  items-center justify-center text-center text-2xl font-medium relative h-1/2 w-full #{!important};
+
+        ._icon {
+            @apply inline-flex items-center justify-center w-full h-full;
+            svg,
+            img {
+                @apply max-w-full;
+                width: 40%;
+            }
+    
+            &:last-child {
+                @apply hidden;
+                // @extend ._hide;
+            }
+        }
+
+    }
+
+    @mixin _active($color : rgba(0, 0, 0, 1)) {
+        background: $color !important;
+        @apply text-white #{!important};
+
+        ._icon {
+            &:first-child {
+                // @extend ._hide;
+                @apply hidden;
+            }
+
+            &:last-child {
+                // @extend ._show;
+                @apply inline-flex;
+            }
+        }
+    }
+
+    // &.active {
+    //     ._scheme {
+    //         @include _active();
+    //     }
+    // }
+    ._scheme.active {
+        @include _active();
+    }
+
+
+    ._font.active {
+        @include _active();
+    }
+
+}
+
+
+._hide {
+    animation: hide .1s forwards;
+}
+
+._show {
+    animation: show .1s forwards;
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0 ;
+        display: none !important;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        display: inline-flex;
+    }
+}
+
+
+// cta.
+.wp-dark-mode-switch-cta {
+    @apply text-sm whitespace-nowrap p-3 rounded-lg shadow-sm;
+}
+
+.wp-dark-mode-switch {
+
+    $size : var(--wpdm-switch-size, 80px);
+    .light, .dark {
+        width:  $size;
+        img, svg  {
+            @apply max-w-full;
+        }
+    }
+    .light {
+        @apply block;
+    }
+    .dark {
+        @apply hidden;
+    } 
+
+    &.active {
+        .light {
+            @apply hidden;
+        }
+        .dark {
+            @apply block;
+        }
+    }
+
+    &.rounded {
+        .light, .dark {
+            width: $size;
+            height: $size;
+            @apply rounded-full overflow-hidden;
+        }
+    }
+}

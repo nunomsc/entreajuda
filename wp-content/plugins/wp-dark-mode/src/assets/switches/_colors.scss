@@ -1,0 +1,30 @@
+.wp-dark-mode-active,[data-wp-dark-mode] {
+    .wp-dark-mode-link a {
+        color: var(--wpdm-link, 'blue');
+    }
+    
+    .wp-dark-mode-link a:hover {
+        color: var(--wpdm-link-hover, 'blue');
+    }
+    
+    .wp-dark-mode-input {
+        background: var(--wpdm-input-bg, '#222');
+        color: var(--wpdm-input-text, 'black');
+        border: 2px solid var(--wpdm-input-text, 'black');
+    }
+    
+    .wp-dark-mode-input::placeholder {
+        color: var(--wpdm-input-placeholder, 'black');
+    }
+    
+    .wp-dark-mode-button {
+        background: var(--wpdm-button-bg, '#222');
+        color: var(--wpdm-button-text, 'black');
+        border: 2px solid var(--wpdm-button-border, 'black');
+    }
+    
+    .wp-dark-mode-button:hover {
+        background: var(--wpdm-button-hover-bg, '#222');
+        color: var(--wpdm-button-hover-text, 'black');
+    }
+}

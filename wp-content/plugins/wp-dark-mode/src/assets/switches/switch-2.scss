@@ -1,0 +1,39 @@
+@use './variables' as *;
+@use './base-switch' as *;
+
+.wp-dark-mode-switch-2 {
+    @extend .wp-dark-mode-switch-normal;
+    ._track {
+        background: rgba(236, 236, 236, 1) ;
+        width: fit-content !important;
+        @apply rounded-full;
+
+        span {
+            @apply z-10 text-center w-1/2 whitespace-nowrap font-medium;
+            padding: 0 scaled(15px);
+            font-size: scaled(12px);
+        }
+
+        ._thumb {
+            @apply transition-all duration-300;
+            background: #FFF !important;
+            width: 50% !important;
+        }
+        
+    }
+
+    &.active {
+        ._track {
+            color:rgb(53, 53, 59) !important;
+        }
+        ._thumb {
+           background: rgba(53, 53, 59, 1);
+           transform: translateX(calc(100% - $switchSpace * 2 - 1px)) !important;
+        }
+        span {
+            &:last-child {
+                // @apply text-white;
+            }
+        }
+    }
+}
