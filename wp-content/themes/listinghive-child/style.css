@@ -298,3 +298,13 @@ html[data-ej-theme="dark"] .hp-icon.fa-edit {
 html[data-ej-theme="dark"] .hp-listing-category__item-count {
    background-color: rgba(7, 36, 86, 0.085);
 }
+
+/* Faixa dos títulos das páginas no modo escuro */
+html[data-ej-theme="dark"] .header-hero--title {
+    background: #1f2937;
+    border-bottom: 1px solid #374151;
+}
+
+html[data-ej-theme="dark"] .header-hero--title .page__title {
+    color: #f3f4f6;
+}
