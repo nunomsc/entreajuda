@@ -10,74 +10,74 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2026-10-21T17:40:12+00:00\n"
-"PO-Revision-Date: 2026-11-06 13:07+0000\n"
+"PO-Revision-Date: 2026-11-06 14:26+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: hivepress\n"
 "Language: pt_PT\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.8.9; wp-7.1.4; php-8.2.29"
 
-#. translators: 1: field label, 2: date.
+#. 1: field label, 2: date.
 #: includes/fields/class-date.php:340
 #, php-format
 msgid "\"%1$s\" can't be earlier than %2$s."
 msgstr ""
 
-#. translators: 1: field label, 2: number.
+#. 1: field label, 2: number.
 #: includes/fields/class-number.php:202
 #, php-format
 msgid "\"%1$s\" can't be greater than %2$s."
 msgstr ""
 
-#. translators: 1: field label, 2: date.
+#. 1: field label, 2: date.
 #: includes/fields/class-date.php:349
 #, php-format
 msgid "\"%1$s\" can't be later than %2$s."
 msgstr ""
 
-#. translators: 1: field label, 2: length.
+#. 1: field label, 2: length.
 #: includes/configs/strings.php:118
 #, php-format
 msgid "\"%1$s\" can't be longer than %2$s characters."
 msgstr ""
 
-#. translators: 1: field label, 2: number.
+#. 1: field label, 2: number.
 #: includes/fields/class-number.php:197
 #, php-format
 msgid "\"%1$s\" can't be lower than %2$s."
 msgstr ""
 
-#. translators: 1: field label, 2: length.
+#. 1: field label, 2: length.
 #: includes/configs/strings.php:120
 #, php-format
 msgid "\"%1$s\" should be at least %2$s characters long."
 msgstr ""
 
-#. translators: %s: field label.
+#. %s: field label.
 #: includes/configs/strings.php:114
 #, php-format
 msgid "\"%s\" field contains an invalid value."
 msgstr ""
 
-#. translators: %s: field label.
+#. %s: field label.
 #: includes/configs/strings.php:116
 #, php-format
 msgid "\"%s\" field contains too many values."
 msgstr ""
 
-#. translators: %s: field label.
+#. %s: field label.
 #: includes/fields/class-field.php:528 includes/fields/class-file.php:79
 #, php-format
 msgid "\"%s\" field is required."
 msgstr ""
 
-#. translators: %s: annual price.
+#. %s: annual price.
 #: templates/admin/extensions.php:99
 #, php-format
 msgid "%s / year"
 msgstr ""
 
-#. translators: %s: extension name.
+#. %s: extension name.
 #: includes/configs/strings.php:110
 #, php-format
 msgid ""
@@ -85,13 +85,13 @@ msgid ""
 "update HivePress or deactivate it."
 msgstr ""
 
-#. translators: %s: extensions number.
+#. %s: extensions number.
 #: templates/admin/extensions.php:81
 #, php-format
 msgid "%s Extensions"
 msgstr ""
 
-#. translators: %s: Listings number.
+#. %s: Listings number.
 #: includes/configs/strings.php:129
 #, php-format
 msgid "%s Listing"
@@ -99,7 +99,7 @@ msgid_plural "%s Listings"
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: %s: WooCommerce.
+#. %s: WooCommerce.
 #: includes/configs/strings.php:106
 #, php-format
 msgid "%s Product"
@@ -161,7 +161,7 @@ msgstr ""
 msgid "Add Vendor"
 msgstr ""
 
-#. translators: %s: date.
+#. %s: date.
 #: includes/configs/strings.php:104
 #, php-format
 msgid "Added on %s"
@@ -247,7 +247,7 @@ msgstr ""
 msgid "App ID"
 msgstr ""
 
-#. translators: %s: link URL.
+#. %s: link URL.
 #: includes/components/class-admin.php:1992
 #, php-format
 msgid ""
@@ -404,7 +404,7 @@ msgid ""
 "names."
 msgstr ""
 
-#. translators: %s: terms URL.
+#. %s: terms URL.
 #: includes/configs/settings.php:470
 #, php-format
 msgid ""
@@ -549,7 +549,7 @@ msgstr ""
 msgid "Date Range"
 msgstr ""
 
-#. translators: %s: plugin name.
+#. %s: plugin name.
 #: includes/components/class-admin.php:2124
 #, php-format
 msgid "Deactivate %s"
@@ -740,13 +740,13 @@ msgstr ""
 msgid "Expiration Period"
 msgstr ""
 
-#. translators: %s: date.
+#. %s: date.
 #: includes/configs/strings.php:50
 #, php-format
 msgid "Expired %s"
 msgstr ""
 
-#. translators: %s: date.
+#. %s: date.
 #: includes/configs/strings.php:48
 #, php-format
 msgid "Expires %s"
@@ -876,7 +876,7 @@ msgstr ""
 msgid "Grant Access"
 msgstr ""
 
-#. translators: %s: link URL.
+#. %s: link URL.
 #: includes/components/class-admin.php:1953
 #, php-format
 msgid ""
@@ -885,7 +885,7 @@ msgid ""
 "functionality."
 msgstr ""
 
-#. translators: %s: link URL.
+#. %s: link URL.
 #: includes/components/class-admin.php:1979
 #, php-format
 msgid ""
@@ -897,7 +897,7 @@ msgstr ""
 msgid "Height"
 msgstr ""
 
-#. translators: %s: terms URL.
+#. %s: terms URL.
 #: includes/components/class-admin.php:1967
 #, php-format
 msgid ""
@@ -906,49 +906,42 @@ msgid ""
 msgstr ""
 
 #: includes/emails/class-user-password-request.php:48
-#, php-format
 msgid ""
 "Hi, %user_name%! Please click on the following link to set a new password: "
 "%password_reset_url%"
 msgstr ""
 
 #: includes/emails/class-user-email-verify.php:48
-#, php-format
 msgid ""
 "Hi, %user_name%! Please click on the following link to verify your email "
 "address: %email_verify_url%"
 msgstr ""
 
 #: includes/emails/class-user-register.php:48
-#, php-format
 msgid ""
 "Hi, %user_name%! Thank you for registering, now you can access website areas "
 "that require an account."
 msgstr ""
 
 #: includes/emails/class-listing-reject.php:48
-#, php-format
 msgid ""
 "Hi, %user_name%! Unfortunately, your listing \"%listing_title%\" has been "
 "rejected."
 msgstr ""
 
 #: includes/emails/class-user-delete.php:48
-#, php-format
 msgid ""
 "Hi, %user_name%! Your account has been deleted, along with any associated "
 "content."
 msgstr ""
 
 #: includes/emails/class-listing-approve.php:48
-#, php-format
 msgid ""
 "Hi, %user_name%! Your listing \"%listing_title%\" has been approved, click "
 "on the following link to view it: %listing_url%"
 msgstr ""
 
 #: includes/emails/class-listing-expire.php:48
-#, php-format
 msgid ""
 "Hi, %user_name%! Your listing \"%listing_title%\" has expired, click on the "
 "following link to renew it: %listing_url%"
@@ -959,9 +952,8 @@ msgstr ""
 msgid "Hide"
 msgstr ""
 
-#. Plugin Name of the plugin
+#. Name of the plugin
 #. Author of the plugin
-#: hivepress.php
 msgid "HivePress"
 msgstr ""
 
@@ -969,13 +961,12 @@ msgstr ""
 msgid "HivePress Store"
 msgstr ""
 
-#. Plugin URI of the plugin
+#. URI of the plugin
 #. Author URI of the plugin
-#: hivepress.php
 msgid "https://hivepress.io/"
 msgstr ""
 
-#. translators: %s: terms URL.
+#. %s: terms URL.
 #: includes/configs/strings.php:112
 #, php-format
 msgid ""
@@ -1034,7 +1025,7 @@ msgstr ""
 msgid "It lacks the required features"
 msgstr ""
 
-#. translators: %s: link URL.
+#. %s: link URL.
 #: includes/components/class-admin.php:1938
 #, php-format
 msgid ""
@@ -1055,7 +1046,7 @@ msgstr ""
 msgid "Last Name"
 msgstr "Apelido"
 
-#. translators: %s: time.
+#. %s: time.
 #: includes/components/class-user.php:109
 #, php-format
 msgid "Last seen %s ago"
@@ -1170,7 +1161,7 @@ msgstr ""
 msgid "Listings"
 msgstr "Listagens"
 
-#. translators: %s: Vendor name.
+#. %s: Vendor name.
 #: includes/configs/strings.php:131
 #, php-format
 msgid "Listings by %s"
@@ -1249,8 +1240,9 @@ msgstr ""
 msgid "Maximum Value"
 msgstr ""
 
-#. translators: %s: date.
+#. %s: date.
 #: templates/user/view/user-registered-date.php:8
+#: templates/vendor/view/vendor-registered-date.php:8
 #, php-format
 msgid "Member since %s"
 msgstr "Membro desde %s"
@@ -1284,7 +1276,6 @@ msgid "Moderation"
 msgstr ""
 
 #. Description of the plugin
-#: hivepress.php
 msgid "Multipurpose directory, listing & classifieds plugin."
 msgstr ""
 
@@ -1377,14 +1368,14 @@ msgstr ""
 msgid "Online"
 msgstr ""
 
-#. translators: %s: file extensions.
+#. %s: file extensions.
 #: includes/controllers/class-attachment.php:176
 #: includes/fields/class-file.php:83
 #, php-format
 msgid "Only %s files are allowed."
 msgstr ""
 
-#. translators: %s: files number.
+#. %s: files number.
 #: includes/controllers/class-attachment.php:164
 #: includes/fields/class-attachment-upload.php:342
 #, php-format
@@ -1479,7 +1470,7 @@ msgstr ""
 msgid "Placeholder Image"
 msgstr ""
 
-#. translators: 1: settings URL, 2: unlicensed products.
+#. 1: settings URL, 2: unlicensed products.
 #: includes/components/class-admin.php:1910
 #, php-format
 msgid ""
@@ -1585,7 +1576,7 @@ msgstr "Imagem de Perfil"
 msgid "Profile Info"
 msgstr "Informação de Perfil"
 
-#. translators: %s: user name.
+#. %s: user name.
 #: includes/controllers/class-user.php:1015
 #, php-format
 msgid "Profile of %s"
@@ -1730,7 +1721,7 @@ msgstr ""
 msgid "Save Changes"
 msgstr "Salvar Alterações"
 
-#. translators: %s: Discount percentage.
+#. %s: Discount percentage.
 #: templates/admin/extensions.php:64
 #, php-format
 msgid "Save up to %s"
@@ -1799,7 +1790,7 @@ msgstr ""
 
 #: includes/configs/strings.php:35
 msgid "Select Image"
-msgstr ""
+msgstr "Selecionar imagem"
 
 #: includes/configs/strings.php:36
 msgid "Select Images"
@@ -1869,7 +1860,6 @@ msgstr ""
 msgid "Settings"
 msgstr "Configurações"
 
-#. translators: %s: terms URL.
 #: includes/components/class-admin.php:1967
 msgid "Share Usage Data"
 msgstr ""
@@ -1878,7 +1868,7 @@ msgstr ""
 msgid "Show"
 msgstr ""
 
-#. translators: 1: results range start, 2: results range end, 3: total results.
+#. 1: results range start, 2: results range end, 3: total results.
 #: includes/blocks/class-result-count.php:55
 #, php-format
 msgid "Showing %1$s-%2$s of %3$s results"
@@ -2052,7 +2042,7 @@ msgid ""
 "account."
 msgstr ""
 
-#. translators: %s: Listing title.
+#. %s: Listing title.
 #: includes/configs/strings.php:159
 #, php-format
 msgid ""
@@ -2060,7 +2050,7 @@ msgid ""
 "of the page."
 msgstr ""
 
-#. translators: %s: Listing title.
+#. %s: Listing title.
 #: includes/configs/strings.php:157
 #, php-format
 msgid ""
@@ -2068,7 +2058,7 @@ msgid ""
 "soon as possible."
 msgstr ""
 
-#. translators: %s: link URL.
+#. %s: link URL.
 #: includes/components/class-admin.php:2153
 #, php-format
 msgid ""
@@ -2076,7 +2066,7 @@ msgid ""
 "review</a> matters."
 msgstr ""
 
-#. translators: %s: themes URL.
+#. %s: themes URL.
 #: includes/components/class-admin.php:1925
 #, php-format
 msgid ""
@@ -2089,13 +2079,13 @@ msgstr ""
 msgid "The docs are not helpful"
 msgstr ""
 
-#. translators: %s: file size.
+#. %s: file size.
 #: includes/fields/class-attachment-upload.php:340
 #, php-format
 msgid "The file size must not exceed %s."
 msgstr ""
 
-#. translators: %s: token list.
+#. %s: token list.
 #: includes/configs/strings.php:108
 #, php-format
 msgid "The following tokens are available: %s."
@@ -2274,6 +2264,7 @@ msgid "Add New"
 msgstr ""
 
 #: includes/configs/meta-boxes.php:166
+#: templates/vendor/view/vendor-verified-badge.php:7
 msgctxt "vendor"
 msgid "Verified"
 msgstr ""
@@ -2306,7 +2297,7 @@ msgstr ""
 msgid "Version"
 msgstr ""
 
-#. translators: %s: version number.
+#. %s: version number.
 #: templates/admin/extensions.php:85
 #, php-format
 msgid "Version %s"
@@ -2328,6 +2319,10 @@ msgstr ""
 msgid "View Listings"
 msgstr ""
 
+#: templates/vendor/edit/page/vendor-view-link.php:5
+msgid "View Profile"
+msgstr "Ver Perfil"
+
 #: includes/configs/strings.php:186
 msgid "View Vendor"
 msgstr ""
@@ -2344,7 +2339,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#. translators: 1: |, 2: %.
+#. 1: |, 2: %.
 #: includes/components/class-email.php:237
 #, php-format
 msgid ""
