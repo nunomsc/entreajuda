@@ -27,3 +27,12 @@ jobs:
           # local-dir: ./wp-content/themes/teu-tema/
           # server-dir: ./htdocs/wp-content/themes/teu-tema/
           dangerous-clean-slate: false
+          # Ignora pastas pesadas que já existem ou devem ser instaladas via WP-Admin
+          exclude: |
+            **/.git*
+            **/.git*/**
+            wp-content/uploads/**
+            wp-content/plugins/**
+            wp-content/upgrade/**
+            wp-admin/**
+            wp-includes/**          
