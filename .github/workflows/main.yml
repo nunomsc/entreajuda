@@ -10,26 +10,42 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: 🚚 Get latest code
+      - name: 🚚 Obter histórico do repositório
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 2 # Permite comparar HEAD com HEAD~1
 
-      - name: 📁 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ./htdocs/
-          # Exclui ficheiros pesados não executáveis dos plugins
-          exclude: |
-            **/.git*
-            **/.git*/**
-            wp-content/uploads/**
-            wp-content/cache/**
-            **/*.map
-            **/*.txt
-            **/*.md
-            **/node_modules/**
-            **/tests/**
+      - name: 📦 Enviar apenas ficheiros do commit
+        run: |
+          sudo apt-get update && sudo apt-get install -y lftp
+
+          # Identifica os ficheiros alterados, adicionados ou modificados no último commit
+          CHANGED_FILES=$(git diff-tree --no-commit-id --name-only -r --diff-filter=d HEAD)
+
+          echo "Ficheiros a enviar:"
+          echo "$CHANGED_FILES"
+
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "Nenhum ficheiro para transferir."
+            exit 0
+          fi
+
+          # Cria um script de comandos em lote para o lftp
+          echo "set ftp:ssl-allow no" > upload_script.lftp
+          echo "set net:timeout 15" >> upload_script.lftp
+          echo "set net:max-retries 3" >> upload_script.lftp
+
+          for FILE in $CHANGED_FILES; do
+            # Ignora ficheiros de sistema do git, workflows e documentação
+            if [[ "$FILE" != .github* && "$FILE" != .git* && -f "$FILE" ]]; then
+              DIR=$(dirname "$FILE")
+              # Garante que a diretoria remota existe e faz o upload
+              echo "mkdir -p ./htdocs/$DIR" >> upload_script.lftp
+              echo "put $FILE -o ./htdocs/$FILE" >> upload_script.lftp
+            fi
+          done
+
+          echo "quit" >> upload_script.lftp
+
+          # Executa a ligação e transferências
+          lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" ${{ secrets.FTP_SERVER }} < upload_script.lftp
