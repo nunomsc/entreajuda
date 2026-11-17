@@ -13,13 +13,14 @@ jobs:
       - name: 🚚 Obter histórico do repositório
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2 # Permite comparar HEAD com HEAD~1
+          fetch-depth: 0 # Garante acesso ao commit anterior ao push
 
       - name: 📦 Enviar apenas ficheiros do commit
         run: |
           sudo apt-get update && sudo apt-get install -y lftp
 
           # Identifica os ficheiros alterados, adicionados ou modificados no último commit
+          BASE_SHA="${{ github.event.before }}"
           CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT "$BASE_SHA" "$GITHUB_SHA")
 
           echo "Ficheiros a enviar:"
