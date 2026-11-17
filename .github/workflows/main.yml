@@ -7,69 +7,75 @@ on:
 
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: 🎉 Deploy incremental
     runs-on: ubuntu-latest
     steps:
-      - name: 🚚 Obter histórico do repositório
+      - name: 🚚 Obter repositório e histórico
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Garante acesso ao commit anterior ao push
+          fetch-depth: 0
 
-      - name: 📦 Enviar apenas ficheiros do commit
-        if: "github.event.head_commit.message != 'test: deploy WordPress plugins via FTP'"
-        run: |
-          sudo apt-get update && sudo apt-get install -y lftp
-
-          # Identifica os ficheiros alterados, adicionados ou modificados no último commit
-          BASE_SHA="${{ github.event.before }}"
-          CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT "$BASE_SHA" "$GITHUB_SHA")
-
-          echo "Ficheiros a enviar:"
-          echo "$CHANGED_FILES"
-
-          if [ -z "$CHANGED_FILES" ]; then
-            echo "Nenhum ficheiro para transferir."
-            exit 0
-          fi
-
-          # Cria um script de comandos em lote para o lftp
-          echo "set ftp:ssl-allow no" > upload_script.lftp
-          echo "set net:timeout 15" >> upload_script.lftp
-          echo "set net:max-retries 3" >> upload_script.lftp
-
-          for FILE in $CHANGED_FILES; do
-            # Ignora ficheiros de sistema do git, workflows e documentação
-            if [[ "$FILE" != .github* && "$FILE" != .git* && -f "$FILE" ]]; then
-              DIR=$(dirname "$FILE")
-              # Garante que a diretoria remota existe e faz o upload
-              echo "mkdir -p ./htdocs/$DIR" >> upload_script.lftp
-              echo "put $FILE -o ./htdocs/$FILE" >> upload_script.lftp
-            fi
-          done
-
-          echo "quit" >> upload_script.lftp
-
-          # Executa a ligação e transferências
-          lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" ${{ secrets.FTP_SERVER }} < upload_script.lftp
-
-      - name: 🧪 Testar envio da pasta wp-content/plugins
-        if: "github.event.head_commit.message == 'test: deploy WordPress plugins via FTP'"
+      - name: 📦 Enviar apenas ficheiros alterados
         env:
+          BASE_SHA: ${{ github.event.before }}
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
-          test -d wp-content/plugins || { echo "Pasta wp-content/plugins inexistente"; exit 1; }
-          test -n "$FTP_SERVER" && test -n "$FTP_USERNAME" && test -n "$FTP_PASSWORD" || { echo "Secrets FTP em falta"; exit 1; }
-          echo "A enviar wp-content/plugins (sem apagar ficheiros remotos)..."
-          lftp -u "$FTP_USERNAME,$FTP_PASSWORD" "$FTP_SERVER" <<'LFTP'
-          set cmd:fail-exit yes
-          set ftp:ssl-allow no
-          set net:timeout 20
-          set net:max-retries 2
-          set xfer:clobber yes
-          mirror --reverse --verbose --no-perms --parallel=2 wp-content/plugins ./htdocs/wp-content/plugins
-          bye
-          LFTP
-          echo "Teste FTP concluído."
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq lftp
+
+          test -n "$FTP_SERVER" && test -n "$FTP_USERNAME" && test -n "$FTP_PASSWORD" || {
+            echo "Faltam credenciais FTP nos GitHub Secrets."
+            exit 1
+          }
+
+          if [[ "$BASE_SHA" =~ ^0+$ ]] || ! git cat-file -e "$BASE_SHA^{commit}" 2>/dev/null; then
+            echo "Sem commit base válido: a listar ficheiros da revisão atual."
+            git ls-files -z > changed_files.bin
+          else
+            git diff --name-only -z --diff-filter=ACMRT "$BASE_SHA" "$GITHUB_SHA" -- > changed_files.bin
+          fi
+
+          # Citar caminhos para o interpretador de comandos do lftp.
+          quote_lftp() {
+            local value="$1"
+            value=${value//\\/\\\\}
+            value=${value//\"/\\\"}
+            printf '"%s"' "$value"
+          }
+
+          {
+            echo "set cmd:fail-exit yes"
+            echo "set ftp:ssl-allow no"
+            echo "set net:timeout 20"
+            echo "set net:max-retries 3"
+            echo "set xfer:clobber yes"
+          } > upload_script.lftp
+
+          count=0
+          while IFS= read -r -d '' file; do
+            [[ -f "$file" ]] || continue
+            case "$file" in
+              .github/*|.git/*|README*|*.md|wp-config.php) continue ;;
+            esac
+
+            dir=$(dirname "$file")
+            remote_dir="./htdocs/$dir"
+            echo "A preparar: $file"
+            # -f evita falhar se a pasta já existir.
+            printf 'mkdir -pf %s\n' "$(quote_lftp "$remote_dir")" >> upload_script.lftp
+            printf 'put %s -o %s\n' "$(quote_lftp "$file")" "$(quote_lftp "./htdocs/$file")" >> upload_script.lftp
+            count=$((count + 1))
+          done < changed_files.bin
+
+          if (( count == 0 )); then
+            echo "Nenhum ficheiro do site alterado. Nada a enviar."
+            exit 0
+          fi
+
+          echo "A enviar $count ficheiro(s) por FTP."
+          echo "bye" >> upload_script.lftp
+          lftp -u "$FTP_USERNAME,$FTP_PASSWORD" "$FTP_SERVER" < upload_script.lftp
+          echo "Deploy incremental concluído."
