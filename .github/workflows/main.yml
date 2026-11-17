@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0 # Garante acesso ao commit anterior ao push
 
       - name: 📦 Enviar apenas ficheiros do commit
-        if: github.event.head_commit.message != 'test: deploy WordPress plugins via FTP'
+        if: "github.event.head_commit.message != 'test: deploy WordPress plugins via FTP'"
         run: |
           sudo apt-get update && sudo apt-get install -y lftp
 
@@ -53,7 +53,7 @@ jobs:
           lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" ${{ secrets.FTP_SERVER }} < upload_script.lftp
 
       - name: 🧪 Testar envio da pasta wp-content/plugins
-        if: github.event.head_commit.message == 'test: deploy WordPress plugins via FTP'
+        if: "github.event.head_commit.message == 'test: deploy WordPress plugins via FTP'"
         env:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
