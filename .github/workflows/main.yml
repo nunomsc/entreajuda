@@ -69,7 +69,6 @@ jobs:
           set net:timeout 20
           set net:max-retries 2
           set xfer:clobber yes
-          mkdir -p ./htdocs/wp-content/plugins
           mirror --reverse --verbose --no-perms --parallel=2 wp-content/plugins ./htdocs/wp-content/plugins
           bye
           LFTP
