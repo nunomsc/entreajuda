@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 7.1.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-08-19 12:42:57+0000\n"
+"PO-Revision-Date: 2026-11-17 01:11:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -285,6 +285,29 @@ msgstr "Janeiro"
 #, gp-priority: high
 msgid "Uncategorized"
 msgstr "Sem categoria"
+
+#. translators: %s: The attribute name.
+#: wp-includes/interactivity-api/class-wp-interactivity-api.php:1128
+msgid "The \"%s\" attribute cannot be bound on an \"object\" element, so the binding was ignored."
+msgstr "O atributo \"%s\" não pode ser associado a um elemento \"object\", pelo que a associação foi ignorada."
+
+#: wp-includes/class-wp-xmlrpc-server.php:1489
+msgid "Sorry, this post type is not supported over XML-RPC."
+msgstr "Desculpe, este tipo de conteúdo não é suportado através de XML-RPC."
+
+#: wp-includes/build/pages/font-library/page.php:324
+#: wp-includes/build/pages/options-connectors/page.php:324
+#: wp-admin/includes/menu.php:384 wp-admin/my-sites.php:17
+#: wp-admin/network/index.php:17 wp-admin/network/settings.php:17
+#: wp-admin/network/site-info.php:32 wp-admin/network/site-settings.php:32
+#: wp-admin/network/site-themes.php:57 wp-admin/network/site-users.php:50
+#: wp-admin/network/sites.php:14 wp-admin/network/sites.php:162
+#: wp-admin/network/upgrade.php:44 wp-admin/network/user-new.php:37
+#: wp-admin/network/users.php:14 wp-admin/network/users.php:24
+#: wp-admin/network/users.php:51 wp-admin/network/users.php:66
+#: wp-admin/network/users.php:189
+msgid "Sorry, you are not allowed to access this page."
+msgstr "Não tem permissão para aceder a esta página."
 
 #: wp-includes/theme.json
 msgctxt "Dimension size name"
