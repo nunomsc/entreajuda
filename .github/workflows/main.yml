@@ -33,9 +33,9 @@ jobs:
 
           if [[ "$BASE_SHA" =~ ^0+$ ]] || ! git cat-file -e "$BASE_SHA^{commit}" 2>/dev/null; then
             echo "Sem commit base válido: a listar ficheiros da revisão atual."
-            git ls-files -z > changed_files.bin
+            git ls-files -z | while IFS= read -r -d '' file; do printf 'A\\0%s\\0' "$file"; done > changed_files.bin
           else
-            git diff --name-only -z --diff-filter=ACMRT "$BASE_SHA" "$GITHUB_SHA" -- > changed_files.bin
+            git diff --name-status --no-renames -z --diff-filter=ACMDT "$BASE_SHA" "$GITHUB_SHA" -- > changed_files.bin
           fi
 
           # Citar caminhos para o interpretador de comandos do lftp.
@@ -54,28 +54,37 @@ jobs:
             echo "set xfer:clobber yes"
           } > upload_script.lftp
 
-          count=0
-          while IFS= read -r -d '' file; do
-            [[ -f "$file" ]] || continue
+          uploads=0
+          deletions=0
+          while IFS= read -r -d '' status && IFS= read -r -d '' file; do
             case "$file" in
               .github/*|.git/*|README*|*.md|wp-config.php) continue ;;
             esac
 
-            dir=$(dirname "$file")
-            remote_dir="./htdocs/$dir"
-            echo "A preparar: $file"
-            # -f evita falhar se a pasta já existir.
-            printf 'mkdir -pf %s\n' "$(quote_lftp "$remote_dir")" >> upload_script.lftp
-            printf 'put %s -o %s\n' "$(quote_lftp "$file")" "$(quote_lftp "./htdocs/$file")" >> upload_script.lftp
-            count=$((count + 1))
+            case "$status" in
+              D)
+                # Apaga apenas ficheiros explicitamente removidos do Git.
+                echo "A eliminar do FTP: $file"
+                printf 'rm %s\n' "$(quote_lftp "./htdocs/$file")" >> upload_script.lftp
+                deletions=$((deletions + 1))
+                ;;
+              A|C|M|T)
+                [[ -f "$file" ]] || continue
+                dir=$(dirname "$file")
+                echo "A enviar: $file"
+                printf 'mkdir -pf %s\n' "$(quote_lftp "./htdocs/$dir")" >> upload_script.lftp
+                printf 'put %s -o %s\n' "$(quote_lftp "$file")" "$(quote_lftp "./htdocs/$file")" >> upload_script.lftp
+                uploads=$((uploads + 1))
+                ;;
+            esac
           done < changed_files.bin
 
-          if (( count == 0 )); then
+          if (( uploads + deletions == 0 )); then
             echo "Nenhum ficheiro do site alterado. Nada a enviar."
             exit 0
           fi
 
-          echo "A enviar $count ficheiro(s) por FTP."
+          echo "FTP: $uploads ficheiro(s) a enviar; $deletions ficheiro(s) a eliminar."
           echo "bye" >> upload_script.lftp
           lftp -u "$FTP_USERNAME,$FTP_PASSWORD" "$FTP_SERVER" < upload_script.lftp
           echo "Deploy incremental concluído."
