@@ -21,7 +21,7 @@
 /local-xdebuginfo.php
 
 # Uploaded media, translations and generated WordPress files
-# /wp-content/uploads/
+/wp-content/uploads/
 # /wp-content/languages/
 /wp-content/cache/
 /wp-content/upgrade/
@@ -58,3 +58,4 @@ vendor/
 .DS_Store
 Thumbs.db
 Desktop.ini
+laradocker/

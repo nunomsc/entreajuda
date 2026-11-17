@@ -236,4 +236,4 @@ export default defineStore('useVisitor', () => {
 		loadVisitors,
 		reinitChart
 	}
-})
+})
