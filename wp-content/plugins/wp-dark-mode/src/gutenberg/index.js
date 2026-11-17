@@ -1,3 +1,0 @@
-import './editor';
-import './block';
-
